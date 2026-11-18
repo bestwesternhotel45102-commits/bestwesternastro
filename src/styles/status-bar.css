@@ -178,21 +178,6 @@
   }
 }
 
-/* The temporary Executive Inn transition badge (global.css §"EXECUTIVE INN
-   TRANSITION BADGE", slated for removal once Best Western branding is
-   official) drops in as a full-width drawer at top:60px on phones — exactly
-   where this strip sits, and at z-index 99999 it wins. Move it below the
-   strip so both are legible.
-   The breakpoint MUST stay 640px to match the badge's own mobile block:
-   between 641px and 900px the badge is a left-hand drawer positioned by
-   `top: 20%` + translateY(-50%), and overriding `top` there would break it.
-   When the badge block is deleted this rule simply stops matching. */
-@media (max-width: 640px) {
-  #ei-badge {
-    top: calc(var(--lsb-top) + var(--lsb-h));
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
   .lsb {
     transition: none;

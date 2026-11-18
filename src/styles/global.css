@@ -480,9 +480,8 @@ body {
    HERO ROOM SHOWCASE — rate ribbon, arrows, indicators
    ------------------------------------------------------------
    Two constraints shape this layout, and both are other people's furniture:
-     • #ei-badge is position:fixed, 520 x 394, pinned over the LEFT of the
-       viewport, and .pet-badge sits over the bottom RIGHT. A rate card in
-       either corner is unreadable on a 768px-tall laptop.
+     • .pet-badge sits over the bottom RIGHT of the viewport. A rate card in
+       a corner is unreadable on a 768px-tall laptop.
      • .sbb (conversion.css) is fixed over the bottom --sbb-h of every page.
    So the rate ribbon is the last item in the hero's own centre column and
    every piece of hero furniture is measured up from --hero-floor.
@@ -683,8 +682,8 @@ body {
 }
 
 /* Previous / next / indicators — one centred row clear of the sticky booking
-   bar. Vertically-centred side arrows would sit under #ei-badge on the left and
-   .pet-badge on the right, so the whole control set lives at the bottom middle
+   bar. Vertically-centred side arrows would sit under .pet-badge on the
+   right, so the whole control set lives at the bottom middle
    where nothing else in the hero reaches. */
 .hctrls {
   position: absolute;
@@ -731,10 +730,9 @@ body {
 }
 @media (min-width: 601px) and (max-height: 800px) {
   .hero .hsub { display: none; }
-  /* Losing the subtitle pulls the buttons up into #ei-badge's fixed 520px-wide
-     panel. Drop the duplicate Book Direct button with it — the ribbon's own
-     Book Now and the sticky bar both carry the same call — so only the centred
-     Explore Rooms button remains, clear of the panel. */
+  /* Short screens: drop the duplicate Book Direct button along with the
+     subtitle — the ribbon's own Book Now and the sticky bar both carry the
+     same call — so only the centred Explore Rooms button remains. */
   .hero .hbtns .btn-p { display: none; }
 }
 
@@ -1762,9 +1760,8 @@ footer a         { color: var(--gold); }
   .scroll-hint { display: none; }
 }
 
-/* Shortest phones (iPhone SE, 360 x 667): #ei-badge drops in over the top of
-   the hero and the control row holds the bottom, leaving roughly 200px of clear
-   band for the rate card. Tighten it further on top of the phone rules above —
+/* Shortest phones (iPhone SE, 360 x 667): the control row holds the bottom of
+   the hero, leaving a narrow clear band for the rate card. Tighten it further on top of the phone rules above —
    the rate and its tax note still never go. */
 @media (max-width: 600px) and (max-height: 700px) {
   .hero          { padding-bottom: calc(var(--hero-floor) + 42px); }
@@ -2923,66 +2920,6 @@ body.video-page { background: #000; }
 @media (max-width: 1280px) {
   .pet-badge { display: none; }
 }
-
-/* ============================================================
-   EXECUTIVE INN TRANSITION BADGE
-   Remove this entire block once Best Western branding is official
-   ============================================================ */
-#ei-badge {
-  position: fixed; left: 0; top: 20%;
-  transform: translateY(-50%) translateX(-110%);
-  transition: transform 0.75s cubic-bezier(0.22,1,0.36,1);
-  z-index: 99999; width: 520px;
-  background: #1a2e4a; color: #fff;
-  border-radius: 0 24px 24px 0;
-  border-right: 7px solid #c9a84c;
-  border-top: 7px solid #c9a84c;
-  border-bottom: 7px solid #c9a84c;
-  font-family: 'Lato', sans-serif; line-height: 1.6;
-  padding: 44px 38px 40px 32px; cursor: default;
-  box-shadow: 6px 6px 28px rgba(0,0,0,0.55);
-}
-#ei-badge.ei-visible { animation: eiPulse 2s ease-in-out infinite; }
-@keyframes eiPulse {
-  0%, 100% { box-shadow: 6px 6px 28px rgba(0,0,0,0.55), 0 0 0px 0px rgba(201,168,76,0); }
-  50%       { box-shadow: 8px 8px 36px rgba(0,0,0,0.65), 0 0 28px 10px rgba(201,168,76,0.65); }
-}
-#ei-badge .ei-dot {
-  display: inline-block; width: 20px; height: 20px; border-radius: 50%;
-  background: #4caf50; margin-right: 12px; vertical-align: middle; flex-shrink: 0;
-  animation: eiDotBlink 0.9s ease-in-out infinite;
-}
-@keyframes eiDotBlink {
-  0%, 100% { opacity: 1;    box-shadow: 0 0 10px 4px rgba(76,175,80,0.8); }
-  50%       { opacity: 0.1; box-shadow: 0 0 0px  0px rgba(76,175,80,0);   }
-}
-#ei-badge .ei-header { display: flex; align-items: center; font-weight: 900; font-size: 2rem; color: #f5c842; margin-bottom: 20px; letter-spacing: 0.02em; }
-#ei-badge .ei-body { font-size: 1.3rem; color: #dde4ef; line-height: 1.8; }
-#ei-badge .ei-body strong { color: #fff; font-weight: 700; }
-#ei-badge .ei-body em { color: #f5c842; font-style: normal; font-weight: 700; }
-#ei-badge-close {
-  position: absolute; top: 12px; right: 16px;
-  background: none; border: none; color: rgba(255,255,255,0.45);
-  font-size: 1.3rem; cursor: pointer; line-height: 1; padding: 4px 7px; transition: color 0.2s;
-}
-#ei-badge-close:hover { color: #fff; }
-/* Ceiling raised from 900px to 1100px with the hero rate ribbon: at 520px wide
-   the panel reaches past the centre of a 1024px screen and covers the hero's
-   own buttons. The compact 320px form leaves them readable. */
-@media (min-width: 641px) and (max-width: 1100px) {
-  #ei-badge { width: 320px; padding: 28px 24px 24px 22px; }
-  #ei-badge .ei-header { font-size: 1.3rem; margin-bottom: 12px; }
-  #ei-badge .ei-body { font-size: 0.95rem; }
-  #ei-badge .ei-dot { width: 14px; height: 14px; margin-right: 10px; }
-}
-@media (max-width: 640px) {
-  #ei-badge { top: 60px; left: 0; right: 0; width: auto; transform: translateY(-200%); border-radius: 0 0 16px 16px; border-right: none; border-top: none; border-left: none; border-bottom: 7px solid #c9a84c; padding: 20px 18px 18px 20px; box-shadow: 0 8px 28px rgba(0,0,0,0.55); }
-  #ei-badge .ei-header { font-size: 1.1rem; margin-bottom: 10px; }
-  #ei-badge .ei-body { font-size: 0.85rem; line-height: 1.6; }
-  #ei-badge .ei-dot { width: 11px; height: 11px; margin-right: 8px; }
-  #ei-badge-close { font-size: 1rem; top: 8px; right: 10px; }
-}
-/* ── END EXECUTIVE INN TRANSITION BADGE ── */
 
 /* ============================================================
    RATES TABLE  (index.html)

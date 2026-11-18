@@ -154,21 +154,7 @@ ${ldScript(hotelNodeFull(hotelDescription))}
 
  /* Badge styles moved to styles.css */
  </style>`;
-const bodyContent = `<!-- ═══════════════════════════════════════════════════════════
-     EXECUTIVE INN FLOATING BADGE — LEFT SIDE
-     Remove this entire block once Best Western branding is official
-     ═══════════════════════════════════════════════════════════ -->
-<div id="ei-badge" role="status" aria-live="polite">
-  <button id="ei-badge-close"
-    onclick="document.getElementById('ei-badge').style.display='none';"
-    aria-label="Dismiss notice">✕</button>
-  <div class="ei-header">
-    <span class="ei-dot"></span> We're Open!
-  </div>
-  <div class="ei-body">
-        This page previews the <em>exciting upgrades</em> coming as we transform into <strong>Best Western Vernal Inn</strong>.<br><br>  Not yet listed on BestWestern.com — book directly and save ${BUSINESS.directBooking.discountPercent}% with discount code <strong>${BUSINESS.directBooking.promoCode}</strong>: <a href="tel:${BUSINESS.phoneTel}" style="color:var(--gold);font-size:1.1rem;font-weight:900;letter-spacing:1px;">📞 ${BUSINESS.phoneDisplay}</a>
-  </div>
-</div>
+const bodyContent = `
 
 <!-- ═══════════════════════════════════════════════════════════ -->
 
@@ -188,9 +174,9 @@ const bodyContent = `<!-- ══════════════════
 ${HERO_SLIDES.map((s, i) => `<div class="hero-slide ${s.kb}${i === 0 ? ' active' : ''}" role="img" aria-label="${s.alt}"><div class="hero-kb"${i === 0 ? ` style="background-image:url('${s.image}')"` : ` data-bg="${s.image}"`}${s.portrait ? ` data-bg-portrait="${s.portrait}"` : ''}></div></div>`).join('\n')}
  <div class="hero-ov"></div>
  <div class="hero-cnt">
- <p class="eyebrow">Coming Soon in Vernal, Utah as</p>
+ <p class="eyebrow">Now Open in Vernal, Utah</p>
  <h1 class="htitle">Best Western Inn<br><em>Vernal, Utah</em></h1>
- <p class="hsub">The Executive Inn is in the process of being beautifully transformed into Best Western Vernal Inn — spacious rooms, free hot breakfast, and a warm welcome every single day. Your home away from home.</p>
+ <p class="hsub">The Executive Inn has been beautifully transformed into Best Western Vernal Inn — spacious rooms, free hot breakfast, and a warm welcome every single day. Your home away from home.</p>
  <div class="hbtns">
  <a href="tel:${BUSINESS.phoneTel}" class="btn-p" data-track="phone_call_homepage">📞 ${BUSINESS.directBooking.ctaLabel} ${BUSINESS.directBooking.discountPercent}%</a>
  <a href="#rooms" class="btn-s">Explore Rooms</a>
@@ -204,9 +190,9 @@ ${HERO_SLIDES.map((s, i) => `<div class="hero-slide ${s.kb}${i === 0 ? ' active'
 
  <!-- ROOM RATE RIBBON — one panel per room slide, cross-faded in step with the
       photo. It sits at the foot of the hero column rather than floating in a
-      corner: #ei-badge is position:fixed over the left edge and .pet-badge over
-      the right, and between them a corner card is unreadable on any laptop-height
-      screen. Three blocks on desktop, stacked on phones. -->
+      corner: .pet-badge sits over the right edge, and a corner card is
+      unreadable on any laptop-height screen. Three blocks on desktop, stacked
+      on phones. -->
  <div class="hroom-layer" id="hroom-layer">
 ${HERO_SLIDES.map((s, i) => {
   if (!s.room) return '';
@@ -761,17 +747,6 @@ ${p.link ? ` <p class="room-detail-links" style="margin:0 0 4px;"><a href="${p.l
  <div class="lbcount" id="lbc"></div>
 </div>`;
 const pageScripts = `<script>
-  window.addEventListener('DOMContentLoaded', () => {
-    const b = document.getElementById('ei-badge');
-    if (!b) return;
-    const isMobile = window.matchMedia('(max-width: 640px)').matches;
-    setTimeout(() => {
-      b.style.transform = isMobile ? 'translateY(0)' : 'translateY(-20%) translateX(0)';
-    }, 120);
-    setTimeout(() => { b.classList.add('ei-visible'); }, 900);
-  });
-</script>
-<script>
 // Hero Slideshow — Ken Burns backgrounds
 /* ── Hero room reel ──
    Two property shots then one slide per room type. The rate card layer is a
