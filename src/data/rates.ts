@@ -15,7 +15,13 @@
 // This is the same publication gate as BUSINESS.bookDirect[].confirmed: we would
 // rather say "call" than publish a number nobody has confirmed.
 //
-// CURRENT STATE (hotel instruction, 2026-09-03; extended 2026-09-09):
+// RATE CARD OF 2026-11-18: every nightly rate below was reset to the "Flexible
+// Rate" shown on the hotel's BestWestern.com booking page (owner's screenshots,
+// 2026-11-18): $85 / $90 / $100 / $110 / $130 / $140 / $160. The per-key notes
+// that quote $95, $108, $120, $135, $149 and $155 are history. BestWestern.com
+// also lists lower member-only rates; those are not published here.
+//
+// EARLIER STATE (hotel instruction, 2026-09-03; extended 2026-09-09):
 //   nightly — CONFIRMED, published, SEVEN room types, $95 to $155. The Studio
 //             Queen (then "Queen Suite") at $95 was added on 2026-09-09 and is
 //             the lowest published rate on the card; see the key's own note.
@@ -64,9 +70,9 @@ export const RATES = {
      *  owner renamed the folder on 2026-09-17). This is the
      *  lowest published rate on the card — below the $108 Studio King — so
      *  it is the number a guest comparing Vernal hotels sees first. */
-    studioQueen: 95 as number | null,
-    studioKing: 108 as number | null,
-    studioTwoQueen: 120 as number | null,
+    studioQueen: 85 as number | null,
+    studioKing: 90 as number | null,
+    studioTwoQueen: 110 as number | null,
     /** $120 from 2026-09-17, on the owner's instruction ("the Studio handicap
      *  king needs to be changed to $120 a night"). It was $108 — the same as the
      *  standard Studio King — and several pages said so in prose ("the same
@@ -75,9 +81,9 @@ export const RATES = {
      *  had "$108" baked into its pixels; the owner re-exported it the same day
      *  as Handicapped-studio-$120.webp, and homeGallery.ts's build guard now
      *  checks it against this number. */
-    accessibleStudioKing: 120 as number | null,
-    petFriendlyStudioTwoQueen: 155 as number | null,
-    petFriendlyRoom: 135 as number | null,
+    accessibleStudioKing: 100 as number | null,
+    petFriendlyStudioTwoQueen: 140 as number | null,
+    petFriendlyRoom: 130 as number | null,
     /** The Studio Jacuzzi King — added 2026-09-16 as "Jacuzzi King Suite", when
      *  the owner asked for its page; named as on the owner's re-exported label
      *  on 2026-09-17 ("use only Studio, not Suite").
@@ -88,7 +94,7 @@ export const RATES = {
      *  homepage rate table, hero card, room tab, weekly-rates page and the room
      *  page's JSON-LD Offer all read this number; the homepage gallery's
      *  labelled tile prints it too and is guarded against it. */
-    studioJacuzziKing: 149 as number | null,
+    studioJacuzziKing: 160 as number | null,
   },
 
   /** Monthly rates. All null: the site currently ranks for "monthly hotels vernal

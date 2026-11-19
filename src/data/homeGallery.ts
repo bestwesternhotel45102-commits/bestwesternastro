@@ -71,59 +71,47 @@ export const HOME_GALLERY: GalleryTile[] = [
   },
 
   // ── The rooms ──────────────────────────────────────────────────────────────
+  // 2026-11-18: these tiles used the owner's labelled exports, which have the
+  // nightly rate printed into the picture ($95, $108, $120, $120, $135, $149,
+  // $155). Every rate changed that day, so all seven pictures became wrong at
+  // once. They now use the clean frames the hero reel uses, with no price in
+  // the pixels and no rateKey. To bring priced tiles back, re-export them at
+  // the new rates, name them "…-$<price>.webp" and set rateKey again — the
+  // guard below still works. The old labelled files are still in public/images.
   {
-    // Re-exported by the owner 2026-09-17: the picture now reads "Studio Queen"
-    // over "$95/night" (it said "Queen Suite" until then). The folder was
-    // renamed Queen-Suite/ → Queen-Studio/ the same day; the filename kept its
-    // old wording, which guests never see.
-    src: 'images/Queen-Studio/Queen-Suite-Labeled-$95.webp',
+    src: 'images/Queen-Studio/Queen-Suite.webp',
     label: 'Studio Queen',
-    alt: 'Studio Queen with a queen bed and a two-seat sofa — $95 a night at Best Western Vernal Hotel, Vernal Utah',
-    rateKey: 'studioQueen',
+    alt: 'Studio Queen with a queen bed and a two-seat sofa under the window — Best Western Vernal Hotel, Vernal Utah',
   },
   {
-    src: 'images/King-Studio/King-Studio-$108.webp',
+    src: 'images/King-Studio/King-Studio5.webp',
     label: 'Studio King',
-    alt: 'Studio King with a desk, kitchenette and dining table — $108 a night at Best Western Vernal Hotel, Vernal Utah',
-    rateKey: 'studioKing',
+    alt: 'Studio King bedroom with platform bed and reading lights — Best Western Vernal Hotel, Vernal Utah',
   },
   {
-    src: 'images/Double-Queen-Studio/Double-Queen-Studio-$120.webp',
-    label: 'Studio Two Queen',
-    alt: 'Studio Two Queen with a kitchenette, dining table, desk and armchair — $120 a night at Best Western Vernal Hotel, Vernal Utah',
-    rateKey: 'studioTwoQueen',
-  },
-  {
-    // Re-exported by the owner at $120 on 2026-09-17, the day the rate moved
-    // from $108 — the old Handicapped-studio-$108.webp tile was withdrawn in
-    // between. After the Studio Two Queen because the two now share $120 and
-    // ROOMS lists it right after that room. Its label already reads
-    // "Accessible Studio King".
-    src: 'images/Handicaped-Studio/Handicapped-studio-$120.webp',
+    src: 'images/Handicaped-Studio/Handicapped-studio4.webp',
     label: 'Accessible Studio King',
-    alt: 'Accessible Studio King with a king bed, kitchenette, desk, armchair and open closet — $120 a night at Best Western Vernal Hotel, Vernal Utah',
-    rateKey: 'accessibleStudioKing',
+    alt: 'Accessible Studio King bedroom with wide turning space — Best Western Vernal Hotel, Vernal Utah',
   },
   {
-    src: 'images/Pet-Friendly-King-Suite/Pet-Friendly-King-Suite-Labeled-$135.webp',
+    src: 'images/Double-Queen-Studio/Double-Queen5.webp',
+    label: 'Studio Two Queen',
+    alt: 'Studio Two Queen bedroom with two queen beds — Best Western Vernal Hotel, Vernal Utah',
+  },
+  {
+    src: 'images/Pet-Friendly-King-Suite/Pet-Friendly-King-Suite3.webp',
     label: 'Pet-Friendly Room',
-    alt: 'Pet-friendly king room with wood-style floors and a window over Vernal — $135 a night at Best Western Vernal Hotel, Vernal Utah',
-    rateKey: 'petFriendlyRoom',
+    alt: 'Pet-friendly king room with desk, dining table and wood-style floors — Best Western Vernal Hotel, Vernal Utah',
   },
   {
-    // Added 2026-09-17, the day the owner confirmed $149 in writing. The
-    // labelled export was re-made that day to read "Studio Jacuzzi King" over
-    // "$149/night". Between the $135 and $155 tiles, keeping rate order.
-    src: 'images/Jacuzzi-Studio/Jacuzzi-Studio-Labeled-$149.webp',
-    label: 'Studio Jacuzzi King',
-    alt: 'Studio Jacuzzi King with a corner jacuzzi beside the desk and wall-mounted TV — $149 a night at Best Western Vernal Hotel, Vernal Utah',
-    rateKey: 'studioJacuzziKing',
-  },
-  {
-    src: 'images/Pet-Friendly-Double-Queen/Pet-Friendly-Double-Queen-Labeled-$155.webp',
+    src: 'images/Pet-Friendly-Double-Queen/Pet-Friendly-Double-Queen-Room2.webp',
     label: 'Pet-Friendly Studio Two Queen',
-    alt: 'Pet-friendly studio with two queen beds, a kitchenette and wood-style floors — $155 a night at Best Western Vernal Hotel, Vernal Utah',
-    rateKey: 'petFriendlyStudioTwoQueen',
+    alt: 'Pet-friendly Studio Two Queen bedroom with wood-style floors — Best Western Vernal Hotel, Vernal Utah',
+  },
+  {
+    src: 'images/Jacuzzi-Studio/Jacuzzi-Suite1.webp',
+    label: 'Studio Jacuzzi King',
+    alt: 'Studio Jacuzzi King with a corner jacuzzi in the room beside the desk and wall-mounted TV — Best Western Vernal Hotel, Vernal Utah',
   },
 
   // ── Breakfast ──────────────────────────────────────────────────────────────

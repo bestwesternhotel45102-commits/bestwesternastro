@@ -1110,6 +1110,8 @@ body {
   height: 100%;
   object-fit: cover;
   object-position: center 30%;
+  /* 2026-11-18: owner asked for a brighter banner. */
+  filter: brightness(1.12) saturate(1.05);
 }
 /* The overlay used to be a flat 90%→55% navy wash across the whole banner,
    which was tuned when the image behind it was a dim phone snapshot. Against
@@ -1142,17 +1144,23 @@ body {
    copy 9.0:1 and 11.8:1 — but ✦ EVERY MORNING, ON US is #c9a24a at 0.72rem,
    which lands at exactly 4.50:1, WCAG AA for small text with nothing to spare.
    Every step down from .72 takes the eyebrow below AA while the white text is
-   still comfortable, so re-measure the gold before lightening this. */
+   still comfortable, so re-measure the gold before lightening this.
+
+   2026-11-18 — LIGHTENED ON THE OWNER'S REQUEST ("make this section look
+   brighter"). The band is now .40 and the edges are clear. To keep the copy
+   readable on the brighter room, the eyebrow is a lighter gold at a larger
+   size and every line carries a heavier text-shadow (see .bkcnt below). The
+   .72 measurements above describe the old band, not this one. */
 .bkov {
   position: absolute;
   inset: 0;
   background: linear-gradient(to bottom,
-    rgba(10,20,45,.14) 0%,
-    rgba(10,20,45,.20) 6%,
-    rgba(10,20,45,.72) 18%,
-    rgba(10,20,45,.72) 82%,
-    rgba(10,20,45,.20) 94%,
-    rgba(10,20,45,.14) 100%);
+    rgba(10,20,45,0) 0%,
+    rgba(10,20,45,.06) 8%,
+    rgba(10,20,45,.40) 24%,
+    rgba(10,20,45,.40) 76%,
+    rgba(10,20,45,.06) 92%,
+    rgba(10,20,45,0) 100%);
 }
 /* The text-shadow is the margin for a bright highlight in the photograph
    drifting under a descender; the ground itself is the band on .bkov. */
@@ -1162,11 +1170,11 @@ body {
   text-align: center;
   padding: 20px;
   max-width: 640px;
-  text-shadow: 0 1px 12px rgba(10,20,45,.55);
+  text-shadow: 0 1px 3px rgba(10,20,45,.9), 0 2px 18px rgba(10,20,45,.75);
 }
 .bkcnt .tag {
-  color: var(--gold);
-  font-size: .72rem;
+  color: #ffd97a;
+  font-size: .8rem;
   letter-spacing: 4px;
   font-weight: 700;
   text-transform: uppercase;
@@ -1181,8 +1189,7 @@ body {
 .bkcnt p {
   font-size: .97rem;
   line-height: 1.8;
-  opacity: .9;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 /* ============================================================

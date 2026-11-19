@@ -370,13 +370,13 @@ export const ROOMS: Room[] = [
       ...STANDARD_BATHROOM('Queen-Studio', 'Queen'),
     ],
     about: [
-      'The Studio Queen is the lowest published rate on our card at $95 a night — below the $108 Studio King — and it is the room to book when there are two of you and you would rather spend the difference on the rest of the trip.',
+      'The Studio Queen is the lowest published rate on our card at $85 a night — below the $90 Studio King — and it is the room to book when there are two of you and you would rather spend the difference on the rest of the trip.',
       'One queen bed sits on a light-wood platform frame against the navy accent wall, with a wall-mounted reading light and a nightstand on each side. What separates it from our other studios is the sofa: a two-seat sofa under the window with a floor lamp beside it, so there is somewhere to sit that is not the bed or the desk chair.',
       'It has the same kitchenette as the rest of the property — a sink and a two-burner cooktop in the counter, cabinets, a microwave, a coffee maker and a full-height refrigerator with a freezer — with a dining table and two upholstered chairs by the entrance. There is a desk with an office chair under a wall-mounted TV, and an open closet with a hanging rail, an iron and an ironing board. The bathroom is the property standard: a granite vanity with a backlit mirror, a full-size tub and shower combination, and a tiled floor.',
       'Free hot breakfast, free WiFi and free parking come with every stay, and the front desk is staffed around the clock. How many people this room sleeps is the one thing we have not had confirmed, so we do not publish it — call the front desk and ask. Weekly rates are quoted by phone.',
     ],
     difference:
-      'The lowest published nightly rate we have at $95, and the only room we have photographed with a sofa in it.',
+      'The lowest published nightly rate we have at $85, and the only room we have photographed with a sofa in it.',
     features: [
       { label: 'One queen bed', source: 'photo' },
       { label: 'Two-seat sofa with floor lamp', source: 'photo' },
@@ -396,9 +396,9 @@ export const ROOMS: Room[] = [
       { label: '24-hour front desk', source: 'site' },
     ],
     seo: {
-      title: 'Studio Queen — $95/Night | Best Western Vernal Hotel, Vernal Utah',
+      title: 'Studio Queen — $85/Night | Best Western Vernal Hotel, Vernal Utah',
       description:
-        'Studio Queen at Best Western Vernal Hotel: one queen bed, a sofa, a full kitchenette, free hot breakfast and free WiFi. $95 per night + tax — our lowest published rate. Weekly rates — call for price.',
+        'Studio Queen at Best Western Vernal Hotel: one queen bed, a sofa, a full kitchenette, free hot breakfast and free WiFi. $85 per night + tax — our lowest published rate. Weekly rates — call for price.',
       bedType: 'Queen',
     },
   },
@@ -505,7 +505,7 @@ export const ROOMS: Room[] = [
       ...STANDARD_BATHROOM('King-Studio', 'King'),
     ],
     about: [
-      'The Studio King is our one-king-bed studio, and at $108 a night it is the lowest-priced king room on the card. The bed sits on a light-wood platform frame against a navy accent wall, with a wall-mounted reading light and a nightstand on each side — so two people can read, charge a phone and answer the room phone without reaching across each other.',
+      'The Studio King is our one-king-bed studio, and at $90 a night it is the lowest-priced king room on the card. The bed sits on a light-wood platform frame against a navy accent wall, with a wall-mounted reading light and a nightstand on each side — so two people can read, charge a phone and answer the room phone without reaching across each other.',
       'Like our other rooms it has a kitchenette, and it is the same configuration throughout: a cooking stove, a sink, cabinets, a microwave, a coffee maker and a full-height refrigerator with a freezer, with a dining table and two chairs alongside on tiled flooring. Along the far wall there is a desk with an office chair and a wall-mounted TV, an armchair with an ottoman under a floor lamp, and an open closet with a hanging rail, drawers and an ironing board.',
       'The bathroom is the property standard: a granite vanity with a single basin under a backlit mirror, a full-size tub and shower combination behind a curved curtain rod, and a tiled floor. Towels, a towel shelf and a hair dryer are on the wall by the vanity.',
       'Free hot breakfast, free WiFi and free parking come with every stay, and the front desk is staffed around the clock. Staying a week or longer? Weekly rates are quoted by phone — call the front desk and ask.',
@@ -514,7 +514,7 @@ export const ROOMS: Room[] = [
       // NOT "the lowest published nightly rate on the rate card" any more: that
       // was written when $108 was the floor, and the $95 Studio Queen (then "Queen Suite") added on
       // 2026-09-09 sits below it. Compare against the Studio Two Queen only.
-      'One king bed instead of two queens, at $108 a night — $12 below the Studio Two Queen.',
+      'One king bed instead of two queens, at $90 a night — $20 below the Studio Two Queen.',
     features: [
       { label: 'One king bed', source: 'photo' },
       { label: 'Studio layout', source: 'site' },
@@ -538,9 +538,9 @@ export const ROOMS: Room[] = [
     ],
     seo: {
       title:
-        'Studio King Room — $108/Night | Best Western Vernal Hotel, Vernal Utah',
+        'Studio King Room — $90/Night | Best Western Vernal Hotel, Vernal Utah',
       description:
-        'Studio King at Best Western Vernal Hotel: one king bed, kitchenette, tub and shower, free hot breakfast and free WiFi. $108 per night + tax. Weekly rates — call for price. Call (435) 789-6625.',
+        'Studio King at Best Western Vernal Hotel: one king bed, kitchenette, tub and shower, free hot breakfast and free WiFi. $90 per night + tax. Weekly rates — call for price. Call (435) 789-6625.',
       bedType: 'King',
       occupancy: 2,
     },
@@ -678,9 +678,9 @@ export const ROOMS: Room[] = [
     ],
     seo: {
       title:
-        'Studio Two Queen Room — $120/Night | Best Western Vernal Hotel, Vernal Utah',
+        'Studio Two Queen Room — $110/Night | Best Western Vernal Hotel, Vernal Utah',
       description:
-        'Double queen room in Vernal, Utah: two queen beds, full kitchenette, dining table, desk and free hot breakfast. Sleeps 1–4. $120 per night + tax. Weekly rates — call for price.',
+        'Double queen room in Vernal, Utah: two queen beds, full kitchenette, dining table, desk and free hot breakfast. Sleeps 1–4. $110 per night + tax. Weekly rates — call for price.',
       bedType: 'Queen',
       occupancy: 4,
     },
@@ -800,7 +800,7 @@ export const ROOMS: Room[] = [
       },
     ],
     about: [
-      'The Handicap / Accessible Studio King is a one-king-bed studio built around the bathroom. It is priced at $120 a night, and the accessibility features are real fixtures, not a designation on a booking sheet.',
+      'The Handicap / Accessible Studio King is a one-king-bed studio built around the bathroom. It is priced at $100 a night, and the accessibility features are real fixtures, not a designation on a booking sheet.',
       'The shower is a roll-in: a low-threshold pan with a textured non-slip floor, an angled grab bar running along two walls, a fold-down teak seat, and a handheld sprayer on a slide bar with a single-lever mixer set within reach of the seat. The vanity is a roll-under counter — open underneath with no cabinet below and insulated pipework — under a backlit mirror. There are grab bars on both walls beside the toilet, with the paper holder set below the side bar, and open floor space between the vanity, the toilet and the shower.',
       'The bedroom itself is the same studio the rest of the property uses: king bed on a low platform frame with reading lights and nightstands, a kitchenette with a cooktop, sink, microwave, coffee maker and full-height refrigerator, a desk with a wall-mounted TV, an armchair and ottoman, and an open closet with a hanging rail, drawers, an iron and ironing board. There is clear carpeted floor along both sides of the bed. Free hot breakfast, free WiFi, free parking and a 24-hour front desk are included.',
       'If you have a specific access requirement — bed height, doorway width, or where in the building the room sits — call the front desk before you book. Rather than publish a measurement we have not verified, we would rather someone check it for you.',
@@ -830,9 +830,9 @@ export const ROOMS: Room[] = [
     ],
     seo: {
       title:
-        'Accessible Studio King — Roll-In Shower, $120/Night | Best Western Vernal Hotel',
+        'Accessible Studio King — Roll-In Shower, $100/Night | Best Western Vernal Hotel',
       description:
-        'Accessible hotel room in Vernal, Utah: king bed, roll-in shower with fold-down seat, grab bars and a roll-under vanity. $120 per night + tax. Weekly rates — call for price.',
+        'Accessible hotel room in Vernal, Utah: king bed, roll-in shower with fold-down seat, grab bars and a roll-under vanity. $100 per night + tax. Weekly rates — call for price.',
       bedType: 'King',
       occupancy: 2,
     },
@@ -941,7 +941,7 @@ export const ROOMS: Room[] = [
       'The pet policy is the hotel\'s published one: up to two dogs per room, an 80 lb limit per dog, a $30 per day pet fee and a $100 refundable damage deposit taken at check-in. Other pets may be approved with prior notice — call the front desk. Free hot breakfast, free WiFi, free parking and a 24-hour front desk come with the room.',
     ],
     difference:
-      'The only two-queen room we have photographed on wood-style plank flooring instead of carpet — chosen for dogs, and priced accordingly at $155.',
+      'The only two-queen room we have photographed on wood-style plank flooring instead of carpet — chosen for dogs, and priced accordingly at $140.',
     features: [
       { label: 'Dogs welcome — up to two per room, 80 lb limit each', source: 'site' },
       { label: 'Pet fee $30/day + $100 refundable deposit', source: 'site' },
@@ -966,9 +966,9 @@ export const ROOMS: Room[] = [
     ],
     seo: {
       title:
-        'Pet-Friendly Studio Two Queen — $155/Night | Best Western Vernal Hotel, Vernal Utah',
+        'Pet-Friendly Studio Two Queen — $140/Night | Best Western Vernal Hotel, Vernal Utah',
       description:
-        'Pet-friendly hotel room in Vernal, Utah: two queen beds, wood-style floors, full kitchenette. Up to two dogs, 80 lb limit, $30/day pet fee. $155 per night + tax. Weekly rates — call for price.',
+        'Pet-friendly hotel room in Vernal, Utah: two queen beds, wood-style floors, full kitchenette. Up to two dogs, 80 lb limit, $30/day pet fee. $140 per night + tax. Weekly rates — call for price.',
       bedType: 'Queen',
       occupancy: 4,
     },
@@ -1085,13 +1085,13 @@ export const ROOMS: Room[] = [
       },
     ],
     about: [
-      'The Pet-Friendly Room is the lower-priced of our two dog-friendly room types, at $135 a night. It sits between the Studio Two Queen and the Pet-Friendly Studio Two Queen on the rate card, and it is the one to book when the dog is coming and there are two of you rather than four.',
+      'The Pet-Friendly Room is the lower-priced of our two dog-friendly room types, at $130 a night. It sits between the Studio Two Queen and the Pet-Friendly Studio Two Queen on the rate card, and it is the one to book when the dog is coming and there are two of you rather than four.',
       'It is a king room laid on wood-style plank flooring rather than carpet — which is the point of it. Wet paws, shed hair and the occasional accident come off a plank floor in a way they do not come out of carpet. The bed sits on a light-wood platform frame against a navy accent wall, with a wall-mounted reading light and a nightstand on each side, and the window looks out over Vernal.',
       'The room has a kitchenette at the entrance end — a sink in the counter, cabinets, a microwave and a coffee maker — with a dining table and two upholstered chairs beside it. There is a desk with a leather office chair under a wall-mounted TV, and an open closet with a hanging rail, drawers and an ironing board. The bathroom is the property standard: a granite vanity with a backlit mirror, a full-size tub and shower combination, and a tiled floor.',
       'The pet policy is the hotel\'s published one — up to two dogs per room, an 80 lb limit per dog, a $30 per day pet fee and a $100 refundable damage deposit taken at check-in. Ground-floor pet rooms are available so you can take a dog straight outside without stairs or a lift. Free hot breakfast, free WiFi, free parking and a 24-hour front desk come with the room. How many people this room sleeps is the one thing we have not had confirmed, so we do not publish it — call the front desk and ask.',
     ],
     difference:
-      'The lower-priced of our two dog-friendly room types at $135: one king bed on wood-style plank flooring, where the $155 Pet-Friendly Studio Two Queen gives you two queens.',
+      'The lower-priced of our two dog-friendly room types at $130: one king bed on wood-style plank flooring, where the $140 Pet-Friendly Studio Two Queen gives you two queens.',
     features: [
       { label: 'Dogs welcome — up to two per room, 80 lb limit each', source: 'site' },
       { label: 'Pet fee $30/day + $100 refundable deposit', source: 'site' },
@@ -1113,9 +1113,9 @@ export const ROOMS: Room[] = [
     ],
     seo: {
       title:
-        'Pet-Friendly King Room — $135/Night | Best Western Vernal Hotel, Vernal Utah',
+        'Pet-Friendly King Room — $130/Night | Best Western Vernal Hotel, Vernal Utah',
       description:
-        'Pet-friendly king room in Vernal, Utah: one king bed, wood-style floors, kitchenette and ground-floor access. Up to two dogs, 80 lb limit, $30/day pet fee. $135 per night + tax.',
+        'Pet-friendly king room in Vernal, Utah: one king bed, wood-style floors, kitchenette and ground-floor access. Up to two dogs, 80 lb limit, $30/day pet fee. $130 per night + tax.',
       bedType: 'King',
     },
   },
@@ -1256,9 +1256,9 @@ export const ROOMS: Room[] = [
       { label: '24-hour front desk', source: 'site' },
     ],
     seo: {
-      title: 'Studio Jacuzzi King — $149/Night, In-Room Jacuzzi | Best Western Vernal Hotel',
+      title: 'Studio Jacuzzi King — $160/Night, In-Room Jacuzzi | Best Western Vernal Hotel',
       description:
-        'Studio Jacuzzi King at Best Western Vernal Hotel in Vernal, Utah: a corner jacuzzi in the room, one king bed, a sofa and a full kitchenette. $149 per night + tax. Free hot breakfast, WiFi and parking. Weekly rates — call for price.',
+        'Studio Jacuzzi King at Best Western Vernal Hotel in Vernal, Utah: a corner jacuzzi in the room, one king bed, a sofa and a full kitchenette. $160 per night + tax. Free hot breakfast, WiFi and parking. Weekly rates — call for price.',
       bedType: 'King',
       // The rate table's "1–2" for this room, the same licence Studio King's
       // occupancy of 2 rests on.
