@@ -7,7 +7,7 @@
 // NAP/price mismatch becomes impossible (runbook Part 3).
 
 export const BUSINESS = {
-  name: 'Best Western Vernal Inn',
+  name: 'Best Western Vernal Hotel',
   legalBrand: 'Best Western',
   // Phone — displayed and tel: forms exactly as used across the site.
   phoneDisplay: '(435) 789-6625',
@@ -57,10 +57,10 @@ export const BUSINESS = {
   },
 
   site: {
-    domain: 'https://bestwesternvernalinn.com',
-    canonicalHome: 'https://bestwesternvernalinn.com/',
+    domain: 'https://bestwesternvernalhotel.com',
+    canonicalHome: 'https://bestwesternvernalhotel.com/',
     logo: '/images/logo.webp',
-    ogImage: 'https://bestwesternvernalinn.com/images/35.webp',
+    ogImage: 'https://bestwesternvernalhotel.com/images/35.webp',
   },
 
   // Partners shown in the footer.

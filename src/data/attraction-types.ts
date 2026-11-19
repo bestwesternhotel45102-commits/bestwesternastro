@@ -32,7 +32,7 @@ export type Attraction = {
    *  `categories[]` joined with ' · '. */
   category: string;
   area: Area;
-  /** Drive time from Best Western Vernal Inn, in minutes (`location.drive_minutes`). */
+  /** Drive time from Best Western Vernal Hotel, in minutes (`location.drive_minutes`). */
   driveMinutes: number;
   duration: Duration;
   interests: InterestId[];

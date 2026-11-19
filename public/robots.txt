@@ -13,4 +13,4 @@ Allow: /
 User-agent: ClaudeBot
 Allow: /
 
-Sitemap: https://bestwesternvernalinn.com/sitemap.xml
+Sitemap: https://bestwesternvernalhotel.com/sitemap.xml

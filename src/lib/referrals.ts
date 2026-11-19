@@ -61,7 +61,7 @@ export function buildDestinationUrl(
   }
   const q = url.searchParams;
   q.set('ref', refCode);
-  q.set('utm_source', params.utmSource || 'bestwesternvernalinn');
+  q.set('utm_source', params.utmSource || 'bestwesternvernalhotel');
   q.set('utm_medium', params.utmMedium || 'referral');
   q.set('utm_campaign', params.utmCampaign || 'book_direct');
   if (partner.offerConfirmed) q.set('promo', partner.promoCode);

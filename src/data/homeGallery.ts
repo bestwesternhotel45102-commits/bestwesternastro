@@ -61,13 +61,13 @@ export const HOME_GALLERY: GalleryTile[] = [
   {
     src: 'images/61.webp',
     label: 'Hotel Exterior',
-    alt: 'Best Western Vernal Inn exterior lit at night — Vernal, Utah',
+    alt: 'Best Western Vernal Hotel exterior lit at night — Vernal, Utah',
     wide: true,
   },
   {
     src: 'images/35.webp',
     label: 'Under the Stars',
-    alt: 'Best Western Vernal Inn under a night sky — Vernal, Utah',
+    alt: 'Best Western Vernal Hotel under a night sky — Vernal, Utah',
   },
 
   // ── The rooms ──────────────────────────────────────────────────────────────
@@ -78,19 +78,19 @@ export const HOME_GALLERY: GalleryTile[] = [
     // old wording, which guests never see.
     src: 'images/Queen-Studio/Queen-Suite-Labeled-$95.webp',
     label: 'Studio Queen',
-    alt: 'Studio Queen with a queen bed and a two-seat sofa — $95 a night at Best Western Vernal Inn, Vernal Utah',
+    alt: 'Studio Queen with a queen bed and a two-seat sofa — $95 a night at Best Western Vernal Hotel, Vernal Utah',
     rateKey: 'studioQueen',
   },
   {
     src: 'images/King-Studio/King-Studio-$108.webp',
     label: 'Studio King',
-    alt: 'Studio King with a desk, kitchenette and dining table — $108 a night at Best Western Vernal Inn, Vernal Utah',
+    alt: 'Studio King with a desk, kitchenette and dining table — $108 a night at Best Western Vernal Hotel, Vernal Utah',
     rateKey: 'studioKing',
   },
   {
     src: 'images/Double-Queen-Studio/Double-Queen-Studio-$120.webp',
     label: 'Studio Two Queen',
-    alt: 'Studio Two Queen with a kitchenette, dining table, desk and armchair — $120 a night at Best Western Vernal Inn, Vernal Utah',
+    alt: 'Studio Two Queen with a kitchenette, dining table, desk and armchair — $120 a night at Best Western Vernal Hotel, Vernal Utah',
     rateKey: 'studioTwoQueen',
   },
   {
@@ -101,13 +101,13 @@ export const HOME_GALLERY: GalleryTile[] = [
     // "Accessible Studio King".
     src: 'images/Handicaped-Studio/Handicapped-studio-$120.webp',
     label: 'Accessible Studio King',
-    alt: 'Accessible Studio King with a king bed, kitchenette, desk, armchair and open closet — $120 a night at Best Western Vernal Inn, Vernal Utah',
+    alt: 'Accessible Studio King with a king bed, kitchenette, desk, armchair and open closet — $120 a night at Best Western Vernal Hotel, Vernal Utah',
     rateKey: 'accessibleStudioKing',
   },
   {
     src: 'images/Pet-Friendly-King-Suite/Pet-Friendly-King-Suite-Labeled-$135.webp',
     label: 'Pet-Friendly Room',
-    alt: 'Pet-friendly king room with wood-style floors and a window over Vernal — $135 a night at Best Western Vernal Inn, Vernal Utah',
+    alt: 'Pet-friendly king room with wood-style floors and a window over Vernal — $135 a night at Best Western Vernal Hotel, Vernal Utah',
     rateKey: 'petFriendlyRoom',
   },
   {
@@ -116,13 +116,13 @@ export const HOME_GALLERY: GalleryTile[] = [
     // "$149/night". Between the $135 and $155 tiles, keeping rate order.
     src: 'images/Jacuzzi-Studio/Jacuzzi-Studio-Labeled-$149.webp',
     label: 'Studio Jacuzzi King',
-    alt: 'Studio Jacuzzi King with a corner jacuzzi beside the desk and wall-mounted TV — $149 a night at Best Western Vernal Inn, Vernal Utah',
+    alt: 'Studio Jacuzzi King with a corner jacuzzi beside the desk and wall-mounted TV — $149 a night at Best Western Vernal Hotel, Vernal Utah',
     rateKey: 'studioJacuzziKing',
   },
   {
     src: 'images/Pet-Friendly-Double-Queen/Pet-Friendly-Double-Queen-Labeled-$155.webp',
     label: 'Pet-Friendly Studio Two Queen',
-    alt: 'Pet-friendly studio with two queen beds, a kitchenette and wood-style floors — $155 a night at Best Western Vernal Inn, Vernal Utah',
+    alt: 'Pet-friendly studio with two queen beds, a kitchenette and wood-style floors — $155 a night at Best Western Vernal Hotel, Vernal Utah',
     rateKey: 'petFriendlyStudioTwoQueen',
   },
 
@@ -130,13 +130,13 @@ export const HOME_GALLERY: GalleryTile[] = [
   {
     src: 'images/Breakfast-Room-and-Foyer.webp',
     label: 'Breakfast Room & Foyer',
-    alt: 'Breakfast room looking through to the foyer and entrance — Best Western Vernal Inn, Vernal Utah',
+    alt: 'Breakfast room looking through to the foyer and entrance — Best Western Vernal Hotel, Vernal Utah',
     wide: true,
   },
   {
     src: 'images/Breakfast-Room7.webp',
     label: 'Hot Breakfast, Included',
-    alt: 'Breakfast service counter with coffee machines, fresh fruit and hot food — Best Western Vernal Inn, Vernal Utah',
+    alt: 'Breakfast service counter with coffee machines, fresh fruit and hot food — Best Western Vernal Hotel, Vernal Utah',
   },
   {
     // Room1 rather than Room4: both are the dining room, but this one has the
@@ -144,12 +144,12 @@ export const HOME_GALLERY: GalleryTile[] = [
     // rather than the same tables from four angles.
     src: 'images/Breakfast-Room1.webp',
     label: 'Breakfast Dining Room',
-    alt: 'Breakfast dining room with marble-topped tables and a lounge seating area beyond — Best Western Vernal Inn, Vernal Utah',
+    alt: 'Breakfast dining room with marble-topped tables and a lounge seating area beyond — Best Western Vernal Hotel, Vernal Utah',
   },
   {
     src: 'images/Breakfast-Room6.webp',
     label: 'Coffee & Fresh Fruit',
-    alt: 'Coffee machines and a fruit basket beside the breakfast seating — Best Western Vernal Inn, Vernal Utah',
+    alt: 'Coffee machines and a fruit basket beside the breakfast seating — Best Western Vernal Hotel, Vernal Utah',
   },
 ];
 

@@ -6,7 +6,7 @@ import { test, expect } from '@playwright/test';
 const PAGES = [
   { name: 'home', path: '/index.html' },
   { name: 'things-to-do', path: '/things-to-do-vernal-utah.html' },
-  { name: 'extended-stay', path: '/extended-stay-hotel-vernal-utah.html' },
+  { name: 'extended-stay', path: '/long-stay-hotel-vernal-utah.html' },
   { name: 'workforce-housing', path: '/workforce-housing-vernal-utah.html' },
   { name: 'not-found', path: '/404.html' },
   { name: 'corporate-rates', path: '/corporate-rates.html' }, // Prompt 4: new page + form island

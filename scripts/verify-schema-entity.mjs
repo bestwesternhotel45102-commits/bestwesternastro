@@ -5,7 +5,7 @@
 //
 // WHY THIS EXISTS: before the `@id` consolidation, six JSON-LD nodes across five
 // pages described the hotel with no `@id` between them — under two different
-// names ("Best Western Vernal Inn" / "Best Western Extended Stay Vernal") and two
+// names ("Best Western Vernal Hotel" / "Best Western Extended Stay Vernal") and two
 // different phone numbers (+14357896625 / +18015971696). Every one of those was
 // live. The schema blocks were migrated from the legacy HTML as opaque strings, so
 // `business.ts` — the file whose entire purpose is preventing a NAP mismatch —

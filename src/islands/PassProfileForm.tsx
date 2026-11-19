@@ -105,7 +105,7 @@ export default function PassProfileForm({
           checked={optin}
           onChange={(e) => setOptin((e.target as HTMLInputElement).checked)}
         />
-        <span>Email me seasonal Vernal tips and Best Western Vernal Inn offers. (optional)</span>
+        <span>Email me seasonal Vernal tips and Best Western Vernal Hotel offers. (optional)</span>
       </label>
 
       <div aria-live="polite">

@@ -4,7 +4,7 @@ import preact from '@astrojs/preact';
 import tailwindcss from '@tailwindcss/vite';
 
 // ─────────────────────────────────────────────────────────────
-// Best Western Vernal Inn — Astro 6 configuration
+// Best Western Vernal Hotel — Astro 6 configuration
 //
 // URL PRESERVATION (critical): the legacy site is served at
 // /page.html (confirmed by the live _redirects file and the
@@ -18,7 +18,7 @@ import tailwindcss from '@tailwindcss/vite';
 // redirects are forced by the migration itself.
 // ─────────────────────────────────────────────────────────────
 export default defineConfig({
-  site: 'https://bestwesternvernalinn.com',
+  site: 'https://bestwesternvernalhotel.com',
   trailingSlash: 'ignore',
   build: {
     // Keep flat .html URLs identical to the legacy static site.

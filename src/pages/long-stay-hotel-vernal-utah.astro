@@ -1,6 +1,6 @@
 ---
-// src/pages/extended-stay-hotel-vernal-utah.astro
-// MIGRATION of /extended-stay-hotel-vernal-utah.html — metadata, canonical, JSON-LD schema, body copy,
+// src/pages/long-stay-hotel-vernal-utah.astro
+// MIGRATION of /long-stay-hotel-vernal-utah.html — metadata, canonical, JSON-LD schema, body copy,
 // headings, and internal links preserved VERBATIM. Shared chrome
 // (nav / mobile menu / footer / scroll-top + burger script) is provided by
 // BaseLayout; page-specific <style>/schema go in the head slot and
@@ -14,8 +14,8 @@ const headExtras = `<script type="application/ld+json">
   "@context":"https://schema.org",
   "@type":"FAQPage",
   "mainEntity":[
-   {"@type":"Question","name":"What are your extended stay rates?","acceptedAnswer":{"@type":"Answer","text":"Weekly and monthly rates are both quoted by phone — call (435) 789-6625 with your dates and room type. Published nightly rates start at ${LOWEST_NIGHTLY} + tax."}},
-    {"@type":"Question","name":"Do extended stay rooms have kitchens?","acceptedAnswer":{"@type":"Answer","text":"Yes. Select rooms have full kitchenettes with a refrigerator, microwave, stovetop, and basic cookware. Specify a kitchenette room when booking."}},
+   {"@type":"Question","name":"What are your weekly and monthly rates?","acceptedAnswer":{"@type":"Answer","text":"Weekly and monthly rates are both quoted by phone — call (435) 789-6625 with your dates and room type. Published nightly rates start at ${LOWEST_NIGHTLY} + tax."}},
+    {"@type":"Question","name":"Do rooms for longer stays have kitchens?","acceptedAnswer":{"@type":"Answer","text":"Yes. Select rooms have full kitchenettes with a refrigerator, microwave, stovetop, and basic cookware. Specify a kitchenette room when booking."}},
     {"@type":"Question","name":"Is breakfast included for weekly stays?","acceptedAnswer":{"@type":"Answer","text":"Yes. Free hot breakfast is included every morning for every guest, regardless of stay length."}},
     {"@type":"Question","name":"How close is the hotel to Vernal Regional Airport?","acceptedAnswer":{"@type":"Answer","text":"0.6 miles — about a 2-minute drive. The closest hotel to VEL."}},
     {"@type":"Question","name":"Can I do laundry on-site?","acceptedAnswer":{"@type":"Answer","text":"Yes. On-site laundry facilities are available to all guests."}}
@@ -24,9 +24,9 @@ const headExtras = `<script type="application/ld+json">
  </script>`;
 const bodyContent = `<section class="page-hero">
  <div class="page-hero-cnt">
- <p style="font-size:.85rem;letter-spacing:3px;text-transform:uppercase;margin-bottom:12px;color:var(--gold);font-weight:700;">Extended Stay — Weekly & Monthly Rates Available</p>
- <h1 style="font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4.5vw,3rem);font-weight:700;margin-bottom:18px;line-height:1.15;">Extended Stay Hotel<br>in Vernal, Utah</h1>
- <p style="font-size:1.05rem;line-height:1.7;opacity:.88;max-width:620px;margin:0 auto 24px;font-weight:300;">Need more than a night or two? Best Western Vernal Inn is Vernal's premier extended-stay hotel — weekly rates quoted by phone, full kitchenettes, free hot breakfast, and the amenities long-term guests actually need. Whether you're here for two weeks or two months, this is home.</p>
+ <p style="font-size:.85rem;letter-spacing:3px;text-transform:uppercase;margin-bottom:12px;color:var(--gold);font-weight:700;">Long Stays — Weekly & Monthly Rates Available</p>
+ <h1 style="font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4.5vw,3rem);font-weight:700;margin-bottom:18px;line-height:1.15;">Long Stays at Our Hotel<br>in Vernal, Utah</h1>
+ <p style="font-size:1.05rem;line-height:1.7;opacity:.88;max-width:620px;margin:0 auto 24px;font-weight:300;">Need more than a night or two? Best Western Vernal Hotel is Vernal's premier hotel for longer stays — weekly rates quoted by phone, full kitchenettes, free hot breakfast, and the amenities long-term guests actually need. Whether you're here for two weeks or two months, this is home.</p>
  <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
   <a data-track="book_click" href="${BUSINESS.bookingUrl}" style="background:var(--gold);color:var(--navy);padding:13px 32px;border-radius:4px;text-decoration:none;font-weight:900;font-size:.85rem;letter-spacing:1.5px;text-transform:uppercase;">${BUSINESS.directBooking.ctaLabel}</a>
   <a href="tel:${BUSINESS.phoneTel}" style="border:2px solid #fff;color:#fff;padding:12px 28px;border-radius:4px;text-decoration:none;font-weight:700;font-size:.85rem;letter-spacing:1px;">📞 (435) 789-6625</a>
@@ -35,9 +35,9 @@ const bodyContent = `<section class="page-hero">
 </section>
 <div class="distance-bar">💼 ${WEEKLY_CALL_LINE.toUpperCase()} · MONTHLY RATES AVAILABLE · KITCHENETTES · FREE BREAKFAST</div>
 <div class="content-wrap">
-<div class="intro-pull"><strong>Extended stays in Vernal don't have to mean apartment hunting or bare-bones motels.</strong> Best Western Vernal Inn quotes weekly rates by phone against your dates and room type, with published nightly rates from ${LOWEST_NIGHTLY} (${RATES.taxNote}) — and full kitchenettes, free hot breakfast every morning, on-site laundry, free parking, and free WiFi all included. For oilfield rotations, construction projects, temporary relocations, and seasonal work in the Uintah Basin, our extended-stay option eliminates the hassle of finding short-term housing.</div>
+<div class="intro-pull"><strong>Long stays in Vernal don't have to mean apartment hunting or bare-bones motels.</strong> Best Western Vernal Hotel quotes weekly rates by phone against your dates and room type, with published nightly rates from ${LOWEST_NIGHTLY} (${RATES.taxNote}) — and full kitchenettes, free hot breakfast every morning, on-site laundry, free parking, and free WiFi all included. For oilfield rotations, construction projects, temporary relocations, and seasonal work in the Uintah Basin, our weekly and monthly rates eliminate the hassle of finding short-term housing.</div>
 <div class="content-section">
- <h2>What Makes Our Extended Stay Different</h2>
+ <h2>What Makes a Long Stay Here Different</h2>
 <p>A room booked for three nights and a room booked for six weeks are the same room; what differs is everything around it. Kitchenette rooms have a full-size refrigerator, microwave, stovetop and basic cookware, which is the difference between eating out twice a day and cooking for yourself. Breakfast is included every morning of the stay, so one meal is handled before you have decided anything. Laundry is on site rather than across town. The front desk is staffed 24 hours, which matters when your schedule is a rotation rather than a working day.</p>
 <ul class="feat-list">
  <li>Weekly rates: call ${BUSINESS.phoneDisplay} for price · nightly from ${LOWEST_NIGHTLY}</li>
@@ -52,8 +52,8 @@ const bodyContent = `<section class="page-hero">
 </ul>
 </div>
 <div class="content-section">
- <h2>Who Stays Extended at Best Western Vernal Inn</h2>
-<p>Our extended-stay guests include oilfield workers on 2-week and 4-week rotations flying into Vernal Regional Airport (just 0.6 miles away), pipeline and construction crews working seasonal projects in the Uintah Basin, government and BLM field staff on temporary assignments, families in between homes during relocation, and traveling nurses and healthcare workers stationed at Ashley Regional Medical Center. The common thread is people who need more than a hotel room — they need a temporary home.</p>
+ <h2>Who Stays Long-Term at Best Western Vernal Hotel</h2>
+<p>Our long-stay guests include oilfield workers on 2-week and 4-week rotations flying into Vernal Regional Airport (just 0.6 miles away), pipeline and construction crews working seasonal projects in the Uintah Basin, government and BLM field staff on temporary assignments, families in between homes during relocation, and traveling nurses and healthcare workers stationed at Ashley Regional Medical Center. The common thread is people who need more than a hotel room — they need a temporary home.</p>
 <ul class="feat-list">
  <li>Oilfield workers on rotating crew schedules</li>
  <li>Pipeline, construction, and utility contractors</li>
@@ -91,15 +91,15 @@ const bodyContent = `<section class="page-hero">
 <p>Monthly rates. The hotel quotes them, but no monthly figure has been confirmed for publication, and printing an unconfirmed number that the front desk then has to walk back is worse than printing nothing. Call ${BUSINESS.phoneDisplay} and ask.</p>
 <p>The same applies to the Studio Jacuzzi Two Queen, which has no published nightly rate yet and is quoted directly by the front desk. If you see a rate on this site, someone confirmed it.</p>
 </div>
-<div class="pro-tip"><p><strong>Extended stay tip:</strong> for stays past 14 nights, call ${BUSINESS.phoneDisplay} and ask about monthly pricing — it is a different rate structure and it is not published on this site. Booking direct also means no booking fee. If a company is covering the stay, <a href="/corporate-rates" style="color:var(--navy);font-weight:600;text-decoration:none;border-bottom:1px solid rgba(var(--gold-rgb),0.5);">request a corporate rate</a> instead.</p></div>
+<div class="pro-tip"><p><strong>Long-stay tip:</strong> for stays past 14 nights, call ${BUSINESS.phoneDisplay} and ask about monthly pricing — it is a different rate structure and it is not published on this site. Booking direct also means no booking fee. If a company is covering the stay, <a href="/corporate-rates" style="color:var(--navy);font-weight:600;text-decoration:none;border-bottom:1px solid rgba(var(--gold-rgb),0.5);">request a corporate rate</a> instead.</p></div>
 <div class="content-section">
  <h2>Frequently Asked Questions</h2>
  <details style="border-bottom:1px solid #e8e4dc;padding:1rem 0;">
-  <summary style="font-weight:700;color:var(--navy);cursor:pointer;font-size:1.02rem;">What are your extended stay rates?</summary>
+  <summary style="font-weight:700;color:var(--navy);cursor:pointer;font-size:1.02rem;">What are your weekly and monthly rates?</summary>
   <p style="margin-top:.7rem;color:var(--muted);line-height:1.8;font-weight:300;">Weekly and monthly rates are both quoted by phone — call (435) 789-6625 with your dates and room type. Published nightly rates start at ${LOWEST_NIGHTLY} + tax.</p>
  </details>
  <details style="border-bottom:1px solid #e8e4dc;padding:1rem 0;">
-  <summary style="font-weight:700;color:var(--navy);cursor:pointer;font-size:1.02rem;">Do extended stay rooms have kitchens?</summary>
+  <summary style="font-weight:700;color:var(--navy);cursor:pointer;font-size:1.02rem;">Do rooms for longer stays have kitchens?</summary>
   <p style="margin-top:.7rem;color:var(--muted);line-height:1.8;font-weight:300;">Yes. Select rooms have full kitchenettes with a refrigerator, microwave, stovetop, and basic cookware. Specify a kitchenette room when booking.</p>
  </details>
  <details style="border-bottom:1px solid #e8e4dc;padding:1rem 0;">
@@ -125,7 +125,7 @@ const bodyContent = `<section class="page-hero">
     <div>
      <h3 style="font-family:'Playfair Display',serif;font-size:1.15rem;color:var(--navy);margin:0 0 .8rem;border-bottom:2px solid var(--gold);padding-bottom:.4rem;">By Stay Type</h3>
      <ul style="list-style:none;padding:0;margin:0;line-height:1.95;">
-      <li><a href="/extended-stay-hotel-vernal-utah" style="color:var(--navy);font-weight:600;text-decoration:none;border-bottom:1px solid rgba(var(--gold-rgb),0.5);">Extended Stay</a> <span style="color:var(--muted);font-size:.88em;">— Weekly &amp; monthly stays, priced by phone</span></li>
+      <li><a href="/long-stay-hotel-vernal-utah" style="color:var(--navy);font-weight:600;text-decoration:none;border-bottom:1px solid rgba(var(--gold-rgb),0.5);">Long Stays</a> <span style="color:var(--muted);font-size:.88em;">— Weekly &amp; monthly stays, priced by phone</span></li>
       <li><a href="/weekly-hotel-rates-vernal-utah" style="color:var(--navy);font-weight:600;text-decoration:none;border-bottom:1px solid rgba(var(--gold-rgb),0.5);">Weekly Rates</a> <span style="color:var(--muted);font-size:.88em;">— 7-night discount pricing</span></li>
       <li><a href="/workforce-housing-vernal-utah" style="color:var(--navy);font-weight:600;text-decoration:none;border-bottom:1px solid rgba(var(--gold-rgb),0.5);">Workforce Housing</a> <span style="color:var(--muted);font-size:.88em;">— Crew lodging &amp; corporate billing</span></li>
       <li><a href="/oilfield-housing-vernal" style="color:var(--navy);font-weight:600;text-decoration:none;border-bottom:1px solid rgba(var(--gold-rgb),0.5);">Oilfield Housing</a> <span style="color:var(--muted);font-size:.88em;">— Truck parking, flexible billing</span></li>
@@ -158,7 +158,7 @@ const bodyContent = `<section class="page-hero">
     </div>
   </div>
   <div style="text-align:center;margin-top:2.6rem;">
-   <a href="/" style="display:inline-block;background:var(--gold);color:var(--navy);font-weight:700;padding:.85rem 1.8rem;border-radius:4px;text-decoration:none;letter-spacing:.04em;">← Back to Best Western Vernal Inn</a>
+   <a href="/" style="display:inline-block;background:var(--gold);color:var(--navy);font-weight:700;padding:.85rem 1.8rem;border-radius:4px;text-decoration:none;letter-spacing:.04em;">← Back to Best Western Vernal Hotel</a>
   </div>
  </div>
 </section>
@@ -188,15 +188,15 @@ const bodyContent = `<section class="page-hero">
 ---
 
 <BaseLayout
-  title=`Extended Stay Hotel in Vernal, Utah | Best Western Vernal Inn — Nightly from ${LOWEST_NIGHTLY}`
-  description=`Best Western Vernal Inn — Vernal's top extended stay hotel. Nightly from ${LOWEST_NIGHTLY}; weekly and monthly rates by phone. Kitchenettes, free breakfast, free parking, pet friendly. Call (435) 789-6625.`
-  canonical=`https://bestwesternvernalinn.com/extended-stay-hotel-vernal-utah`
-  ogTitle=`Extended Stay Hotel in Vernal, Utah | Best Western Vernal Inn — Nightly from ${LOWEST_NIGHTLY}`
-  ogDescription=`Best Western Vernal Inn — Vernal's top extended stay hotel. Nightly from ${LOWEST_NIGHTLY}; weekly and monthly rates by phone. Kitchenettes, free breakfast, free parking, pet friendly. Call (435) 789-6625.`
-  ogImage=`https://bestwesternvernalinn.com/images/35.webp`
-  twitterTitle=`Extended Stay Hotel in Vernal, Utah | Best Western Vernal Inn — Nightly from ${LOWEST_NIGHTLY}`
-  twitterDescription=`Best Western Vernal Inn — Vernal's top extended stay hotel. Nightly from ${LOWEST_NIGHTLY}; weekly and monthly rates by phone. Kitchenettes, free breakfast, free parking, pet friendly. Call (435) 789-6625.`
-  twitterImage=`https://bestwesternvernalinn.com/images/35.webp`
+  title=`Weekly & Monthly Stays in Vernal, Utah | Best Western Vernal Hotel — Nightly from ${LOWEST_NIGHTLY}`
+  description=`Best Western Vernal Hotel — Vernal's top hotel for longer stays. Nightly from ${LOWEST_NIGHTLY}; weekly and monthly rates by phone. Kitchenettes, free breakfast, free parking, pet friendly. Call (435) 789-6625.`
+  canonical=`https://bestwesternvernalhotel.com/long-stay-hotel-vernal-utah`
+  ogTitle=`Weekly & Monthly Stays in Vernal, Utah | Best Western Vernal Hotel — Nightly from ${LOWEST_NIGHTLY}`
+  ogDescription=`Best Western Vernal Hotel — Vernal's top hotel for longer stays. Nightly from ${LOWEST_NIGHTLY}; weekly and monthly rates by phone. Kitchenettes, free breakfast, free parking, pet friendly. Call (435) 789-6625.`
+  ogImage=`https://bestwesternvernalhotel.com/images/35.webp`
+  twitterTitle=`Weekly & Monthly Stays in Vernal, Utah | Best Western Vernal Hotel — Nightly from ${LOWEST_NIGHTLY}`
+  twitterDescription=`Best Western Vernal Hotel — Vernal's top hotel for longer stays. Nightly from ${LOWEST_NIGHTLY}; weekly and monthly rates by phone. Kitchenettes, free breakfast, free parking, pet friendly. Call (435) 789-6625.`
+  twitterImage=`https://bestwesternvernalhotel.com/images/35.webp`
   lastUpdated=`April 2026`
 >
   <Fragment slot="head" set:html={headExtras} />

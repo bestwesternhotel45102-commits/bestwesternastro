@@ -58,7 +58,7 @@ function checkPage(slug) {
   // Any URL inside structured data that still points at a redirecting .html
   const ldHtmlUrls = blocks
     .join(' ')
-    .match(/https:\/\/bestwesternvernalinn\.com\/[A-Za-z0-9._/-]*\.html/g);
+    .match(/https:\/\/bestwesternvernalhotel\.com\/[A-Za-z0-9._/-]*\.html/g);
 
   const supCount = (html.match(/<sup>/g) || []).length;
 

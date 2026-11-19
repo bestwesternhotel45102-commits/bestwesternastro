@@ -25,7 +25,7 @@ const bodyContent = `<section class="page-hero">
  <div class="page-hero-cnt">
  <p style="font-size:.85rem;letter-spacing:3px;text-transform:uppercase;margin-bottom:12px;color:var(--gold);font-weight:700;">Weekly Rates — Save More, Stay Longer</p>
  <h1 style="font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4.5vw,3rem);font-weight:700;margin-bottom:18px;line-height:1.15;">Weekly Hotel Rates<br>in Vernal, Utah</h1>
- <p style="font-size:1.05rem;line-height:1.7;opacity:.88;max-width:620px;margin:0 auto 24px;font-weight:300;">Best Western Vernal Inn quotes weekly rates directly — call with your dates and room type and the front desk will give you the current price for a 7-night stay. Nightly rates start at ${LOWEST_NIGHTLY} + tax, with free hot breakfast, free WiFi, free parking, and kitchenettes included.</p>
+ <p style="font-size:1.05rem;line-height:1.7;opacity:.88;max-width:620px;margin:0 auto 24px;font-weight:300;">Best Western Vernal Hotel quotes weekly rates directly — call with your dates and room type and the front desk will give you the current price for a 7-night stay. Nightly rates start at ${LOWEST_NIGHTLY} + tax, with free hot breakfast, free WiFi, free parking, and kitchenettes included.</p>
  <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
   <a data-track="book_click" href="${BUSINESS.bookingUrl}" style="background:var(--gold);color:var(--navy);padding:13px 32px;border-radius:4px;text-decoration:none;font-weight:900;font-size:.85rem;letter-spacing:1.5px;text-transform:uppercase;">${BUSINESS.directBooking.ctaLabel}</a>
   <a href="tel:${BUSINESS.phoneTel}" style="border:2px solid #fff;color:#fff;padding:12px 28px;border-radius:4px;text-decoration:none;font-weight:700;font-size:.85rem;letter-spacing:1px;">📞 (435) 789-6625</a>
@@ -34,7 +34,7 @@ const bodyContent = `<section class="page-hero">
 </section>
 <div class="distance-bar">💰 NIGHTLY FROM ${LOWEST_NIGHTLY} · ${WEEKLY_CALL_LINE.toUpperCase()} · BREAKFAST INCLUDED</div>
 <div class="content-wrap">
-<div class="intro-pull"><strong>Staying in Vernal for a week or more?</strong> Best Western Vernal Inn's weekly rates are designed for guests who need more than a night — oilfield crews, contractors, extended family visits, and recreational travelers exploring Dinosaur National Monument, Flaming Gorge, and the Uinta Mountains. The weekly price is not published here: it is set by the front desk against your dates and room type, so call ${BUSINESS.phoneDisplay} and ask. What is published is the nightly card — a Studio Queen at ${usd(RATES.nightly.studioQueen)} ${RATES.taxNote}, a Studio King at ${usd(RATES.nightly.studioKing)}, a Studio Two Queen at ${usd(RATES.nightly.studioTwoQueen)} — which gives you a firm ceiling to compare the weekly quote against.</div>
+<div class="intro-pull"><strong>Staying in Vernal for a week or more?</strong> Best Western Vernal Hotel's weekly rates are designed for guests who need more than a night — oilfield crews, contractors, extended family visits, and recreational travelers exploring Dinosaur National Monument, Flaming Gorge, and the Uinta Mountains. The weekly price is not published here: it is set by the front desk against your dates and room type, so call ${BUSINESS.phoneDisplay} and ask. What is published is the nightly card — a Studio Queen at ${usd(RATES.nightly.studioQueen)} ${RATES.taxNote}, a Studio King at ${usd(RATES.nightly.studioKing)}, a Studio Two Queen at ${usd(RATES.nightly.studioTwoQueen)} — which gives you a firm ceiling to compare the weekly quote against.</div>
 <div class="content-section">
  <h2>Weekly Rate Breakdown</h2>
 <div style="overflow-x:auto;margin:1.2rem 0;">
@@ -90,7 +90,7 @@ const bodyContent = `<section class="page-hero">
 <div class="content-section">
  <h2>If You Are Staying Longer Than a Week</h2>
 <p>Monthly rates exist but are not published on this site, and we would rather say so than print a number nobody at the desk has confirmed. If your stay runs past seven nights, call ${BUSINESS.phoneDisplay} and ask for the monthly rate directly — it is a different rate, not seven-night pricing repeated four times.</p>
-<p>If you are weighing a long stay more generally, the <a href="/extended-stay-hotel-vernal-utah" style="color:var(--navy);font-weight:700;">extended stay page</a> covers what living here for weeks is actually like, and <a href="/workforce-housing-vernal-utah" style="color:var(--navy);font-weight:700;">workforce housing</a> covers crew bookings and company billing.</p>
+<p>If you are weighing a long stay more generally, the <a href="/long-stay-hotel-vernal-utah" style="color:var(--navy);font-weight:700;">long-stay page</a> covers what living here for weeks is actually like, and <a href="/workforce-housing-vernal-utah" style="color:var(--navy);font-weight:700;">workforce housing</a> covers crew bookings and company billing.</p>
 </div>
 <div class="content-section">
  <h2>What's Included at No Extra Cost</h2>
@@ -135,7 +135,7 @@ const bodyContent = `<section class="page-hero">
     <div>
      <h3 style="font-family:'Playfair Display',serif;font-size:1.15rem;color:var(--navy);margin:0 0 .8rem;border-bottom:2px solid var(--gold);padding-bottom:.4rem;">By Stay Type</h3>
      <ul style="list-style:none;padding:0;margin:0;line-height:1.95;">
-      <li><a href="/extended-stay-hotel-vernal-utah" style="color:var(--navy);font-weight:600;text-decoration:none;border-bottom:1px solid rgba(var(--gold-rgb),0.5);">Extended Stay</a> <span style="color:var(--muted);font-size:.88em;">— Weekly &amp; monthly stays, priced by phone</span></li>
+      <li><a href="/long-stay-hotel-vernal-utah" style="color:var(--navy);font-weight:600;text-decoration:none;border-bottom:1px solid rgba(var(--gold-rgb),0.5);">Long Stays</a> <span style="color:var(--muted);font-size:.88em;">— Weekly &amp; monthly stays, priced by phone</span></li>
       <li><a href="/weekly-hotel-rates-vernal-utah" style="color:var(--navy);font-weight:600;text-decoration:none;border-bottom:1px solid rgba(var(--gold-rgb),0.5);">Weekly Rates</a> <span style="color:var(--muted);font-size:.88em;">— 7-night discount pricing</span></li>
       <li><a href="/workforce-housing-vernal-utah" style="color:var(--navy);font-weight:600;text-decoration:none;border-bottom:1px solid rgba(var(--gold-rgb),0.5);">Workforce Housing</a> <span style="color:var(--muted);font-size:.88em;">— Crew lodging &amp; corporate billing</span></li>
       <li><a href="/oilfield-housing-vernal" style="color:var(--navy);font-weight:600;text-decoration:none;border-bottom:1px solid rgba(var(--gold-rgb),0.5);">Oilfield Housing</a> <span style="color:var(--muted);font-size:.88em;">— Truck parking, flexible billing</span></li>
@@ -168,7 +168,7 @@ const bodyContent = `<section class="page-hero">
     </div>
   </div>
   <div style="text-align:center;margin-top:2.6rem;">
-   <a href="/" style="display:inline-block;background:var(--gold);color:var(--navy);font-weight:700;padding:.85rem 1.8rem;border-radius:4px;text-decoration:none;letter-spacing:.04em;">← Back to Best Western Vernal Inn</a>
+   <a href="/" style="display:inline-block;background:var(--gold);color:var(--navy);font-weight:700;padding:.85rem 1.8rem;border-radius:4px;text-decoration:none;letter-spacing:.04em;">← Back to Best Western Vernal Hotel</a>
   </div>
  </div>
 </section>
@@ -198,15 +198,15 @@ const bodyContent = `<section class="page-hero">
 ---
 
 <BaseLayout
-  title=`Weekly Hotel Rates in Vernal, Utah | Best Western Vernal Inn — Call for Weekly Price`
-  description=`Weekly hotel rates at Best Western Vernal Inn are quoted by phone — call (435) 789-6625 for your dates. Nightly rates from ${LOWEST_NIGHTLY} + tax. Free breakfast, kitchenettes, pet friendly.`
-  canonical=`https://bestwesternvernalinn.com/weekly-hotel-rates-vernal-utah`
-  ogTitle=`Weekly Hotel Rates in Vernal, Utah | Best Western Vernal Inn — Call for Weekly Price`
-  ogDescription=`Weekly hotel rates at Best Western Vernal Inn are quoted by phone — call (435) 789-6625 for your dates. Nightly rates from ${LOWEST_NIGHTLY} + tax. Free breakfast, kitchenettes, pet friendly.`
-  ogImage=`https://bestwesternvernalinn.com/images/35.webp`
-  twitterTitle=`Weekly Hotel Rates in Vernal, Utah | Best Western Vernal Inn — Call for Weekly Price`
-  twitterDescription=`Weekly hotel rates at Best Western Vernal Inn are quoted by phone — call (435) 789-6625 for your dates. Nightly rates from ${LOWEST_NIGHTLY} + tax. Free breakfast, kitchenettes, pet friendly.`
-  twitterImage=`https://bestwesternvernalinn.com/images/35.webp`
+  title=`Weekly Hotel Rates in Vernal, Utah | Best Western Vernal Hotel — Call for Weekly Price`
+  description=`Weekly hotel rates at Best Western Vernal Hotel are quoted by phone — call (435) 789-6625 for your dates. Nightly rates from ${LOWEST_NIGHTLY} + tax. Free breakfast, kitchenettes, pet friendly.`
+  canonical=`https://bestwesternvernalhotel.com/weekly-hotel-rates-vernal-utah`
+  ogTitle=`Weekly Hotel Rates in Vernal, Utah | Best Western Vernal Hotel — Call for Weekly Price`
+  ogDescription=`Weekly hotel rates at Best Western Vernal Hotel are quoted by phone — call (435) 789-6625 for your dates. Nightly rates from ${LOWEST_NIGHTLY} + tax. Free breakfast, kitchenettes, pet friendly.`
+  ogImage=`https://bestwesternvernalhotel.com/images/35.webp`
+  twitterTitle=`Weekly Hotel Rates in Vernal, Utah | Best Western Vernal Hotel — Call for Weekly Price`
+  twitterDescription=`Weekly hotel rates at Best Western Vernal Hotel are quoted by phone — call (435) 789-6625 for your dates. Nightly rates from ${LOWEST_NIGHTLY} + tax. Free breakfast, kitchenettes, pet friendly.`
+  twitterImage=`https://bestwesternvernalhotel.com/images/35.webp`
   lastUpdated=`April 2026`
 >
   <Fragment slot="head" set:html={headExtras} />

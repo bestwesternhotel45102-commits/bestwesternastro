@@ -501,7 +501,7 @@ export const FRONT_DESK_INSIGHTS: InsightRecord[] = [
       // is a page edit, deliberately deferred until this sheet is reviewed — there is no
       // point rendering a component that is gated shut.
       [
-        'extended-stay-hotel-vernal-utah',
+        'long-stay-hotel-vernal-utah',
         'workforce-housing-vernal-utah',
         'oilfield-housing-vernal',
         'weekly-hotel-rates-vernal-utah',
@@ -526,7 +526,7 @@ export const FRONT_DESK_INSIGHTS: InsightRecord[] = [
       },
       surprises: {
         answer:
-          'How hot and how strong the showers are. It is the thing guests mention to us most often, and it is not what people expect from an extended-stay property.',
+          'How hot and how strong the showers are. It is the thing guests mention to us most often, and it is not what people expect from a hotel shower.',
         // MAPPING TO CONFIRM: the interview recorded this as a recurring guest COMPLIMENT.
         // There is no compliments question in STANDARD_QUESTIONS, and `surprises` is the
         // closest honest fit — but it is our mapping, not the owner's words. Confirm at

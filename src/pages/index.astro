@@ -56,7 +56,7 @@ const attr = (s: string): string => amp(s).replace(/"/g, '&quot;');
 const jsArg = (s: string): string =>
   attr(s.replace(/\\/g, '\\\\').replace(/'/g, "\\'"));
 
-const hotelDescription = `Newly transformed Best Western Inn in Vernal, Utah. Nightly rates from ${LOWEST_NIGHTLY} + tax; weekly rates available — call for price. Free hot breakfast daily, full kitchenettes, jacuzzi studios, pet friendly rooms, and heated floors in the dining room.`;
+const hotelDescription = `Newly renovated Best Western Vernal Hotel in Vernal, Utah. Nightly rates from ${LOWEST_NIGHTLY} + tax; weekly rates available — call for price. Free hot breakfast daily, full kitchenettes, jacuzzi studios, pet friendly rooms, and heated floors in the dining room.`;
 
 const headExtras = `<!-- The reel's opening photograph is the largest thing above the fold and was
      queueing behind 28 other images; measured on an 8 Mbps connection it did not
@@ -74,7 +74,7 @@ ${ldScript(hotelNodeFull(hotelDescription))}
  "@type": "ListItem",
  "position": 1,
  "name": "Home",
- "item": "https://bestwesternvernalinn.com/"
+ "item": "https://bestwesternvernalhotel.com/"
  }
  ]
  }
@@ -85,8 +85,8 @@ ${ldScript(hotelNodeFull(hotelDescription))}
  "@type": "Person",
  "name": "Paresh Ghandi",
  "jobTitle": "Owner / Manager",
- "description": "Local Vernal owner who transformed the former Executive Inn into Best Western Vernal Inn, committed to warm hospitality in the Uintah Basin.",
- "url": "https://bestwesternvernalinn.com/video",
+ "description": "Local Vernal owner of Best Western Vernal Hotel, committed to warm hospitality in the Uintah Basin.",
+ "url": "https://bestwesternvernalhotel.com/video",
  "worksFor": ${JSON.stringify(hotelRef())}
  }
  </script>
@@ -97,7 +97,7 @@ ${ldScript(hotelNodeFull(hotelDescription))}
  "mainEntity": [
  {
  "@type": "Question",
- "name": "What are the weekly rates at Best Western Vernal Inn?",
+ "name": "What are the weekly rates at Best Western Vernal Hotel?",
  "acceptedAnswer": {
  "@type": "Answer",
  "text": "Weekly rates are quoted by phone — call (435) 789-6625 for current weekly pricing. Published nightly rates start at ${LOWEST_NIGHTLY} + tax for a Studio King. Monthly rates and corporate billing for long-term stays are also available by phone."
@@ -105,7 +105,7 @@ ${ldScript(hotelNodeFull(hotelDescription))}
  },
  {
  "@type": "Question",
- "name": "Is Best Western Vernal Inn pet friendly?",
+ "name": "Is Best Western Vernal Hotel pet friendly?",
  "acceptedAnswer": {
  "@type": "Answer",
  "text": "Yes. Up to two dogs per room, 80 lb limit per dog. Pet fee is $30/day plus a $100 refundable deposit at check-in. Other pets may be approved with prior notice — call (435) 789-6625."
@@ -113,7 +113,7 @@ ${ldScript(hotelNodeFull(hotelDescription))}
  },
  {
  "@type": "Question",
- "name": "Does Best Western Vernal Inn include free breakfast?",
+ "name": "Does Best Western Vernal Hotel include free breakfast?",
  "acceptedAnswer": {
  "@type": "Answer",
  "text": "Yes. A free hot breakfast is included every day — hot dishes, pancakes, pastries, fruit, juice, and coffee. No extra charge, served daily."
@@ -124,15 +124,15 @@ ${ldScript(hotelNodeFull(hotelDescription))}
  "name": "Do the rooms have kitchenettes?",
  "acceptedAnswer": {
  "@type": "Answer",
- "text": "Most rooms include a full kitchenette with stovetop, microwave, full-size refrigerator, and coffee maker — ideal for extended stays and long-term guests."
+ "text": "Most rooms include a full kitchenette with stovetop, microwave, full-size refrigerator, and coffee maker — ideal for longer stays and long-term guests."
  }
  },
  {
  "@type": "Question",
- "name": "How far is Best Western Vernal Inn from Dinosaur National Monument?",
+ "name": "How far is Best Western Vernal Hotel from Dinosaur National Monument?",
  "acceptedAnswer": {
  "@type": "Answer",
- "text": "Dinosaur National Monument is approximately 20 minutes from Best Western Vernal Inn at 1935 South 1500 East, Vernal, UT 84078."
+ "text": "Dinosaur National Monument is approximately 20 minutes from Best Western Vernal Hotel at 1935 South 1500 East, Vernal, UT 84078."
  }
  }
  ]
@@ -160,7 +160,7 @@ const bodyContent = `
 
 <!-- PAGE SUMMARY BAR — AI-extractable content, visible to all crawlers -->
 <div class="page-summary-bar" role="complementary" aria-label="Quick summary">
- <strong>Best Western Vernal Inn</strong> — Extended stay hotel in Vernal, Utah. Nightly rates from ${LOWEST_NIGHTLY} + tax (Studio King). Weekly rates — call for price. Free hot breakfast daily, full kitchenettes, jacuzzi studios, pet friendly rooms, free WiFi and free parking. Located at 1935 South 1500 East, Vernal, UT 84078 — 0.6 miles from Vernal Regional Airport, near Dinosaur National Monument. Book online at BestWestern.com or call <strong>(435) 789-6625</strong>.
+ <strong>Best Western Vernal Hotel</strong> — Hotel in Vernal, Utah. Nightly rates from ${LOWEST_NIGHTLY} + tax (Studio King). Weekly rates — call for price. Free hot breakfast daily, full kitchenettes, jacuzzi studios, pet friendly rooms, free WiFi and free parking. Located at 1935 South 1500 East, Vernal, UT 84078 — 0.6 miles from Vernal Regional Airport, near Dinosaur National Monument. Book online at BestWestern.com or call <strong>(435) 789-6625</strong>.
 </div>
 
 <!-- NAV -->
@@ -171,13 +171,13 @@ const bodyContent = `
      its rate laid over the photograph, and closes on the pool, hot tub and
      fitness center. Slides and rates both come from
      src/data/heroShowcase.ts → src/data/rates.ts; nothing is hardcoded here. -->
-<section class="hero" id="hero" aria-roledescription="carousel" aria-label="Best Western Vernal Inn — rooms and rates">
+<section class="hero" id="hero" aria-roledescription="carousel" aria-label="Best Western Vernal Hotel — rooms and rates">
 ${HERO_SLIDES.map((s, i) => `<div class="hero-slide ${s.kb}${i === 0 ? ' active' : ''}" role="img" aria-label="${s.alt}"><div class="hero-kb"${i === 0 ? ` style="background-image:url('${s.image}')"` : ` data-bg="${s.image}"`}${s.portrait ? ` data-bg-portrait="${s.portrait}"` : ''}></div></div>`).join('\n')}
  <div class="hero-ov"></div>
  <div class="hero-cnt">
  <p class="eyebrow">Now Open in Vernal, Utah</p>
- <h1 class="htitle">Best Western Inn<br><em>Vernal, Utah</em></h1>
- <p class="hsub">The Executive Inn has been beautifully transformed into Best Western Vernal Inn — spacious rooms, free hot breakfast, and a warm welcome every single day. Your home away from home.</p>
+ <h1 class="htitle">Best Western<br><em>Vernal Hotel</em></h1>
+ <p class="hsub">Spacious rooms, free hot breakfast, and a warm welcome every single day. Your home away from home.</p>
  <div class="hbtns">
  <a href="${BUSINESS.bookingUrl}" class="btn-p" data-track="book_click">${BUSINESS.directBooking.ctaLabel}</a>
  <a href="#rooms" class="btn-s">Explore Rooms</a>
@@ -235,7 +235,7 @@ ${HERO_SLIDES.map((s, i) => {
  <!-- PET FRIENDLY BADGE -->
  <a href="#rooms" onclick="st(document.querySelector('[onclick*=pet]'),'pet')" class="pet-badge">
  <div class="pet-badge-img">
- <img src="images/puppy.webp" alt="Pet Friendly Hotel Vernal Utah — Dogs Welcome at Best Western Vernal Inn">
+ <img src="images/puppy.webp" alt="Pet Friendly Hotel Vernal Utah — Dogs Welcome at Best Western Vernal Hotel">
  </div>
  <div class="pet-badge-footer">
  <span class="pet-paw-icon">🐾</span>
@@ -280,7 +280,7 @@ ${HERO_SLIDES.map((s, i) => {
 <!-- WEEKLY RATES -->
 <section class="weekly-rates rv">
  <div class="wr-inner">
- <p class="wr-eyebrow">✦ Extended Stay Savings ✦</p>
+ <p class="wr-eyebrow">✦ Weekly Stay Savings ✦</p>
  <h2 class="wr-title">Special <em>Weekly Rates</em></h2>
  <p class="wr-sub">Staying 7 nights or longer? Weekly rates are quoted by the front desk — call and we'll give you the current price for your dates and room type.</p>
  <div class="wr-cards">
@@ -314,7 +314,7 @@ ${HERO_SLIDES.map((s, i) => {
       weekly stays by phone, and this table is exactly the surface an assistant
       would scrape a stale number off. -->
  <div class="rates-table-wrap">
- <table class="rates-table" aria-label="Room Rates — Best Western Vernal Inn Utah">
+ <table class="rates-table" aria-label="Room Rates — Best Western Vernal Hotel Utah">
  <thead>
  <tr>
  <th>Room Type</th>
@@ -372,7 +372,7 @@ ${HERO_SLIDES.map((s, i) => {
  <td>1–2</td>
  <td>Call for rate</td>
  <td>Call for price</td>
- <td>Extended stays, contractors</td>
+ <td>Long stays, contractors</td>
  </tr>
  <tr>
  <td>${rateCell('Studio Jacuzzi King')}</td>
@@ -390,7 +390,7 @@ ${HERO_SLIDES.map((s, i) => {
  </tr>
  </tbody>
  </table>
- <p class="rates-monthly-note">📞 Weekly and monthly rates available — call <a href="tel:${BUSINESS.phoneTel}">${BUSINESS.phoneDisplay}</a> for extended-stay pricing and corporate / company billing options.</p>
+ <p class="rates-monthly-note">📞 Weekly and monthly rates available — call <a href="tel:${BUSINESS.phoneTel}">${BUSINESS.phoneDisplay}</a> for long-stay pricing and corporate / company billing options.</p>
  </div>
 
  <p class="wr-note">📞 ${WEEKLY_CALL_LINE} — call <a href="tel:${BUSINESS.phoneTel}">${BUSINESS.phoneDisplay}</a></p>
@@ -404,7 +404,7 @@ ${HERO_SLIDES.map((s, i) => {
  <div class="sb-content">
  <p class="sb-eyebrow">✦ See the Transformation ✦</p>
  <h2 class="sb-title">Watch Our Story</h2>
- <p class="sb-sub">From the Executive Inn to Best Western Vernal Inn — a warm, cinematic look at everything that's new, beautiful, and waiting for you.</p>
+ <p class="sb-sub">A warm, cinematic look at everything that's new, beautiful, and waiting for you at Best Western Vernal Hotel.</p>
  <a href="/video" class="sb-play-btn" aria-label="Watch presentation">
  <span class="sb-play-ring"></span>
  <span class="sb-play-icon">▶</span>
@@ -442,7 +442,7 @@ ${HERO_SLIDES.map((s, i) => {
  id="ownerVideo"
  class="frame-video"
  src="https://www.youtube.com/embed/muU4RyNBzQI?si=UDQjYvrGPWQhwdg4"
- title="Best Western Vernal Inn — Owner's Welcome & Property Walkthrough"
+ title="Best Western Vernal Hotel — Owner's Welcome & Property Walkthrough"
  frameborder="0"
  loading="lazy"
  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -474,7 +474,7 @@ ${HERO_SLIDES.map((s, i) => {
 
  <div class="owner-sig">
  <div class="owner-sig-name">The Owner</div>
- <div class="owner-sig-title">Best Western Vernal Inn · Vernal, Utah</div>
+ <div class="owner-sig-title">Best Western Vernal Hotel · Vernal, Utah</div>
  </div>
  </div>
 
@@ -542,13 +542,13 @@ ${p.link ? ` <p class="room-detail-links" style="margin:0 0 4px;"><a href="${p.l
 </div>
 
 <!-- BREAKFAST BANNER -->
-<!-- Was a phone snapshot of this room BEFORE the renovation (the old Executive
-     Inn's mismatched chairs and granite tables) under a headline about a free
+<!-- Was a phone snapshot of this room BEFORE the renovation (the old
+     mismatched chairs and granite tables) under a headline about a free
      hot breakfast. Replaced 2026-09-09 with the owner's photograph of the same
      room from nearly the same spot. Alt text describes the room, which is what
      is in the frame; the breakfast is not. -->
 <section class="bkhero rv">
- <img src="images/Breakfast-Room.webp" alt="Breakfast dining room with marble-topped tables, ring pendant lights and lounge seating beyond — Best Western Vernal Inn, Vernal Utah" loading="lazy" decoding="async">
+ <img src="images/Breakfast-Room.webp" alt="Breakfast dining room with marble-topped tables, ring pendant lights and lounge seating beyond — Best Western Vernal Hotel, Vernal Utah" loading="lazy" decoding="async">
  <div class="bkov"></div>
  <div class="bkcnt">
  <p class="tag">✦ Every Morning, On Us</p>
@@ -623,13 +623,13 @@ ${p.link ? ` <p class="room-detail-links" style="margin:0 0 4px;"><a href="${p.l
  <div style="max-width:1240px;margin:0 auto;">
   <p class="tag" style="text-align:center;display:block;color:var(--gold);font-weight:700;letter-spacing:.2em;text-transform:uppercase;font-size:.95rem;margin-bottom:.6rem;">✦ Plan Your Stay in Vernal</p>
   <h2 style="font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);color:var(--navy);text-align:center;margin:0 0 .8rem;font-weight:700;">Find the <em style="color:var(--gold);font-style:italic;">Right Room</em> for Your Trip</h2>
-  <p style="text-align:center;color:var(--muted);max-width:740px;margin:0 auto 3rem;font-size:1.08rem;line-height:1.6;font-weight:300;">From extended stays to weekend trips to Dinosaur Country — we have detailed pages for every kind of guest. Pick the page that fits your stay.</p>
+  <p style="text-align:center;color:var(--muted);max-width:740px;margin:0 auto 3rem;font-size:1.08rem;line-height:1.6;font-weight:300;">From longer stays to weekend trips to Dinosaur Country — we have detailed pages for every kind of guest. Pick the page that fits your stay.</p>
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:2.6rem;align-items:start;">
    <div>
     <h3 style="font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--navy);margin:0 0 1rem;text-align:center;letter-spacing:.01em;"><span style="color:var(--gold);">✦</span> By Stay Type</h3>
     <div style="display:grid;gap:.85rem;">
-    <a href="/extended-stay-hotel-vernal-utah" class="topic-card" style="display:block;padding:1.4rem 1.3rem;background:#fff;border:1px solid rgba(var(--gold-rgb),0.35);border-radius:6px;text-decoration:none;transition:transform .2s,box-shadow .2s,border-color .2s;">
-     <div style="font-family:'Playfair Display',serif;font-weight:700;font-size:1.08rem;color:var(--navy);margin-bottom:.3rem;">Extended Stay</div>
+    <a href="/long-stay-hotel-vernal-utah" class="topic-card" style="display:block;padding:1.4rem 1.3rem;background:#fff;border:1px solid rgba(var(--gold-rgb),0.35);border-radius:6px;text-decoration:none;transition:transform .2s,box-shadow .2s,border-color .2s;">
+     <div style="font-family:'Playfair Display',serif;font-weight:700;font-size:1.08rem;color:var(--navy);margin-bottom:.3rem;">Long Stays</div>
      <div style="font-size:.92rem;color:var(--muted);line-height:1.5;">Weekly &amp; monthly stays — call for price</div>
     </a>
     <a href="/weekly-hotel-rates-vernal-utah" class="topic-card" style="display:block;padding:1.4rem 1.3rem;background:#fff;border:1px solid rgba(var(--gold-rgb),0.35);border-radius:6px;text-decoration:none;transition:transform .2s,box-shadow .2s,border-color .2s;">
@@ -720,12 +720,12 @@ ${p.link ? ` <p class="room-detail-links" style="margin:0 0 4px;"><a href="${p.l
 <!-- CTA -->
 <section class="cta rv">
  <h2>Ready to Feel at Home?</h2>
- <p>Book your stay at Best Western Vernal Inn — Vernal tonight.<br>Great rooms, free breakfast, and a warm welcome waiting for you.</p>
+ <p>Book your stay at Best Western Vernal Hotel — Vernal tonight.<br>Great rooms, free breakfast, and a warm welcome waiting for you.</p>
  <div class="cta-btns">
  <a data-track="book_click" href="${BUSINESS.bookingUrl}" class="btn-p">${BUSINESS.directBooking.ctaLabel}</a>
  <a href="tel:${BUSINESS.phoneTel}" class="btn-s" style="color:var(--navy);border-color:var(--navy);">📞 (435) 789-6625</a>
  </div>
- <p class="cta-info">1935 South 1500 East, Vernal, UT &nbsp;|&nbsp; <a href="https://bestwesternvernalinn.com">bestwesternvernalinn.com</a></p>
+ <p class="cta-info">1935 South 1500 East, Vernal, UT &nbsp;|&nbsp; <a href="https://bestwesternvernalhotel.com">bestwesternvernalhotel.com</a></p>
 </section>
 
 <!-- FOOTER -->
@@ -1007,16 +1007,16 @@ if (ownerOverlay && ownerIframe) {
 ---
 
 <BaseLayout
-  title=`Extended Stay Hotel in Vernal, UT | Best Western Vernal Inn — Rooms from ${LOWEST_NIGHTLY}/night`
-  description=`Best Western Inn in Vernal, Utah — nightly rates from ${LOWEST_NIGHTLY} + tax, weekly rates by phone, free hot breakfast daily, full kitchenettes, jacuzzi studios, pet friendly, free WiFi & parking. 0.6 miles from Vernal Regional Airport. Call (435) 789-6625.`
-  canonical=`https://bestwesternvernalinn.com/`
-  ogTitle=`Extended Stay Hotel in Vernal, UT | Best Western Vernal Inn`
+  title=`Hotel in Vernal, UT | Best Western Vernal Hotel — Rooms from ${LOWEST_NIGHTLY}/night`
+  description=`Best Western Vernal Hotel in Vernal, Utah — nightly rates from ${LOWEST_NIGHTLY} + tax, weekly rates by phone, free hot breakfast daily, full kitchenettes, jacuzzi studios, pet friendly, free WiFi & parking. 0.6 miles from Vernal Regional Airport. Call (435) 789-6625.`
+  canonical=`https://bestwesternvernalhotel.com/`
+  ogTitle=`Hotel in Vernal, UT | Best Western Vernal Hotel`
   ogDescription=`Nightly rates from ${LOWEST_NIGHTLY} + tax; weekly rates — call for price. Free hot breakfast, full kitchenettes, jacuzzi studios, pet friendly. 0.6 miles from Vernal Regional Airport.`
-  ogImage=`https://bestwesternvernalinn.com/images/35.webp`
-  twitterTitle=`Extended Stay Hotel in Vernal, UT | Best Western Vernal Inn`
+  ogImage=`https://bestwesternvernalhotel.com/images/35.webp`
+  twitterTitle=`Hotel in Vernal, UT | Best Western Vernal Hotel`
   twitterDescription=`Nightly rates from ${LOWEST_NIGHTLY} + tax; weekly rates — call for price. Free hot breakfast, kitchenettes, jacuzzi studios, pet friendly. Near Dinosaur National Monument.`
-  twitterImage=`https://bestwesternvernalinn.com/images/35.webp`
-  hreflang=`https://bestwesternvernalinn.com/`
+  twitterImage=`https://bestwesternvernalhotel.com/images/35.webp`
+  hreflang=`https://bestwesternvernalhotel.com/`
   isHome={true}
   lastUpdated=`February 2026`
 >

@@ -233,7 +233,7 @@ const STANDARD_BATHROOM = (dir: string, prefix: string): RoomPhoto[] => [
     portrait: `images/${dir}/${prefix}-Bathroom-Phoneview3.webp`,
     caption:
       'The bathroom: the granite vanity ledge on the left, the toilet, towel racks and a towel shelf, and the tub at the far right. This is the standard bathroom shared by our non-accessible rooms.',
-    alt: 'Guest bathroom with vanity, toilet and towel racks — Best Western Vernal Inn, Vernal Utah',
+    alt: 'Guest bathroom with vanity, toilet and towel racks — Best Western Vernal Hotel, Vernal Utah',
     shared: true,
   },
   {
@@ -241,7 +241,7 @@ const STANDARD_BATHROOM = (dir: string, prefix: string): RoomPhoto[] => [
     portrait: `images/${dir}/${prefix}-Bathroom-Phoneview4.webp`,
     caption:
       'The vanity: granite counter with a single basin and a backlit mirror, with towels and a hair dryer on the wall alongside. This is the standard bathroom shared by our non-accessible rooms.',
-    alt: 'Hotel bathroom vanity with granite counter and backlit mirror — Best Western Vernal Inn, Vernal Utah',
+    alt: 'Hotel bathroom vanity with granite counter and backlit mirror — Best Western Vernal Hotel, Vernal Utah',
     shared: true,
   },
   {
@@ -249,7 +249,7 @@ const STANDARD_BATHROOM = (dir: string, prefix: string): RoomPhoto[] => [
     portrait: `images/${dir}/${prefix}-Bathroom-Phoneview2.webp`,
     caption:
       'The bath: a full-size tub and shower combination with a curved curtain rod and chrome fixtures.',
-    alt: 'Bathtub and shower combination in a guest bathroom — Best Western Vernal Inn, Vernal Utah',
+    alt: 'Bathtub and shower combination in a guest bathroom — Best Western Vernal Hotel, Vernal Utah',
     shared: true,
   },
 ];
@@ -310,7 +310,7 @@ export const ROOMS: Room[] = [
       src: 'images/Queen-Studio/Queen-Suite.webp',
       portrait: 'images/Queen-Studio/Queen-Suite-phoneview.webp',
       caption: 'The queen bed with the sofa and the window beyond.',
-      alt: 'Studio Queen with a queen bed and a sofa — Best Western Vernal Inn, Vernal Utah',
+      alt: 'Studio Queen with a queen bed and a sofa — Best Western Vernal Hotel, Vernal Utah',
     },
     gallery: [
       {
@@ -318,7 +318,7 @@ export const ROOMS: Room[] = [
         portrait: 'images/Queen-Studio/Queen-Suite-phoneview.webp',
         caption:
           'The queen bed on a light-wood platform frame against the navy accent wall, with a wall-mounted reading light and a nightstand either side. Beyond it a two-seat sofa sits under the window with a floor lamp beside it, and a framed print of the Flaming Gorge bridge hangs on the far wall.',
-        alt: 'Queen bed with a two-seat sofa under the window — Best Western Vernal Inn, Vernal Utah',
+        alt: 'Queen bed with a two-seat sofa under the window — Best Western Vernal Hotel, Vernal Utah',
         heroSlide: true,
       },
       {
@@ -326,7 +326,7 @@ export const ROOMS: Room[] = [
         portrait: 'images/Queen-Studio/Queen-Suite-phoneview1.webp',
         caption:
           'The bed head-on, with a panelled headboard, a wall light and a nightstand on each side, the room phone and clock within reach, and a framed waterfall print on the wall to the left.',
-        alt: 'Queen bed with panelled headboard and wall reading lights — Best Western Vernal Inn, Vernal Utah',
+        alt: 'Queen bed with panelled headboard and wall reading lights — Best Western Vernal Hotel, Vernal Utah',
         heroSlide: true,
       },
       {
@@ -334,7 +334,7 @@ export const ROOMS: Room[] = [
         portrait: 'images/Queen-Studio/Queen-Suite-phoneview9.webp',
         caption:
           'The bed from the window side, with the roller-shaded window looking out over Vernal, the heating and cooling unit beneath it and a framed Delicate Arch print on the accent wall.',
-        alt: 'Queen bed beside a shaded window and heating and cooling unit — Best Western Vernal Inn, Vernal Utah',
+        alt: 'Queen bed beside a shaded window and heating and cooling unit — Best Western Vernal Hotel, Vernal Utah',
         heroSlide: true,
       },
       {
@@ -342,7 +342,7 @@ export const ROOMS: Room[] = [
         portrait: 'images/Queen-Studio/Queen-Suite-phoneview5.webp',
         caption:
           'The entrance end: the kitchenette with a sink in the counter, cabinets above and below, a microwave and a coffee maker, and a dining table with two upholstered chairs beside the door.',
-        alt: 'Kitchenette with microwave and coffee maker beside a dining table and entry door — Best Western Vernal Inn, Vernal Utah',
+        alt: 'Kitchenette with microwave and coffee maker beside a dining table and entry door — Best Western Vernal Hotel, Vernal Utah',
         heroSlide: true,
       },
       {
@@ -350,7 +350,7 @@ export const ROOMS: Room[] = [
         portrait: 'images/Queen-Studio/Queen-Suite-phoneview6.webp',
         caption:
           'The working half of the room: a desk with an office chair and a reading lamp under the wall-mounted TV, the open closet beside it, and the window with the heating and cooling unit beneath it.',
-        alt: 'Desk, office chair, wall-mounted TV and open closet beside a window — Best Western Vernal Inn, Vernal Utah',
+        alt: 'Desk, office chair, wall-mounted TV and open closet beside a window — Best Western Vernal Hotel, Vernal Utah',
         heroSlide: true,
       },
       {
@@ -358,14 +358,14 @@ export const ROOMS: Room[] = [
         portrait: 'images/Queen-Studio/Queen-Suite-phoneview4.webp',
         caption:
           'The closet in full: a hanging rail with wooden hangers, an iron and an ironing board stowed alongside, open shelving and two drawers below, next to the desk and the wall-mounted TV.',
-        alt: 'Open closet with hangers, iron and ironing board beside a desk — Best Western Vernal Inn, Vernal Utah',
+        alt: 'Open closet with hangers, iron and ironing board beside a desk — Best Western Vernal Hotel, Vernal Utah',
       },
       {
         src: 'images/Queen-Studio/Queen-Suite7.webp',
         portrait: 'images/Queen-Studio/Queen-Suite-phoneview7.webp',
         caption:
           'The kitchenette: a stainless single-basin sink and a two-burner cooktop set into the granite counter, a microwave and a coffee maker above, and a full-height refrigerator with a freezer alongside, on tiled flooring.',
-        alt: 'Kitchenette with sink, two-burner cooktop, microwave and full-height refrigerator — Best Western Vernal Inn, Vernal Utah',
+        alt: 'Kitchenette with sink, two-burner cooktop, microwave and full-height refrigerator — Best Western Vernal Hotel, Vernal Utah',
       },
       ...STANDARD_BATHROOM('Queen-Studio', 'Queen'),
     ],
@@ -396,9 +396,9 @@ export const ROOMS: Room[] = [
       { label: '24-hour front desk', source: 'site' },
     ],
     seo: {
-      title: 'Studio Queen — $95/Night | Best Western Vernal Inn, Vernal Utah',
+      title: 'Studio Queen — $95/Night | Best Western Vernal Hotel, Vernal Utah',
       description:
-        'Studio Queen at Best Western Vernal Inn: one queen bed, a sofa, a full kitchenette, free hot breakfast and free WiFi. $95 per night + tax — our lowest published rate. Weekly rates — call for price.',
+        'Studio Queen at Best Western Vernal Hotel: one queen bed, a sofa, a full kitchenette, free hot breakfast and free WiFi. $95 per night + tax — our lowest published rate. Weekly rates — call for price.',
       bedType: 'Queen',
     },
   },
@@ -436,7 +436,7 @@ export const ROOMS: Room[] = [
       portrait: 'images/King-Studio/King-Studio-phoneview.webp',
       caption:
         'The king bed, centred on the navy accent wall between two nightstands.',
-      alt: 'Studio King room with king bed and reading lights — Best Western Vernal Inn, Vernal Utah',
+      alt: 'Studio King room with king bed and reading lights — Best Western Vernal Hotel, Vernal Utah',
     },
     gallery: [
       {
@@ -444,7 +444,7 @@ export const ROOMS: Room[] = [
         portrait: 'images/King-Studio/King-Studio-phoneview.webp',
         caption:
           'The king bed on a light-wood platform frame against the navy accent wall, with a tall panelled headboard, a wall-mounted reading light on each side and a nightstand either end. A framed Delicate Arch print hangs on the wall to the right; the floor is patterned carpet.',
-        alt: 'King bed with panelled headboard and wall reading lights in a Studio King room — Best Western Vernal Inn, Vernal Utah',
+        alt: 'King bed with panelled headboard and wall reading lights in a Studio King room — Best Western Vernal Hotel, Vernal Utah',
         heroSlide: true,
       },
       {
@@ -452,7 +452,7 @@ export const ROOMS: Room[] = [
         portrait: 'images/King-Studio/King-Studio-phoneview4.webp',
         caption:
           'The king bed from the window side of the room, with the roller-shaded window and the heating and cooling unit beneath it, and the room phone on the nightstand.',
-        alt: 'King bed beside a shaded window and heating and cooling unit — Best Western Vernal Inn, Vernal Utah',
+        alt: 'King bed beside a shaded window and heating and cooling unit — Best Western Vernal Hotel, Vernal Utah',
         heroSlide: true,
       },
       {
@@ -460,7 +460,7 @@ export const ROOMS: Room[] = [
         portrait: 'images/King-Studio/King-Studio-phoneview5.webp',
         caption:
           'The bed from the entry door, with framed prints of a waterfall and the Bixby Bridge on either side of the headboard and the heating and cooling unit at the far right.',
-        alt: 'King bed seen from the entry door with framed landscape prints either side — Best Western Vernal Inn, Vernal Utah',
+        alt: 'King bed seen from the entry door with framed landscape prints either side — Best Western Vernal Hotel, Vernal Utah',
         heroSlide: true,
       },
       {
@@ -468,7 +468,7 @@ export const ROOMS: Room[] = [
         portrait: 'images/King-Studio/King-Studio-phoneview6.webp',
         caption:
           'The working half of the studio from the foot of the bed: the desk with an office chair and the wall-mounted TV, the dining table and two chairs, the kitchenette with its microwave and cabinets, and the entry door beyond.',
-        alt: 'Studio King showing desk, TV, dining table, kitchenette and entry door — Best Western Vernal Inn, Vernal Utah',
+        alt: 'Studio King showing desk, TV, dining table, kitchenette and entry door — Best Western Vernal Hotel, Vernal Utah',
         heroSlide: true,
       },
       {
@@ -476,7 +476,7 @@ export const ROOMS: Room[] = [
         portrait: 'images/King-Studio/King-Studio-phoneview8.webp',
         caption:
           'The same half of the room in one frame from beside the bed: the open closet with its hanging rail, drawers and stowed ironing board, the desk and wall-mounted TV, the dining table with two upholstered chairs, and the kitchenette at the far end.',
-        alt: 'Open closet, desk, TV, dining table and kitchenette in a Studio King — Best Western Vernal Inn, Vernal Utah',
+        alt: 'Open closet, desk, TV, dining table and kitchenette in a Studio King — Best Western Vernal Hotel, Vernal Utah',
         heroSlide: true,
       },
       {
@@ -484,7 +484,7 @@ export const ROOMS: Room[] = [
         portrait: 'images/King-Studio/King-Studio-phoneview3.webp',
         caption:
           'The desk and work area with an office chair and the wall-mounted TV, an armchair and ottoman under a floor lamp across the corner, and the open closet with hangers and an ironing board beside them.',
-        alt: 'Desk, office chair, TV, armchair and open closet in a guest room — Best Western Vernal Inn, Vernal Utah',
+        alt: 'Desk, office chair, TV, armchair and open closet in a guest room — Best Western Vernal Hotel, Vernal Utah',
         heroSlide: true,
       },
       {
@@ -492,7 +492,7 @@ export const ROOMS: Room[] = [
         portrait: 'images/King-Studio/King-Studio-phoneview10.webp',
         caption:
           'The dining table and two upholstered chairs beside the bed, with the window and the heating and cooling unit beneath it, and a framed Bixby Bridge print on the wall.',
-        alt: 'Dining table and two chairs beside a king bed and window — Best Western Vernal Inn, Vernal Utah',
+        alt: 'Dining table and two chairs beside a king bed and window — Best Western Vernal Hotel, Vernal Utah',
         heroSlide: true,
       },
       {
@@ -500,7 +500,7 @@ export const ROOMS: Room[] = [
         portrait: 'images/King-Studio/King-Studio-phoneview12.webp',
         caption:
           'The kitchenette: a stainless single-basin sink set into the granite counter, cabinets above and below, a microwave and a coffee maker, and a full-height refrigerator with a freezer beside the dining table, on tiled flooring.',
-        alt: 'Kitchenette with sink, microwave, coffee maker and full-height refrigerator — Best Western Vernal Inn, Vernal Utah',
+        alt: 'Kitchenette with sink, microwave, coffee maker and full-height refrigerator — Best Western Vernal Hotel, Vernal Utah',
       },
       ...STANDARD_BATHROOM('King-Studio', 'King'),
     ],
@@ -538,9 +538,9 @@ export const ROOMS: Room[] = [
     ],
     seo: {
       title:
-        'Studio King Room — $108/Night | Best Western Vernal Inn, Vernal Utah',
+        'Studio King Room — $108/Night | Best Western Vernal Hotel, Vernal Utah',
       description:
-        'Studio King at Best Western Vernal Inn: one king bed, kitchenette, tub and shower, free hot breakfast and free WiFi. $108 per night + tax. Weekly rates — call for price. Call (435) 789-6625.',
+        'Studio King at Best Western Vernal Hotel: one king bed, kitchenette, tub and shower, free hot breakfast and free WiFi. $108 per night + tax. Weekly rates — call for price. Call (435) 789-6625.',
       bedType: 'King',
       occupancy: 2,
     },
@@ -572,7 +572,7 @@ export const ROOMS: Room[] = [
       portrait: 'images/Double-Queen-Studio/Double-Queen-Phoneview1.webp',
       caption:
         'Two queen beds side by side, with the window and heating and cooling unit beyond.',
-      alt: 'Studio Two Queen room with two queen beds — Best Western Vernal Inn, Vernal Utah',
+      alt: 'Studio Two Queen room with two queen beds — Best Western Vernal Hotel, Vernal Utah',
     },
     gallery: [
       {
@@ -580,7 +580,7 @@ export const ROOMS: Room[] = [
         portrait: 'images/Double-Queen-Studio/Double-Queen-Phoneview1.webp',
         caption:
           'Two queen beds on light-wood platform frames, each with a panelled headboard, sharing a wall light and a nightstand between them. The window carries a roller shade, with a through-wall heating and cooling unit beneath it.',
-        alt: 'Two queen beds with a window and through-wall heating and cooling unit — Best Western Vernal Inn, Vernal Utah',
+        alt: 'Two queen beds with a window and through-wall heating and cooling unit — Best Western Vernal Hotel, Vernal Utah',
         heroSlide: true,
       },
       {
@@ -588,7 +588,7 @@ export const ROOMS: Room[] = [
         portrait: 'images/Double-Queen-Studio/Double-Queen-Phoneview2.webp',
         caption:
           'The beds from the other side of the room, with a framed Delicate Arch print on the wall.',
-        alt: 'Two queen beds with framed Utah landscape artwork — Best Western Vernal Inn, Vernal Utah',
+        alt: 'Two queen beds with framed Utah landscape artwork — Best Western Vernal Hotel, Vernal Utah',
         heroSlide: true,
       },
       {
@@ -596,7 +596,7 @@ export const ROOMS: Room[] = [
         portrait: 'images/Double-Queen-Studio/Double-Queen-Phoneview6.webp',
         caption:
           'The whole studio from the dining table: the desk and wall-mounted TV on the left, the open closet and a framed canyon print, the window with the heating and cooling unit beneath it, and the two queen beds against the navy accent wall.',
-        alt: 'Studio Two Queen seen from the dining table, with desk, TV, closet, window and two queen beds — Best Western Vernal Inn, Vernal Utah',
+        alt: 'Studio Two Queen seen from the dining table, with desk, TV, closet, window and two queen beds — Best Western Vernal Hotel, Vernal Utah',
         heroSlide: true,
       },
       {
@@ -604,7 +604,7 @@ export const ROOMS: Room[] = [
         portrait: 'images/Double-Queen-Studio/Double-Queen-Phoneview4.webp',
         caption:
           'The full length of the studio from the bed: the entry door, the kitchenette with its dining table and two chairs, the armchair and ottoman, and the desk with the wall-mounted TV above it.',
-        alt: 'Full view of a Studio Two Queen showing entrance, kitchenette, seating and desk — Best Western Vernal Inn, Vernal Utah',
+        alt: 'Full view of a Studio Two Queen showing entrance, kitchenette, seating and desk — Best Western Vernal Hotel, Vernal Utah',
         heroSlide: true,
       },
       {
@@ -612,7 +612,7 @@ export const ROOMS: Room[] = [
         portrait: 'images/Double-Queen-Studio/Double-Queen-Phoneview3.webp',
         caption:
           'The working half of the room in one frame — kitchenette, dining table, armchair with ottoman, desk with an office chair, and the open closet with its hanging rail, drawers, iron and ironing board.',
-        alt: 'Kitchenette, dining table, seating area, desk and closet in a Studio Two Queen — Best Western Vernal Inn, Vernal Utah',
+        alt: 'Kitchenette, dining table, seating area, desk and closet in a Studio Two Queen — Best Western Vernal Hotel, Vernal Utah',
         heroSlide: true,
       },
       {
@@ -620,7 +620,7 @@ export const ROOMS: Room[] = [
         portrait: 'images/Double-Queen-Studio/Double-Queen-Phoneview.webp',
         caption:
           'The seating corner: an upholstered armchair with a matching ottoman under a floor lamp, next to the desk and the wall-mounted TV.',
-        alt: 'Armchair, ottoman, floor lamp and wall-mounted TV in a guest room — Best Western Vernal Inn, Vernal Utah',
+        alt: 'Armchair, ottoman, floor lamp and wall-mounted TV in a guest room — Best Western Vernal Hotel, Vernal Utah',
         heroSlide: true,
       },
       {
@@ -628,7 +628,7 @@ export const ROOMS: Room[] = [
         portrait: 'images/Double-Queen-Studio/Double-Queen-Phoneview5.webp',
         caption:
           'The dining table and two upholstered chairs, with the full-height refrigerator and freezer beside them and tiled flooring underfoot at the kitchenette end, looking across to the desk, the closet and the beds.',
-        alt: 'Dining table and full-height refrigerator in a studio room — Best Western Vernal Inn, Vernal Utah',
+        alt: 'Dining table and full-height refrigerator in a studio room — Best Western Vernal Hotel, Vernal Utah',
         heroSlide: true,
       },
       {
@@ -638,14 +638,14 @@ export const ROOMS: Room[] = [
         src: 'images/Double-Queen-Studio/Double-Queen-Kitchenette-Phoneview.webp',
         caption:
           'The kitchenette: a two-burner cooktop and a stainless single-basin sink set into the granite counter, cabinets above and below, a microwave and a coffee maker, and a full-height refrigerator with a freezer opposite, on tiled flooring.',
-        alt: 'Kitchenette with two-burner cooktop, sink, microwave, coffee maker and full-height refrigerator — Best Western Vernal Inn, Vernal Utah',
+        alt: 'Kitchenette with two-burner cooktop, sink, microwave, coffee maker and full-height refrigerator — Best Western Vernal Hotel, Vernal Utah',
       },
       {
         src: 'images/Double-Queen-Studio/Double-Queen8.webp',
         portrait: 'images/Double-Queen-Studio/Double-Queen-Phoneview7.webp',
         caption:
           'The open closet beside the window: a hanging rail with wooden hangers, an iron on the shelf above, an ironing board stowed alongside and two drawers below. The heating and cooling unit sits under the window, with a framed city-skyline print on the wall by the armchair.',
-        alt: 'Open closet with hangers, iron and ironing board next to a window in a Studio Two Queen — Best Western Vernal Inn, Vernal Utah',
+        alt: 'Open closet with hangers, iron and ironing board next to a window in a Studio Two Queen — Best Western Vernal Hotel, Vernal Utah',
       },
       ...STANDARD_BATHROOM('Double-Queen-Studio', 'Double-Queen'),
     ],
@@ -678,7 +678,7 @@ export const ROOMS: Room[] = [
     ],
     seo: {
       title:
-        'Studio Two Queen Room — $120/Night | Best Western Vernal Inn, Vernal Utah',
+        'Studio Two Queen Room — $120/Night | Best Western Vernal Hotel, Vernal Utah',
       description:
         'Double queen room in Vernal, Utah: two queen beds, full kitchenette, dining table, desk and free hot breakfast. Sleeps 1–4. $120 per night + tax. Weekly rates — call for price.',
       bedType: 'Queen',
@@ -714,7 +714,7 @@ export const ROOMS: Room[] = [
       portrait: 'images/Handicaped-Studio/Handicapped-studio-phoneview6.webp',
       caption:
         'The king bed with clear floor space along both sides.',
-      alt: 'Accessible Studio King room with king bed and wide clear floor space — Best Western Vernal Inn, Vernal Utah',
+      alt: 'Accessible Studio King room with king bed and wide clear floor space — Best Western Vernal Hotel, Vernal Utah',
     },
     gallery: [
       {
@@ -722,7 +722,7 @@ export const ROOMS: Room[] = [
         portrait: 'images/Handicaped-Studio/Handicapped-studio-phoneview6.webp',
         caption:
           'The king bed on a low platform frame against the navy accent wall, with a wall-mounted reading light and a nightstand either side and open carpeted floor running the length of the bed. A framed Delicate Arch print hangs on the wall to the right.',
-        alt: 'King bed with clear floor space in an accessible hotel room — Best Western Vernal Inn, Vernal Utah',
+        alt: 'King bed with clear floor space in an accessible hotel room — Best Western Vernal Hotel, Vernal Utah',
         heroSlide: true,
       },
       {
@@ -730,34 +730,34 @@ export const ROOMS: Room[] = [
         portrait: 'images/Handicaped-Studio/Handicapped-studio-bathroom-phoneview2.webp',
         caption:
           'The roll-in shower: a low-threshold shower pan with a textured non-slip floor, an angled grab bar along two walls and a fold-down teak seat.',
-        alt: 'Roll-in shower with grab bar and fold-down seat — accessible room, Best Western Vernal Inn, Vernal Utah',
+        alt: 'Roll-in shower with grab bar and fold-down seat — accessible room, Best Western Vernal Hotel, Vernal Utah',
       },
       {
         // Landscape despite the "phoneview" in its name — see the note above.
         src: 'images/Handicaped-Studio/Handicapped-studio-bathroom-phoneview1.webp',
         caption:
           'The same shower from the doorway, showing the handheld sprayer on its slide bar and the single-lever mixer within reach of the seat, with towels on the shelf outside.',
-        alt: 'Accessible shower with handheld sprayer, slide bar and fold-down seat — Best Western Vernal Inn, Vernal Utah',
+        alt: 'Accessible shower with handheld sprayer, slide bar and fold-down seat — Best Western Vernal Hotel, Vernal Utah',
       },
       {
         src: 'images/Handicaped-Studio/Handicapped-studio-bathroom.webp',
         portrait: 'images/Handicaped-Studio/Handicapped-studio-bathroom-phoneview.webp',
         caption:
           'The vanity is open underneath — a roll-under counter with no cabinet below it and insulated pipework — under a backlit mirror, with a grab bar on the wall behind the toilet and another on the wall beside it.',
-        alt: 'Roll-under bathroom vanity and grab bar in an accessible hotel bathroom — Best Western Vernal Inn, Vernal Utah',
+        alt: 'Roll-under bathroom vanity and grab bar in an accessible hotel bathroom — Best Western Vernal Hotel, Vernal Utah',
       },
       {
         src: 'images/Handicaped-Studio/Handicapped-studio-bathroom1.webp',
         caption:
           'The accessible bathroom in full: grab bars on two walls by the toilet with the paper holder set below the side bar, a towel shelf within reach, and open floor space between the vanity, the toilet and the shower.',
-        alt: 'Accessible hotel bathroom with grab bars and open floor space between fixtures — Best Western Vernal Inn, Vernal Utah',
+        alt: 'Accessible hotel bathroom with grab bars and open floor space between fixtures — Best Western Vernal Hotel, Vernal Utah',
       },
       {
         src: 'images/Handicaped-Studio/Handicapped-studio3.webp',
         portrait: 'images/Handicaped-Studio/Handicapped-studio-phoneview4.webp',
         caption:
           'The king bed from the other side of the room, with the roller-shaded window and the heating and cooling unit beneath it, and the phone and clock on the nightstand.',
-        alt: 'King bed beside a shaded window and heating and cooling unit — Best Western Vernal Inn, Vernal Utah',
+        alt: 'King bed beside a shaded window and heating and cooling unit — Best Western Vernal Hotel, Vernal Utah',
         heroSlide: true,
       },
       {
@@ -765,7 +765,7 @@ export const ROOMS: Room[] = [
         portrait: 'images/Handicaped-Studio/Handicapped-studio-phoneview3.webp',
         caption:
           'The studio in one frame from the bed: the framed Delicate Arch print, the kitchenette at the far end, the desk with the wall-mounted TV, the armchair and ottoman, and the closet with an iron on its shelf and an ironing board stowed in it.',
-        alt: 'Studio room showing kitchenette, desk, TV and closet — Best Western Vernal Inn, Vernal Utah',
+        alt: 'Studio room showing kitchenette, desk, TV and closet — Best Western Vernal Hotel, Vernal Utah',
         heroSlide: true,
       },
       {
@@ -773,7 +773,7 @@ export const ROOMS: Room[] = [
         portrait: 'images/Handicaped-Studio/Handicapped-studio-phoneview5.webp',
         caption:
           'The working half of the room from the foot of the bed: the kitchenette through the opening on the left, the desk and wall-mounted TV, the armchair and ottoman, and the open closet with its hanging rail, hangers, drawers, iron and ironing board.',
-        alt: 'Kitchenette, desk, TV, armchair and open closet in an accessible studio — Best Western Vernal Inn, Vernal Utah',
+        alt: 'Kitchenette, desk, TV, armchair and open closet in an accessible studio — Best Western Vernal Hotel, Vernal Utah',
         heroSlide: true,
       },
       {
@@ -781,14 +781,14 @@ export const ROOMS: Room[] = [
         portrait: 'images/Handicaped-Studio/Handicapped-studio-Kitchenette-phoneview.webp',
         caption:
           'The kitchenette: a two-burner cooktop and a stainless single-basin sink set into the granite counter, cabinets above and below, a microwave and a coffee maker, and a full-height refrigerator with a freezer opposite, on tiled flooring.',
-        alt: 'Kitchenette with two-burner cooktop, sink, microwave, coffee maker and full-height refrigerator — Best Western Vernal Inn, Vernal Utah',
+        alt: 'Kitchenette with two-burner cooktop, sink, microwave, coffee maker and full-height refrigerator — Best Western Vernal Hotel, Vernal Utah',
       },
       {
         src: 'images/Handicaped-Studio/Handicapped-studio.webp',
         portrait: 'images/Handicaped-Studio/Handicapped-studio-phoneview.webp',
         caption:
           'The desk and work area with an office chair and the wall-mounted TV, and the armchair and ottoman under a floor lamp across the corner, looking through to the window and the bed.',
-        alt: 'Desk, office chair, TV and armchair in a guest room — Best Western Vernal Inn, Vernal Utah',
+        alt: 'Desk, office chair, TV and armchair in a guest room — Best Western Vernal Hotel, Vernal Utah',
         heroSlide: true,
       },
       {
@@ -796,7 +796,7 @@ export const ROOMS: Room[] = [
         portrait: 'images/Handicaped-Studio/Handicapped-studio-phoneview1.webp',
         caption:
           'The open closet beside the window: a hanging rail with wooden hangers, an iron on the shelf above, an ironing board stowed alongside and two drawers below. The window looks out over Vernal, with the heating and cooling unit beneath it.',
-        alt: 'Open closet with hangers, iron and ironing board beside a window — Best Western Vernal Inn, Vernal Utah',
+        alt: 'Open closet with hangers, iron and ironing board beside a window — Best Western Vernal Hotel, Vernal Utah',
       },
     ],
     about: [
@@ -830,7 +830,7 @@ export const ROOMS: Room[] = [
     ],
     seo: {
       title:
-        'Accessible Studio King — Roll-In Shower, $120/Night | Best Western Vernal Inn',
+        'Accessible Studio King — Roll-In Shower, $120/Night | Best Western Vernal Hotel',
       description:
         'Accessible hotel room in Vernal, Utah: king bed, roll-in shower with fold-down seat, grab bars and a roll-under vanity. $120 per night + tax. Weekly rates — call for price.',
       bedType: 'King',
@@ -867,7 +867,7 @@ export const ROOMS: Room[] = [
       portrait: 'images/Pet-Friendly-Double-Queen/Pet-Friendly-Double-Queen-Room-phoneview5.webp',
       caption:
         'Two queen beds on wood-style plank flooring.',
-      alt: 'Pet-friendly Studio Two Queen with two queen beds and wood-style floors — Best Western Vernal Inn, Vernal Utah',
+      alt: 'Pet-friendly Studio Two Queen with two queen beds and wood-style floors — Best Western Vernal Hotel, Vernal Utah',
     },
     gallery: [
       {
@@ -875,7 +875,7 @@ export const ROOMS: Room[] = [
         portrait: 'images/Pet-Friendly-Double-Queen/Pet-Friendly-Double-Queen-Room-phoneview5.webp',
         caption:
           'Two queen beds head-on, on light-wood platform frames with panelled headboards and blue covers, sharing a wall light and a nightstand with the room phone and an alarm clock on it. A framed Utah sandstone print hangs on the wall to the left, and wood-style plank flooring runs the width of the room.',
-        alt: 'Two queen beds on wood-style plank flooring in a pet-friendly room — Best Western Vernal Inn, Vernal Utah',
+        alt: 'Two queen beds on wood-style plank flooring in a pet-friendly room — Best Western Vernal Hotel, Vernal Utah',
         heroSlide: true,
       },
       {
@@ -883,7 +883,7 @@ export const ROOMS: Room[] = [
         portrait: 'images/Pet-Friendly-Double-Queen/Pet-Friendly-Double-Queen-Room-phoneview3.webp',
         caption:
           'The beds from the near corner, showing the panelled headboards, the shared wall light and nightstand, and the entry door at the far left.',
-        alt: 'Two queen beds sharing a nightstand and wall light — Best Western Vernal Inn, Vernal Utah',
+        alt: 'Two queen beds sharing a nightstand and wall light — Best Western Vernal Hotel, Vernal Utah',
         heroSlide: true,
       },
       {
@@ -891,7 +891,7 @@ export const ROOMS: Room[] = [
         portrait: 'images/Pet-Friendly-Double-Queen/Pet-Friendly-Double-Queen-Room-phoneview2.webp',
         caption:
           'The beds from the other corner, with the roller-shaded window and the heating and cooling unit beneath it.',
-        alt: 'Pet-friendly room with two beds, window and heating and cooling unit — Best Western Vernal Inn, Vernal Utah',
+        alt: 'Pet-friendly room with two beds, window and heating and cooling unit — Best Western Vernal Hotel, Vernal Utah',
         heroSlide: true,
       },
       {
@@ -899,7 +899,7 @@ export const ROOMS: Room[] = [
         portrait: 'images/Pet-Friendly-Double-Queen/Pet-Friendly-Double-Queen-Room-phoneview1.webp',
         caption:
           'The full length of the room from beside the beds: the entry door at the far end, the kitchenette, the dining table with two chairs, the desk with the wall-mounted TV and the ottoman — all on continuous wood-style plank flooring.',
-        alt: 'Full view of a pet-friendly studio showing entrance, kitchenette, dining table and wood-style floors — Best Western Vernal Inn, Vernal Utah',
+        alt: 'Full view of a pet-friendly studio showing entrance, kitchenette, dining table and wood-style floors — Best Western Vernal Hotel, Vernal Utah',
         heroSlide: true,
       },
       {
@@ -907,7 +907,7 @@ export const ROOMS: Room[] = [
         portrait: 'images/Pet-Friendly-Double-Queen/Pet-Friendly-Double-Queen-Room-phoneview7.webp',
         caption:
           'The kitchenette and dining table by the entrance — the same kitchen configuration as our other rooms: a sink set into the counter, cabinets above and below, a microwave and a coffee maker, with a table and upholstered chairs alongside.',
-        alt: 'Kitchenette with sink, microwave and cabinets beside a dining table — Best Western Vernal Inn, Vernal Utah',
+        alt: 'Kitchenette with sink, microwave and cabinets beside a dining table — Best Western Vernal Hotel, Vernal Utah',
         heroSlide: true,
       },
       {
@@ -915,7 +915,7 @@ export const ROOMS: Room[] = [
         portrait: 'images/Pet-Friendly-Double-Queen/Pet-Friendly-Double-Queen-Room-phoneview8.webp',
         caption:
           'The dining table and chairs with the full-height refrigerator and freezer beside them, and the armchair, floor lamp and wall-mounted TV beyond.',
-        alt: 'Dining table, refrigerator and seating area in a pet-friendly room — Best Western Vernal Inn, Vernal Utah',
+        alt: 'Dining table, refrigerator and seating area in a pet-friendly room — Best Western Vernal Hotel, Vernal Utah',
         heroSlide: true,
       },
       {
@@ -923,7 +923,7 @@ export const ROOMS: Room[] = [
         portrait: 'images/Pet-Friendly-Double-Queen/Pet-Friendly-Double-Queen-Room-phoneview6.webp',
         caption:
           'The seating corner: an armchair with a matching ottoman under a floor lamp, next to the desk, office chair and wall-mounted TV, with a framed canyon print on the wall.',
-        alt: 'Armchair, ottoman and desk with wall-mounted TV on wood-style floors — Best Western Vernal Inn, Vernal Utah',
+        alt: 'Armchair, ottoman and desk with wall-mounted TV on wood-style floors — Best Western Vernal Hotel, Vernal Utah',
         heroSlide: true,
       },
       {
@@ -931,7 +931,7 @@ export const ROOMS: Room[] = [
         portrait: 'images/Pet-Friendly-Double-Queen/Pet-Friendly-Double-Queen-Room-phoneview4.webp',
         caption:
           'The closet unit, with a full-length mirror on one side — the window and its heating and cooling unit reflected in it — an open hanging bay, two drawers and an ironing board stowed to the right.',
-        alt: 'Closet unit with full-length mirror, hanging bay, drawers and ironing board — Best Western Vernal Inn, Vernal Utah',
+        alt: 'Closet unit with full-length mirror, hanging bay, drawers and ironing board — Best Western Vernal Hotel, Vernal Utah',
       },
       ...STANDARD_BATHROOM('Pet-Friendly-Double-Queen', 'Pet-Friendly'),
     ],
@@ -966,7 +966,7 @@ export const ROOMS: Room[] = [
     ],
     seo: {
       title:
-        'Pet-Friendly Studio Two Queen — $155/Night | Best Western Vernal Inn, Vernal Utah',
+        'Pet-Friendly Studio Two Queen — $155/Night | Best Western Vernal Hotel, Vernal Utah',
       description:
         'Pet-friendly hotel room in Vernal, Utah: two queen beds, wood-style floors, full kitchenette. Up to two dogs, 80 lb limit, $30/day pet fee. $155 per night + tax. Weekly rates — call for price.',
       bedType: 'Queen',
@@ -1015,7 +1015,7 @@ export const ROOMS: Room[] = [
       src: 'images/Pet-Friendly-King-Suite/Pet-Friendly-King-Suite6.webp',
       portrait: 'images/Pet-Friendly-King-Suite/Pet-Friendly-King-Suite-phoneview6.webp',
       caption: 'The king bed on wood-style plank flooring.',
-      alt: 'Pet-Friendly Room with a king bed and wood-style floors — Best Western Vernal Inn, Vernal Utah',
+      alt: 'Pet-Friendly Room with a king bed and wood-style floors — Best Western Vernal Hotel, Vernal Utah',
     },
     gallery: [
       {
@@ -1023,14 +1023,14 @@ export const ROOMS: Room[] = [
         portrait: 'images/Pet-Friendly-King-Suite/Pet-Friendly-King-Suite-phoneview6.webp',
         caption:
           'The king bed head-on against the navy accent wall, on a light-wood platform frame with a panelled headboard, a wall-mounted reading light and a nightstand either side. A framed Delicate Arch print hangs to the left, and wood-style plank flooring runs under the bed.',
-        alt: 'King bed with panelled headboard and wall reading lights on wood-style flooring — Best Western Vernal Inn, Vernal Utah',
+        alt: 'King bed with panelled headboard and wall reading lights on wood-style flooring — Best Western Vernal Hotel, Vernal Utah',
         heroSlide: true,
       },
       {
         src: 'images/Pet-Friendly-King-Suite/Pet-Friendly-King-Suite7.webp',
         caption:
           'The bed from the window side, with the roller-shaded window looking out over Vernal, the heating and cooling unit beneath it and the room phone on the nightstand.',
-        alt: 'King bed beside a window with a view over Vernal — Best Western Vernal Inn, Vernal Utah',
+        alt: 'King bed beside a window with a view over Vernal — Best Western Vernal Hotel, Vernal Utah',
         heroSlide: true,
       },
       {
@@ -1038,14 +1038,14 @@ export const ROOMS: Room[] = [
         portrait: 'images/Pet-Friendly-King-Suite/Pet-Friendly-King-Suite-phoneview3.webp',
         caption:
           'The room in one frame from the entrance: the desk with the wall-mounted TV, the dining table and two upholstered chairs, the window with the heating and cooling unit beneath it, and the foot of the bed on the right — all on continuous wood-style plank flooring.',
-        alt: 'Pet-friendly king room showing desk, TV, dining table, window and bed — Best Western Vernal Inn, Vernal Utah',
+        alt: 'Pet-friendly king room showing desk, TV, dining table, window and bed — Best Western Vernal Hotel, Vernal Utah',
         heroSlide: true,
       },
       {
         src: 'images/Pet-Friendly-King-Suite/Pet-Friendly-King-Suite5.webp',
         caption:
           'The entrance end: the kitchenette with a sink in the counter, cabinets above and below, a microwave and a coffee maker, and the dining table with two upholstered chairs beside the door.',
-        alt: 'Kitchenette with microwave, coffee maker and dining table beside the entry door — Best Western Vernal Inn, Vernal Utah',
+        alt: 'Kitchenette with microwave, coffee maker and dining table beside the entry door — Best Western Vernal Hotel, Vernal Utah',
         heroSlide: true,
       },
       {
@@ -1053,35 +1053,35 @@ export const ROOMS: Room[] = [
         portrait: 'images/Pet-Friendly-King-Suite/Pet-Friendly-King-Suite-phoneview1.webp',
         caption:
           'The desk with a leather office chair, a reading lamp and the wall-mounted TV above it.',
-        alt: 'Desk with leather office chair and wall-mounted TV — Best Western Vernal Inn, Vernal Utah',
+        alt: 'Desk with leather office chair and wall-mounted TV — Best Western Vernal Hotel, Vernal Utah',
       },
       {
         src: 'images/Pet-Friendly-King-Suite/Pet-Friendly-King-Suite.webp',
         portrait: 'images/Pet-Friendly-King-Suite/Pet-Friendly-King-Suite-phoneview.webp',
         caption:
           'The open closet beside the desk: a full-width hanging rail, an ironing board stowed upright, two drawers below and an open shelf alongside.',
-        alt: 'Open closet with hanging rail, drawers and stowed ironing board — Best Western Vernal Inn, Vernal Utah',
+        alt: 'Open closet with hanging rail, drawers and stowed ironing board — Best Western Vernal Hotel, Vernal Utah',
       },
       {
         src: 'images/Pet-Friendly-King-Suite/Pet-Friendly-King-Bathroom1.webp',
         portrait: 'images/Pet-Friendly-King-Suite/Pet-Friendly-King-bathroom-phoneview2.webp',
         caption:
           'The bathroom: a granite vanity with a single basin under a backlit mirror, towels on the rail and shelf, the toilet, and the tub and shower beyond. Tiled floor throughout.',
-        alt: 'Guest bathroom with granite vanity, backlit mirror, toilet and tub — Best Western Vernal Inn, Vernal Utah',
+        alt: 'Guest bathroom with granite vanity, backlit mirror, toilet and tub — Best Western Vernal Hotel, Vernal Utah',
       },
       {
         src: 'images/Pet-Friendly-King-Suite/Pet-Friendly-King-bathroom.webp',
         portrait: 'images/Pet-Friendly-King-Suite/Pet-Friendly-King-Bathroom-phoneview1.webp',
         caption:
           'The bath: a full-size tub and shower combination with a curved curtain rod, chrome fixtures and a towel rack above the toilet.',
-        alt: 'Bathtub and shower combination with curved curtain rod — Best Western Vernal Inn, Vernal Utah',
+        alt: 'Bathtub and shower combination with curved curtain rod — Best Western Vernal Hotel, Vernal Utah',
       },
       {
         src: 'images/Pet-Friendly-King-Suite/Pet-Friendly-King-Suite2.webp',
         portrait: 'images/Pet-Friendly-King-Suite/Pet-Friendly-King-Suite-phoneview2.webp',
         caption:
           'The vanity and backlit mirror, with the tub and shower reflected behind and towels within reach.',
-        alt: 'Bathroom vanity and backlit mirror reflecting the shower — Best Western Vernal Inn, Vernal Utah',
+        alt: 'Bathroom vanity and backlit mirror reflecting the shower — Best Western Vernal Hotel, Vernal Utah',
       },
     ],
     about: [
@@ -1113,7 +1113,7 @@ export const ROOMS: Room[] = [
     ],
     seo: {
       title:
-        'Pet-Friendly King Room — $135/Night | Best Western Vernal Inn, Vernal Utah',
+        'Pet-Friendly King Room — $135/Night | Best Western Vernal Hotel, Vernal Utah',
       description:
         'Pet-friendly king room in Vernal, Utah: one king bed, wood-style floors, kitchenette and ground-floor access. Up to two dogs, 80 lb limit, $30/day pet fee. $135 per night + tax.',
       bedType: 'King',
@@ -1161,7 +1161,7 @@ export const ROOMS: Room[] = [
       src: 'images/Jacuzzi-Studio/Jacuzzi-Suite1.webp',
       portrait: 'images/Jacuzzi-Studio/Jacuzzi-Suite-phoneview1.webp',
       caption: 'The corner jacuzzi in the room itself, beside the desk and the window.',
-      alt: 'Studio Jacuzzi King with a corner jacuzzi in the room beside the desk — Best Western Vernal Inn, Vernal Utah',
+      alt: 'Studio Jacuzzi King with a corner jacuzzi in the room beside the desk — Best Western Vernal Hotel, Vernal Utah',
     },
     gallery: [
       {
@@ -1169,7 +1169,7 @@ export const ROOMS: Room[] = [
         portrait: 'images/Jacuzzi-Studio/Jacuzzi-Suite-phoneview1.webp',
         caption:
           'The corner jacuzzi set into a tiled surround in the main room, with the desk, a leather office chair and the wall-mounted TV beside it, and a roller-shaded window looking out over Vernal with the heating and cooling unit beneath.',
-        alt: 'Corner jacuzzi in a tiled surround beside a desk and wall-mounted TV — Best Western Vernal Inn, Vernal Utah',
+        alt: 'Corner jacuzzi in a tiled surround beside a desk and wall-mounted TV — Best Western Vernal Hotel, Vernal Utah',
         heroSlide: true,
       },
       {
@@ -1177,14 +1177,14 @@ export const ROOMS: Room[] = [
         portrait: 'images/Jacuzzi-Studio/Jacuzzi-Suite-phoneview.webp',
         caption:
           'The jacuzzi up close: a corner tub with chrome fixtures and a towel on its tiled ledge, standing on a tiled floor set into the carpet.',
-        alt: 'Corner jacuzzi tub with chrome fixtures and a tiled surround — Best Western Vernal Inn, Vernal Utah',
+        alt: 'Corner jacuzzi tub with chrome fixtures and a tiled surround — Best Western Vernal Hotel, Vernal Utah',
       },
       {
         src: 'images/Jacuzzi-Studio/Jacuzzi-Suite10.webp',
         portrait: 'images/Jacuzzi-Studio/Jacuzzi-Suite-phoneview10.webp',
         caption:
           'The king bed head-on against the navy accent wall, on a light-wood platform frame with a panelled headboard, a wall-mounted reading light and a nightstand either side — the room phone on one, the clock on the other — and a framed waterfall print to the left.',
-        alt: 'King bed with panelled headboard and wall reading lights against a navy wall — Best Western Vernal Inn, Vernal Utah',
+        alt: 'King bed with panelled headboard and wall reading lights against a navy wall — Best Western Vernal Hotel, Vernal Utah',
         heroSlide: true,
       },
       {
@@ -1192,7 +1192,7 @@ export const ROOMS: Room[] = [
         portrait: 'images/Jacuzzi-Studio/Jacuzzi-Suite-phoneview9.webp',
         caption:
           'The bed from the desk side, with a two-seat sofa and a floor lamp beside the roller-shaded window, the view out over Vernal, and a framed canyon print on the far wall.',
-        alt: 'King bed beside a two-seat sofa and a window over Vernal — Best Western Vernal Inn, Vernal Utah',
+        alt: 'King bed beside a two-seat sofa and a window over Vernal — Best Western Vernal Hotel, Vernal Utah',
         heroSlide: true,
       },
       {
@@ -1200,7 +1200,7 @@ export const ROOMS: Room[] = [
         portrait: 'images/Jacuzzi-Studio/Jacuzzi-Suite-phoneview7.webp',
         caption:
           'The room from the entry door: a table with two upholstered chairs against the wall, the bed beyond it, and the sofa and floor lamp by the window.',
-        alt: 'Table with two upholstered chairs, king bed and sofa seen from the door — Best Western Vernal Inn, Vernal Utah',
+        alt: 'Table with two upholstered chairs, king bed and sofa seen from the door — Best Western Vernal Hotel, Vernal Utah',
         heroSlide: true,
       },
       {
@@ -1208,7 +1208,7 @@ export const ROOMS: Room[] = [
         portrait: 'images/Jacuzzi-Studio/Jacuzzi-Suite-phoneview6.webp',
         caption:
           'The working end of the room: a desk with a leather office chair and a reading lamp under the wall-mounted TV, and the kitchenette beside it on a tiled floor, with the edge of the jacuzzi surround in the corner.',
-        alt: 'Desk with leather office chair and wall-mounted TV beside the kitchenette — Best Western Vernal Inn, Vernal Utah',
+        alt: 'Desk with leather office chair and wall-mounted TV beside the kitchenette — Best Western Vernal Hotel, Vernal Utah',
         heroSlide: true,
       },
       {
@@ -1216,14 +1216,14 @@ export const ROOMS: Room[] = [
         portrait: 'images/Jacuzzi-Studio/Jacuzzi-Suite-phoneview5.webp',
         caption:
           'The kitchenette: a stainless single-basin sink and a two-burner cooktop set into the counter, cabinets above and below, a microwave and a coffee maker, and a full-height refrigerator with a freezer alongside, on tiled flooring.',
-        alt: 'Kitchenette with sink, two-burner cooktop, microwave and full-height refrigerator — Best Western Vernal Inn, Vernal Utah',
+        alt: 'Kitchenette with sink, two-burner cooktop, microwave and full-height refrigerator — Best Western Vernal Hotel, Vernal Utah',
       },
       {
         src: 'images/Jacuzzi-Studio/Jacuzzi-Suite8.webp',
         portrait: 'images/Jacuzzi-Studio/Jacuzzi-Suite-phoneview8.webp',
         caption:
           'The open closet by the door: a hanging rail with wooden hangers, an iron on the shelf and an ironing board stowed alongside, with the table and chairs in front.',
-        alt: 'Open closet with hangers, iron and ironing board beside a table and chairs — Best Western Vernal Inn, Vernal Utah',
+        alt: 'Open closet with hangers, iron and ironing board beside a table and chairs — Best Western Vernal Hotel, Vernal Utah',
       },
       ...STANDARD_BATHROOM('Jacuzzi-Studio', 'Jacuzzi'),
     ],
@@ -1256,9 +1256,9 @@ export const ROOMS: Room[] = [
       { label: '24-hour front desk', source: 'site' },
     ],
     seo: {
-      title: 'Studio Jacuzzi King — $149/Night, In-Room Jacuzzi | Best Western Vernal Inn',
+      title: 'Studio Jacuzzi King — $149/Night, In-Room Jacuzzi | Best Western Vernal Hotel',
       description:
-        'Studio Jacuzzi King at Best Western Vernal Inn in Vernal, Utah: a corner jacuzzi in the room, one king bed, a sofa and a full kitchenette. $149 per night + tax. Free hot breakfast, WiFi and parking. Weekly rates — call for price.',
+        'Studio Jacuzzi King at Best Western Vernal Hotel in Vernal, Utah: a corner jacuzzi in the room, one king bed, a sofa and a full kitchenette. $149 per night + tax. Free hot breakfast, WiFi and parking. Weekly rates — call for price.',
       bedType: 'King',
       // The rate table's "1–2" for this room, the same licence Studio King's
       // occupancy of 2 rests on.

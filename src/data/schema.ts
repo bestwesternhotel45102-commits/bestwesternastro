@@ -7,7 +7,7 @@
 // `TouristDestination.isPartOf`). None carried an `@id`, so a crawler had six
 // equivalent-but-unlinked nodes to reconcile. They did not agree:
 //
-//   • index.astro          name "Best Western Vernal Inn"          tel +14357896625
+//   • index.astro          name "Best Western Vernal Hotel"          tel +14357896625
 //   • dog-friendly-…       name "Best Western Extended Stay Vernal" tel +18015971696  ← different NUMBER
 //   • naples-utah-hotel    name "Best Western Extended Stay Vernal" tel +14357896625
 //   • oilfield-housing-…   name "Best Western Extended Stay Vernal" tel +18015971696  ← different NUMBER
@@ -114,7 +114,6 @@ export function hotelNode() {
     // alternateName reconciles the two strings to one entity instead of leaving
     // a second, competing one. REVISIT once the legal entity is verified from
     // the franchise records — see docs/BUSINESS_KNOWLEDGE_WORKBOOK.md.
-    alternateName: 'Best Western Extended Stay Vernal',
     url: BUSINESS.site.canonicalHome,
     telephone: BUSINESS.phoneE164,
     email: BUSINESS.email,
@@ -167,10 +166,10 @@ function weeklyOffers() {
     .filter((r): r is { room: (typeof rooms)[number]; price: number } => r.price !== null)
     .map(({ room, price }) => ({
       '@type': 'Offer',
-      name: `Weekly Extended Stay — ${room.name}`,
+      name: `Weekly Stay — ${room.name}`,
       itemOffered: {
         '@type': 'Service',
-        name: `${room.name} Room — ${RATES.weekNights}-Night Extended Stay`,
+        name: `${room.name} Room — ${RATES.weekNights}-Night Stay`,
         description: room.description,
       },
       priceSpecification: {

@@ -14,7 +14,7 @@ const headExtras = `<script type="application/ld+json">
   "@context":"https://schema.org",
   "@type":"FAQPage",
   "mainEntity":[
-   {"@type":"Question","name":"What is the cheapest hotel in Vernal, Utah?","acceptedAnswer":{"@type":"Answer","text":"Best Western Vernal Inn offers rates starting at ${LOWEST_NIGHTLY} per night with free hot breakfast, free parking, and free WiFi — making it the best overall value among full-service hotels in Vernal when total cost is considered."}},
+   {"@type":"Question","name":"What is the cheapest hotel in Vernal, Utah?","acceptedAnswer":{"@type":"Answer","text":"Best Western Vernal Hotel offers rates starting at ${LOWEST_NIGHTLY} per night with free hot breakfast, free parking, and free WiFi — making it the best overall value among full-service hotels in Vernal when total cost is considered."}},
     {"@type":"Question","name":"Do you offer weekly rates?","acceptedAnswer":{"@type":"Answer","text":"Yes. Weekly rates are quoted by the front desk rather than published — call (435) 789-6625 with your dates and room type. All weekly rates include free breakfast and all standard amenities."}},
     {"@type":"Question","name":"Is breakfast really free?","acceptedAnswer":{"@type":"Answer","text":"Yes. A full hot breakfast is included every morning with every stay — eggs, waffles, pastries, fruit, coffee, and juice. No additional charge."}},
     {"@type":"Question","name":"Are there any hidden fees?","acceptedAnswer":{"@type":"Answer","text":"No. No resort fees, parking fees, WiFi charges, or other hidden costs. The rate you see is the rate you pay."}},
@@ -26,7 +26,7 @@ const bodyContent = `<section class="page-hero">
  <div class="page-hero-cnt">
  <p style="font-size:.85rem;letter-spacing:3px;text-transform:uppercase;margin-bottom:12px;color:var(--gold);font-weight:700;">Vernal's Best Value — Real Amenities, Real Savings</p>
  <h1 style="font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4.5vw,3rem);font-weight:700;margin-bottom:18px;line-height:1.15;">Affordable Hotel<br>in Vernal, Utah</h1>
- <p style="font-size:1.05rem;line-height:1.7;opacity:.88;max-width:620px;margin:0 auto 24px;font-weight:300;">Looking for a budget-friendly hotel in Vernal that doesn't cut corners? Best Western Vernal Inn starts at ${LOWEST_NIGHTLY}/night with free hot breakfast, free parking, free WiFi, and kitchenettes — amenities that save you $50+ per day versus hotels that charge for everything extra.</p>
+ <p style="font-size:1.05rem;line-height:1.7;opacity:.88;max-width:620px;margin:0 auto 24px;font-weight:300;">Looking for a budget-friendly hotel in Vernal that doesn't cut corners? Best Western Vernal Hotel starts at ${LOWEST_NIGHTLY}/night with free hot breakfast, free parking, free WiFi, and kitchenettes — amenities that save you $50+ per day versus hotels that charge for everything extra.</p>
  <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
   <a data-track="book_click" href="${BUSINESS.bookingUrl}" style="background:var(--gold);color:var(--navy);padding:13px 32px;border-radius:4px;text-decoration:none;font-weight:900;font-size:.85rem;letter-spacing:1.5px;text-transform:uppercase;">${BUSINESS.directBooking.ctaLabel}</a>
   <a href="tel:${BUSINESS.phoneTel}" style="border:2px solid #fff;color:#fff;padding:12px 28px;border-radius:4px;text-decoration:none;font-weight:700;font-size:.85rem;letter-spacing:1px;">📞 (435) 789-6625</a>
@@ -35,10 +35,10 @@ const bodyContent = `<section class="page-hero">
 </section>
 <div class="distance-bar">💰 NIGHTLY FROM ${LOWEST_NIGHTLY} · ${WEEKLY_CALL_LINE.toUpperCase()} · FREE BREAKFAST ALWAYS INCLUDED</div>
 <div class="content-wrap">
-<div class="intro-pull"><strong>Budget-friendly doesn't have to mean bare-bones.</strong> Best Western Vernal Inn offers the lowest effective nightly cost of any full-service hotel in Vernal when you factor in what's included: free hot breakfast saves $10–$15 per person per day, free parking saves $10–$15/night versus competitors that charge, free WiFi is standard, and kitchenettes in select rooms let you cook instead of eating out. For a weekly stay the front desk quotes a price against your dates — call ${BUSINESS.phoneDisplay} and compare it against what a comparable Vernal hotel charges once breakfast, parking and a kitchen are added back on.</div>
+<div class="intro-pull"><strong>Budget-friendly doesn't have to mean bare-bones.</strong> Best Western Vernal Hotel offers the lowest effective nightly cost of any full-service hotel in Vernal when you factor in what's included: free hot breakfast saves $10–$15 per person per day, free parking saves $10–$15/night versus competitors that charge, free WiFi is standard, and kitchenettes in select rooms let you cook instead of eating out. For a weekly stay the front desk quotes a price against your dates — call ${BUSINESS.phoneDisplay} and compare it against what a comparable Vernal hotel charges once breakfast, parking and a kitchen are added back on.</div>
 <div class="content-section">
  <h2>What's Included — No Hidden Fees</h2>
-<p>The real cost of a hotel isn't just the room rate — it's what you pay on top. At Best Western Vernal Inn, everything that matters is already included. No resort fees, no parking charges, no WiFi upcharges, no surprises on the bill. Here's exactly what you get with every single stay, whether it's one night or one month:</p>
+<p>The real cost of a hotel isn't just the room rate — it's what you pay on top. At Best Western Vernal Hotel, everything that matters is already included. No resort fees, no parking charges, no WiFi upcharges, no surprises on the bill. Here's exactly what you get with every single stay, whether it's one night or one month:</p>
 <ul class="feat-list">
  <li>Free hot breakfast daily — eggs, waffles, coffee, juice, pastries</li>
  <li>Free WiFi throughout the entire property</li>
@@ -62,7 +62,7 @@ const bodyContent = `<section class="page-hero">
 <p>Add booking fees to that list if you are reserving through a third-party site. Booking direct — on BestWestern.com or by calling ${BUSINESS.phoneDisplay} — has none.</p>
 </div>
 <div class="content-section">
- <h2>Who Chooses Best Western Vernal Inn for Value</h2>
+ <h2>Who Chooses Best Western Vernal Hotel for Value</h2>
 <p>Our affordable rates attract a wide range of guests — from oilfield workers on GSA per diem to road-tripping families to hunters who want a real bed during rifle season. The common thread is practical people who do the math and realize that free breakfast, free parking, and a kitchenette add up to real savings over the course of a stay.</p>
 <ul class="feat-list">
  <li>Oilfield workers and contractors on per diem — check the current GSA rate for Uintah County, then call us with it</li>
@@ -70,7 +70,7 @@ const bodyContent = `<section class="page-hero">
  <li>Hunting groups during fall season — weekly rate for the full hunt</li>
  <li>Road trippers on Highway 40 — stop, rest, refuel, save</li>
  <li>Business travelers — all-in pricing with no surprise charges</li>
- <li>Extended-stay guests relocating to the Uintah Basin</li>
+ <li>Long-stay guests relocating to the Uintah Basin</li>
 </ul>
 </div>
 <div class="pro-tip"><p><strong>Budget Tip:</strong> A family of four in a Studio Two Queen at ${usd(RATES.nightly.studioTwoQueen)}/night gets free breakfast and a kitchenette in the price — against a hotel charging separately for both, three nights is roughly $100–$200 of difference. For a full week, ask the front desk for the weekly price. Call (435) 789-6625 to book.</p></div>
@@ -78,7 +78,7 @@ const bodyContent = `<section class="page-hero">
  <h2>Frequently Asked Questions</h2>
  <details style="border-bottom:1px solid #e8e4dc;padding:1rem 0;">
   <summary style="font-weight:700;color:var(--navy);cursor:pointer;font-size:1.02rem;">What is the cheapest hotel in Vernal, Utah?</summary>
-  <p style="margin-top:.7rem;color:var(--muted);line-height:1.8;font-weight:300;">Best Western Vernal Inn offers rates starting at ${LOWEST_NIGHTLY} per night with free hot breakfast, free parking, and free WiFi — making it the best overall value among full-service hotels in Vernal when total cost is considered.</p>
+  <p style="margin-top:.7rem;color:var(--muted);line-height:1.8;font-weight:300;">Best Western Vernal Hotel offers rates starting at ${LOWEST_NIGHTLY} per night with free hot breakfast, free parking, and free WiFi — making it the best overall value among full-service hotels in Vernal when total cost is considered.</p>
  </details>
  <details style="border-bottom:1px solid #e8e4dc;padding:1rem 0;">
   <summary style="font-weight:700;color:var(--navy);cursor:pointer;font-size:1.02rem;">Do you offer weekly rates?</summary>
@@ -107,7 +107,7 @@ const bodyContent = `<section class="page-hero">
     <div>
      <h3 style="font-family:'Playfair Display',serif;font-size:1.15rem;color:var(--navy);margin:0 0 .8rem;border-bottom:2px solid var(--gold);padding-bottom:.4rem;">By Stay Type</h3>
      <ul style="list-style:none;padding:0;margin:0;line-height:1.95;">
-      <li><a href="/extended-stay-hotel-vernal-utah" style="color:var(--navy);font-weight:600;text-decoration:none;border-bottom:1px solid rgba(var(--gold-rgb),0.5);">Extended Stay</a> <span style="color:var(--muted);font-size:.88em;">— Weekly &amp; monthly stays, priced by phone</span></li>
+      <li><a href="/long-stay-hotel-vernal-utah" style="color:var(--navy);font-weight:600;text-decoration:none;border-bottom:1px solid rgba(var(--gold-rgb),0.5);">Long Stays</a> <span style="color:var(--muted);font-size:.88em;">— Weekly &amp; monthly stays, priced by phone</span></li>
       <li><a href="/weekly-hotel-rates-vernal-utah" style="color:var(--navy);font-weight:600;text-decoration:none;border-bottom:1px solid rgba(var(--gold-rgb),0.5);">Weekly Rates</a> <span style="color:var(--muted);font-size:.88em;">— 7-night discount pricing</span></li>
       <li><a href="/workforce-housing-vernal-utah" style="color:var(--navy);font-weight:600;text-decoration:none;border-bottom:1px solid rgba(var(--gold-rgb),0.5);">Workforce Housing</a> <span style="color:var(--muted);font-size:.88em;">— Crew lodging &amp; corporate billing</span></li>
       <li><a href="/oilfield-housing-vernal" style="color:var(--navy);font-weight:600;text-decoration:none;border-bottom:1px solid rgba(var(--gold-rgb),0.5);">Oilfield Housing</a> <span style="color:var(--muted);font-size:.88em;">— Truck parking, flexible billing</span></li>
@@ -139,7 +139,7 @@ const bodyContent = `<section class="page-hero">
     </div>
   </div>
   <div style="text-align:center;margin-top:2.6rem;">
-   <a href="/" style="display:inline-block;background:var(--gold);color:var(--navy);font-weight:700;padding:.85rem 1.8rem;border-radius:4px;text-decoration:none;letter-spacing:.04em;">← Back to Best Western Vernal Inn</a>
+   <a href="/" style="display:inline-block;background:var(--gold);color:var(--navy);font-weight:700;padding:.85rem 1.8rem;border-radius:4px;text-decoration:none;letter-spacing:.04em;">← Back to Best Western Vernal Hotel</a>
   </div>
  </div>
 </section>
@@ -169,15 +169,15 @@ const bodyContent = `<section class="page-hero">
 ---
 
 <BaseLayout
-  title=`Affordable Hotel in Vernal, Utah | Best Western Vernal Inn — From ${LOWEST_NIGHTLY}/Night`
-  description=`Best Western Vernal Inn — Vernal's best value hotel. From ${LOWEST_NIGHTLY}/night; weekly rates by phone. Free hot breakfast, free WiFi, free parking, kitchenettes. No hidden fees. Call (435) 789-6625.`
-  canonical=`https://bestwesternvernalinn.com/cheap-hotel-vernal-utah`
-  ogTitle=`Affordable Hotel in Vernal, Utah | Best Western Vernal Inn — From ${LOWEST_NIGHTLY}/Night`
-  ogDescription=`Best Western Vernal Inn — Vernal's best value hotel. From ${LOWEST_NIGHTLY}/night; weekly rates by phone. Free hot breakfast, free WiFi, free parking, kitchenettes. No hidden fees. Call (435) 789-6625.`
-  ogImage=`https://bestwesternvernalinn.com/images/35.webp`
-  twitterTitle=`Affordable Hotel in Vernal, Utah | Best Western Vernal Inn — From ${LOWEST_NIGHTLY}/Night`
-  twitterDescription=`Best Western Vernal Inn — Vernal's best value hotel. From ${LOWEST_NIGHTLY}/night; weekly rates by phone. Free hot breakfast, free WiFi, free parking, kitchenettes. No hidden fees. Call (435) 789-6625.`
-  twitterImage=`https://bestwesternvernalinn.com/images/35.webp`
+  title=`Affordable Hotel in Vernal, Utah | Best Western Vernal Hotel — From ${LOWEST_NIGHTLY}/Night`
+  description=`Best Western Vernal Hotel — Vernal's best value hotel. From ${LOWEST_NIGHTLY}/night; weekly rates by phone. Free hot breakfast, free WiFi, free parking, kitchenettes. No hidden fees. Call (435) 789-6625.`
+  canonical=`https://bestwesternvernalhotel.com/cheap-hotel-vernal-utah`
+  ogTitle=`Affordable Hotel in Vernal, Utah | Best Western Vernal Hotel — From ${LOWEST_NIGHTLY}/Night`
+  ogDescription=`Best Western Vernal Hotel — Vernal's best value hotel. From ${LOWEST_NIGHTLY}/night; weekly rates by phone. Free hot breakfast, free WiFi, free parking, kitchenettes. No hidden fees. Call (435) 789-6625.`
+  ogImage=`https://bestwesternvernalhotel.com/images/35.webp`
+  twitterTitle=`Affordable Hotel in Vernal, Utah | Best Western Vernal Hotel — From ${LOWEST_NIGHTLY}/Night`
+  twitterDescription=`Best Western Vernal Hotel — Vernal's best value hotel. From ${LOWEST_NIGHTLY}/night; weekly rates by phone. Free hot breakfast, free WiFi, free parking, kitchenettes. No hidden fees. Call (435) 789-6625.`
+  twitterImage=`https://bestwesternvernalhotel.com/images/35.webp`
   lastUpdated=`April 2026`
 >
   <Fragment slot="head" set:html={headExtras} />

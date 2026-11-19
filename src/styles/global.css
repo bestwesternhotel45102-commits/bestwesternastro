@@ -1,5 +1,5 @@
 /* ============================================================
-   BEST WESTERN EXTENDED STAY — VERNAL, UTAH
+   BEST WESTERN VERNAL HOTEL — VERNAL, UTAH
    styles.css  |  Shared stylesheet for all hotel pages
    ============================================================ */
 
@@ -2351,7 +2351,7 @@ body.video-page { background: #000; }
   transition: width .25s linear; box-shadow: 0 0 6px rgba(201,168,76,.7);
 }
 .frame-border::after {
-  content: 'BEST WESTERN EXTENDED STAY  ·  VERNAL, UTAH';
+  content: 'BEST WESTERN VERNAL HOTEL  ·  VERNAL, UTAH';
   display: block; text-align: center;
   font-size: .52rem; font-weight: 700; letter-spacing: 2.5px;
   color: rgba(var(--gold-rgb), 0.5); margin-top: 10px; text-transform: uppercase;
@@ -2934,7 +2934,7 @@ body.video-page { background: #000; }
 
 /* ============================================================
    SEO LANDING PAGES — Shared & Page-Specific Styles
-   Used by: dinosaur-national-monument, extended-stay,
+   Used by: dinosaur-national-monument, long-stay,
             hotel-prices, pet-friendly, workforce-crew-housing,
             flaming-gorge
    ============================================================ */

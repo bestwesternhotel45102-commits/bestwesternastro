@@ -109,8 +109,8 @@ export const HERO_SLIDES: HeroSlide[] = [
     image: 'images/Hotel-DayTime.webp',
     portrait: 'images/Hotel-DayTime-phoneview.webp',
     kb: 'kb-right',
-    alt: 'Best Western Vernal Inn in daylight, with the Best Western sign on the tower above the covered entrance — Vernal, Utah',
-    label: 'The Inn',
+    alt: 'Best Western Vernal Hotel in daylight, with the Best Western sign on the tower above the covered entrance — Vernal, Utah',
+    label: 'The Hotel',
   },
   {
     id: 'property-stars',
@@ -118,7 +118,7 @@ export const HERO_SLIDES: HeroSlide[] = [
     image: 'images/Hotel-NithtTime.webp',
     portrait: 'images/Hotel-NithtTime-phoneview.webp',
     kb: 'kb-left',
-    alt: 'Best Western Vernal Inn lit up at night under a starry sky — Vernal, Utah',
+    alt: 'Best Western Vernal Hotel lit up at night under a starry sky — Vernal, Utah',
     label: 'Under the Stars',
   },
   {
@@ -128,7 +128,7 @@ export const HERO_SLIDES: HeroSlide[] = [
     image: 'images/Queen-Studio/Queen-Suite.webp',
     portrait: 'images/Queen-Studio/Queen-Suite-phoneview.webp',
     kb: 'kb-right',
-    alt: 'Studio Queen with a queen bed and a two-seat sofa under the window — Best Western Vernal Inn, Vernal Utah',
+    alt: 'Studio Queen with a queen bed and a two-seat sofa under the window — Best Western Vernal Hotel, Vernal Utah',
     label: 'Studio Queen',
     room: {
       name: 'Studio Queen',
@@ -147,7 +147,7 @@ export const HERO_SLIDES: HeroSlide[] = [
     image: 'images/King-Studio/King-Studio5.webp',
     portrait: 'images/King-Studio/King-Studio-phoneview5.webp',
     kb: 'kb-up',
-    alt: 'Studio King bedroom with platform bed and reading lights — Best Western Vernal Inn, Vernal Utah',
+    alt: 'Studio King bedroom with platform bed and reading lights — Best Western Vernal Hotel, Vernal Utah',
     label: 'Studio King',
     room: {
       name: 'Studio King',
@@ -163,7 +163,7 @@ export const HERO_SLIDES: HeroSlide[] = [
     image: 'images/Double-Queen-Studio/Double-Queen5.webp',
     portrait: 'images/Double-Queen-Studio/Double-Queen-Phoneview4.webp',
     kb: 'kb-left',
-    alt: 'Studio Two Queen bedroom with two queen beds — Best Western Vernal Inn, Vernal Utah',
+    alt: 'Studio Two Queen bedroom with two queen beds — Best Western Vernal Hotel, Vernal Utah',
     label: 'Studio Two Queen',
     room: {
       name: 'Studio Two Queen',
@@ -179,7 +179,7 @@ export const HERO_SLIDES: HeroSlide[] = [
     image: 'images/Handicaped-Studio/Handicapped-studio4.webp',
     portrait: 'images/Handicaped-Studio/Handicapped-studio-phoneview3.webp',
     kb: 'kb-down',
-    alt: 'Accessible Studio King bedroom with wide turning space — Best Western Vernal Inn, Vernal Utah',
+    alt: 'Accessible Studio King bedroom with wide turning space — Best Western Vernal Hotel, Vernal Utah',
     label: 'Accessible Studio King',
     room: {
       name: 'Handicap / Accessible Studio King',
@@ -195,7 +195,7 @@ export const HERO_SLIDES: HeroSlide[] = [
     image: 'images/Pet-Friendly-Double-Queen/Pet-Friendly-Double-Queen-Room2.webp',
     portrait: 'images/Pet-Friendly-Double-Queen/Pet-Friendly-Double-Queen-Room-phoneview1.webp',
     kb: 'kb-up',
-    alt: 'Pet-friendly Studio Two Queen bedroom with wood-style floors — Best Western Vernal Inn, Vernal Utah',
+    alt: 'Pet-friendly Studio Two Queen bedroom with wood-style floors — Best Western Vernal Hotel, Vernal Utah',
     label: 'Pet-Friendly Studio Two Queen',
     room: {
       name: 'Pet-Friendly Studio Two Queen',
@@ -218,7 +218,7 @@ export const HERO_SLIDES: HeroSlide[] = [
     image: 'images/Pet-Friendly-King-Suite/Pet-Friendly-King-Suite3.webp',
     portrait: 'images/Pet-Friendly-King-Suite/Pet-Friendly-King-Suite-phoneview3.webp',
     kb: 'kb-right',
-    alt: 'Pet-friendly king room with desk, dining table and wood-style floors — Best Western Vernal Inn, Vernal Utah',
+    alt: 'Pet-friendly king room with desk, dining table and wood-style floors — Best Western Vernal Hotel, Vernal Utah',
     label: 'Pet-Friendly Room',
     room: {
       name: 'Pet-Friendly Room',
@@ -248,7 +248,7 @@ export const HERO_SLIDES: HeroSlide[] = [
     image: 'images/Jacuzzi-Studio/Jacuzzi-Suite1.webp',
     portrait: 'images/Jacuzzi-Studio/Jacuzzi-Suite-phoneview1.webp',
     kb: 'kb-left',
-    alt: 'Studio Jacuzzi King with a corner jacuzzi in the room beside the desk and wall-mounted TV — Best Western Vernal Inn, Vernal Utah',
+    alt: 'Studio Jacuzzi King with a corner jacuzzi in the room beside the desk and wall-mounted TV — Best Western Vernal Hotel, Vernal Utah',
     label: 'Studio Jacuzzi King',
     room: {
       name: 'Studio Jacuzzi King',
@@ -278,7 +278,7 @@ export const HERO_SLIDES: HeroSlide[] = [
     image: 'images/Amenities/Indoor-Pool.webp',
     portrait: 'images/Amenities/Indoor-Pool-phoneview.webp',
     kb: 'kb-right',
-    alt: 'Indoor swimming pool with poolside seating and tall windows — Best Western Vernal Inn, Vernal Utah',
+    alt: 'Indoor swimming pool with poolside seating and tall windows — Best Western Vernal Hotel, Vernal Utah',
     label: 'Indoor Pool',
   },
   {
@@ -287,7 +287,7 @@ export const HERO_SLIDES: HeroSlide[] = [
     image: 'images/Amenities/Hot-Tub.webp',
     portrait: 'images/Amenities/Hot-Tub-phoneview.webp',
     kb: 'kb-up',
-    alt: 'Indoor hot tub with handrail beside the pool — Best Western Vernal Inn, Vernal Utah',
+    alt: 'Indoor hot tub with handrail beside the pool — Best Western Vernal Hotel, Vernal Utah',
     label: 'Hot Tub',
   },
   {
@@ -296,7 +296,7 @@ export const HERO_SLIDES: HeroSlide[] = [
     image: 'images/Amenities/Fitness-Center.webp',
     portrait: 'images/Amenities/Fitness-Center-phoneview.webp',
     kb: 'kb-left',
-    alt: 'Fitness center with treadmill, dumbbell rack, adjustable bench and cable machine — Best Western Vernal Inn, Vernal Utah',
+    alt: 'Fitness center with treadmill, dumbbell rack, adjustable bench and cable machine — Best Western Vernal Hotel, Vernal Utah',
     label: 'Fitness Center',
   },
 ];
