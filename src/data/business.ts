@@ -38,22 +38,22 @@ export const BUSINESS = {
     display: '24-Hour Front Desk',
   },
 
-  // External booking engine. No longer linked from on-site CTAs (those now
-  // route to tel: + directBooking below) — kept only for the /go partner
-  // redirect pipe (src/data/partners.ts), which forwards THIRD-PARTY referral
-  // traffic to this engine and is a separate flow from the site's own buttons.
-  bookingUrl: 'https://www.theworld24.com/booking/executiveinnsuites.php',
+  // Booking engine: the hotel's own page on BestWestern.com (property 45102).
+  // Every on-site booking button links here, and so does the /go partner
+  // redirect (src/data/partners.ts), which appends ref/utm params the page ignores.
+  //
+  // HISTORY: until 2026-11-18 booking buttons dialled the front desk with a
+  // phone-only 10% code (ROCCO), per a GM decision of 2026-07-16, and /go
+  // forwarded to the Executive Inn's theworld24.com engine. Both were replaced
+  // when the hotel went live as a Best Western; the ROCCO offer was dropped on
+  // the owner's instruction because it cannot be honoured on BestWestern.com.
+  bookingUrl:
+    'https://www.bestwestern.com/en_US/book/naples/hotel-rooms/best-western-naples-vernal-hotel/propertyCode.45102.html',
 
-  // Site-wide "call to book" CTA. Replaces online booking buttons per GM
-  // decision (2026-07-16) to drive direct phone bookings instead of the
-  // third-party engine. `confirmed` gates publication like bookDirect[]
-  // below — true because the GM/owner authorized this discount directly.
+  // Label for every button that links to bookingUrl. Buttons that show the
+  // phone number still dial the front desk.
   directBooking: {
-    promoCode: 'ROCCO',
-    discountPercent: 10,
-    confirmed: true,
-    // Primary CTA label — combine with discountPercent, e.g. `${ctaLabel} ${discountPercent}%`.
-    ctaLabel: 'Book Direct & Save',
+    ctaLabel: 'Book Now',
   },
 
   site: {
@@ -74,7 +74,6 @@ export const BUSINESS = {
   // (Report §12). Flip to `true` ONLY after the GM signs off in writing —
   // no code change needed, just this flag. Only confirmed claims are rendered.
   bookDirect: [
-    { id: 'save-10', label: 'Save 10% — mention code ROCCO', confirmed: true },
     { id: 'no-fees', label: 'No booking fees', confirmed: true }, // true by definition when booking direct
     { id: 'free-parking', label: 'Free parking — truck & trailer', confirmed: true },
     { id: 'free-breakfast', label: 'Free hot breakfast', confirmed: true },

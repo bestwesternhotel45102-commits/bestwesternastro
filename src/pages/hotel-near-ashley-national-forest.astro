@@ -74,7 +74,7 @@ const bodyTop = `<section class="page-hero">
  <h1 style="font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4.5vw,3rem);font-weight:700;margin-bottom:18px;line-height:1.15;">Ashley National Forest<br>from Vernal, Utah</h1>
  <p style="font-size:1.05rem;line-height:1.7;opacity:.88;max-width:660px;margin:0 auto 24px;font-weight:300;">A practical guide to the 1.4-million-acre forest on Vernal's doorstep — how to get in, which access road suits your trip, what is open when, and where to base yourself. Written for visitors staying in Vernal.</p>
  <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
-  <a href="tel:${BUSINESS.phoneTel}" style="background:var(--gold);color:var(--navy);padding:13px 32px;border-radius:4px;text-decoration:none;font-weight:900;font-size:.85rem;letter-spacing:1.5px;text-transform:uppercase;">📞 ${BUSINESS.directBooking.ctaLabel} ${BUSINESS.directBooking.discountPercent}%</a>
+  <a data-track="book_click" href="${BUSINESS.bookingUrl}" style="background:var(--gold);color:var(--navy);padding:13px 32px;border-radius:4px;text-decoration:none;font-weight:900;font-size:.85rem;letter-spacing:1.5px;text-transform:uppercase;">${BUSINESS.directBooking.ctaLabel}</a>
   <a href="tel:${BUSINESS.phoneTel}" style="border:2px solid #fff;color:#fff;padding:12px 28px;border-radius:4px;text-decoration:none;font-weight:700;font-size:.85rem;letter-spacing:1px;">📞 ${BUSINESS.phoneDisplay}</a>
  </div>
  </div>
@@ -289,10 +289,10 @@ const bodyBottom = `
    <span class="lbl">Email</span>
    <span class="val">Send a Message</span>
   </a>
-  <a href="tel:${BUSINESS.phoneTel}" class="contact-opt book">
-   <span class="icon">📞</span>
-   <span class="lbl">${BUSINESS.directBooking.ctaLabel} ${BUSINESS.directBooking.discountPercent}%</span>
-   <span class="val">Mention code ${BUSINESS.directBooking.promoCode}</span>
+  <a data-track="book_click" href="${BUSINESS.bookingUrl}" class="contact-opt book">
+   <span class="icon">🛎️</span>
+   <span class="lbl">${BUSINESS.directBooking.ctaLabel}</span>
+   <span class="val">BestWestern.com</span>
   </a>
  </div>
 </div>`;

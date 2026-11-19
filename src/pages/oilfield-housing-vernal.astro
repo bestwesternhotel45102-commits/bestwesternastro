@@ -227,7 +227,7 @@ const bodyContent = `<div class="distance-bar">
   <div class="contact-options">
     <a href="tel:${BUSINESS.phoneTel}" class="contact-opt"><span class="icon">📞</span><span class="lbl">Call Us</span><span class="val">${BUSINESS.phoneDisplay}</span></a>
     <a href="sms:${BUSINESS.phoneTel}" class="contact-opt"><span class="icon">💬</span><span class="lbl">Text or WhatsApp</span><span class="val">${BUSINESS.phoneDisplay}</span></a>
-    <a href="tel:${BUSINESS.phoneTel}" class="contact-opt book"><span class="icon">📞</span><span class="lbl">${BUSINESS.directBooking.ctaLabel} ${BUSINESS.directBooking.discountPercent}%</span><span class="val">Mention code ${BUSINESS.directBooking.promoCode}</span></a>
+    <a data-track="book_click" href="${BUSINESS.bookingUrl}" class="contact-opt book"><span class="icon">🛎️</span><span class="lbl">${BUSINESS.directBooking.ctaLabel}</span><span class="val">BestWestern.com</span></a>
   </div>
 </div>
 

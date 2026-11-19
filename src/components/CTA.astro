@@ -18,10 +18,10 @@ const { heading = 'Ready to Book?', tagline } = Astro.props;
   <h2>{heading}</h2>
   <p>{tagline}</p>
   <div class="contact-options">
-    <a href={`tel:${BUSINESS.phoneTel}`} class="contact-opt book" data-track="phone_call_cta">
-      <span class="icon">📞</span>
-      <span class="lbl">{BUSINESS.directBooking.ctaLabel} {BUSINESS.directBooking.discountPercent}%</span>
-      <span class="val">{BUSINESS.phoneDisplay}</span>
+    <a href={BUSINESS.bookingUrl} class="contact-opt book" data-track="book_click">
+      <span class="icon">🛎️</span>
+      <span class="lbl">{BUSINESS.directBooking.ctaLabel}</span>
+      <span class="val">BestWestern.com</span>
     </a>
     <a href={`mailto:${BUSINESS.email}`} class="contact-opt">
       <span class="icon">✉️</span>
@@ -29,9 +29,9 @@ const { heading = 'Ready to Book?', tagline } = Astro.props;
       <span class="val">Send a Message</span>
     </a>
     <a href={`tel:${BUSINESS.phoneTel}`} class="contact-opt" data-track="phone_call_cta">
-      <span class="icon">🏷️</span>
-      <span class="lbl">Mention Code</span>
-      <span class="val">{BUSINESS.directBooking.promoCode}</span>
+      <span class="icon">📞</span>
+      <span class="lbl">Call the Front Desk</span>
+      <span class="val">{BUSINESS.phoneDisplay}</span>
     </a>
   </div>
 </div>

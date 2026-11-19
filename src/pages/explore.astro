@@ -472,7 +472,7 @@ const bodyContent = `<!-- PAGE SUMMARY — AI-extractable, invisible to users --
   <h2>Your Base Camp<br><em>for All of It.</em></h2>
   <p>Every adventure on this page starts and ends with a great night's rest. Best Western Vernal Inn has spacious rooms, free hot breakfast, and a welcome that makes you feel like you belong here.</p>
   <div class="ex-cta-btns">
-    <a href="tel:${BUSINESS.phoneTel}" class="ex-cta-book">📞 ${BUSINESS.directBooking.ctaLabel} ${BUSINESS.directBooking.discountPercent}%</a>
+    <a data-track="book_click" href="${BUSINESS.bookingUrl}" class="ex-cta-book">${BUSINESS.directBooking.ctaLabel}</a>
     <a href="tel:${BUSINESS.phoneTel}" class="ex-cta-call">📞 (435) 789-6625</a>
   </div>
 </div>
@@ -761,7 +761,7 @@ const bodyContent = `<!-- PAGE SUMMARY — AI-extractable, invisible to users --
   <h2>Ready to<br><em>Make Memories?</em></h2>
   <p>Book your stay at Best Western Vernal Inn — Vernal's most comfortable home base for everything this incredible corner of Utah has to offer.</p>
   <div class="ex-cta-btns">
-    <a href="tel:${BUSINESS.phoneTel}" class="ex-cta-book">📞 ${BUSINESS.directBooking.ctaLabel} ${BUSINESS.directBooking.discountPercent}%</a>
+    <a data-track="book_click" href="${BUSINESS.bookingUrl}" class="ex-cta-book">${BUSINESS.directBooking.ctaLabel}</a>
     <a href="tel:${BUSINESS.phoneTel}" class="ex-cta-call">📞 (435) 789-6625</a>
   </div>
   <p class="ex-cta-address">1935 South 1500 East, Vernal, UT 84078 &nbsp;·&nbsp;

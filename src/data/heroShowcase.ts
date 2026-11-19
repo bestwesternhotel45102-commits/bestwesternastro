@@ -259,6 +259,46 @@ export const HERO_SLIDES: HeroSlide[] = [
       weekly: WEEKLY_CALL_LINE,
     },
   },
+
+  // AMENITIES (added 2026-11-18 at the owner's request: "pictures for the pool,
+  // the hot tub and the gym … in the home page hero section too").
+  //
+  // They close the reel rather than open it so the first rate still arrives
+  // after the same two exterior shots. `kind: 'property'` — no price card.
+  //
+  // Sources: pool and hot tub from the owner's BestWesternExtra/Swimming-Pool
+  // shoot; gym from public/images/Modern-Gym-Interior-with Mirrored-Fitness-
+  // Equipment.png. The 16:9 frames are 1448x1086 WebP re-encodes; the 9:16
+  // phone versions are 611x1086 crops of the same frame (no owner phone export
+  // exists for these) — hot tub cropped by sharp's `attention` strategy, the
+  // other two from centre, each chosen by eye.
+  {
+    id: 'amenity-pool',
+    kind: 'property',
+    image: 'images/Amenities/Indoor-Pool.webp',
+    portrait: 'images/Amenities/Indoor-Pool-phoneview.webp',
+    kb: 'kb-right',
+    alt: 'Indoor swimming pool with poolside seating and tall windows — Best Western Vernal Inn, Vernal Utah',
+    label: 'Indoor Pool',
+  },
+  {
+    id: 'amenity-hot-tub',
+    kind: 'property',
+    image: 'images/Amenities/Hot-Tub.webp',
+    portrait: 'images/Amenities/Hot-Tub-phoneview.webp',
+    kb: 'kb-up',
+    alt: 'Indoor hot tub with handrail beside the pool — Best Western Vernal Inn, Vernal Utah',
+    label: 'Hot Tub',
+  },
+  {
+    id: 'amenity-fitness',
+    kind: 'property',
+    image: 'images/Amenities/Fitness-Center.webp',
+    portrait: 'images/Amenities/Fitness-Center-phoneview.webp',
+    kb: 'kb-left',
+    alt: 'Fitness center with treadmill, dumbbell rack, adjustable bench and cable machine — Best Western Vernal Inn, Vernal Utah',
+    label: 'Fitness Center',
+  },
 ];
 
 /** Index of the first room slide — the reel's price card layer starts here. */

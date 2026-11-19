@@ -27,7 +27,7 @@ const bodyContent = `<section class="page-hero">
  <h1 style="font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4.5vw,3rem);font-weight:700;margin-bottom:18px;line-height:1.15;">Weekly Hotel Rates<br>in Vernal, Utah</h1>
  <p style="font-size:1.05rem;line-height:1.7;opacity:.88;max-width:620px;margin:0 auto 24px;font-weight:300;">Best Western Vernal Inn quotes weekly rates directly — call with your dates and room type and the front desk will give you the current price for a 7-night stay. Nightly rates start at ${LOWEST_NIGHTLY} + tax, with free hot breakfast, free WiFi, free parking, and kitchenettes included.</p>
  <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
-  <a href="tel:${BUSINESS.phoneTel}" style="background:var(--gold);color:var(--navy);padding:13px 32px;border-radius:4px;text-decoration:none;font-weight:900;font-size:.85rem;letter-spacing:1.5px;text-transform:uppercase;">📞 ${BUSINESS.directBooking.ctaLabel} ${BUSINESS.directBooking.discountPercent}%</a>
+  <a data-track="book_click" href="${BUSINESS.bookingUrl}" style="background:var(--gold);color:var(--navy);padding:13px 32px;border-radius:4px;text-decoration:none;font-weight:900;font-size:.85rem;letter-spacing:1.5px;text-transform:uppercase;">${BUSINESS.directBooking.ctaLabel}</a>
   <a href="tel:${BUSINESS.phoneTel}" style="border:2px solid #fff;color:#fff;padding:12px 28px;border-radius:4px;text-decoration:none;font-weight:700;font-size:.85rem;letter-spacing:1px;">📞 (435) 789-6625</a>
  </div>
  </div>
@@ -105,7 +105,7 @@ const bodyContent = `<section class="page-hero">
  <li>24-hour front desk — check in on shift worker schedules</li>
 </ul>
 </div>
-<div class="pro-tip"><p><strong>Booking direct:</strong> call ${BUSINESS.phoneDisplay} and mention code <strong>${BUSINESS.directBooking.promoCode}</strong> for ${BUSINESS.directBooking.discountPercent}% off. Booking direct also means no booking fee, and the front desk can match you to the right room type — particularly for the Studio Jacuzzi Two Queen and the Studio King (Kitchenette), which have no published rate. For company-paid stays, <a href="/corporate-rates" style="color:var(--navy);font-weight:600;text-decoration:none;border-bottom:1px solid rgba(var(--gold-rgb),0.5);">set up a corporate account</a> and billing is handled directly.</p></div>
+<div class="pro-tip"><p><strong>Booking direct:</strong> book on BestWestern.com or call ${BUSINESS.phoneDisplay}. Booking direct means no booking fee, and the front desk can match you to the right room type — particularly for the Studio Jacuzzi Two Queen and the Studio King (Kitchenette), which have no published rate. For company-paid stays, <a href="/corporate-rates" style="color:var(--navy);font-weight:600;text-decoration:none;border-bottom:1px solid rgba(var(--gold-rgb),0.5);">set up a corporate account</a> and billing is handled directly.</p></div>
 <div class="content-section">
  <h2>Frequently Asked Questions</h2>
  <details style="border-bottom:1px solid #e8e4dc;padding:1rem 0;">
@@ -188,10 +188,10 @@ const bodyContent = `<section class="page-hero">
    <span class="lbl">Email</span>
    <span class="val">Send a Message</span>
   </a>
-  <a href="tel:${BUSINESS.phoneTel}" class="contact-opt book">
-   <span class="icon">📞</span>
-   <span class="lbl">${BUSINESS.directBooking.ctaLabel} ${BUSINESS.directBooking.discountPercent}%</span>
-   <span class="val">Mention code ${BUSINESS.directBooking.promoCode}</span>
+  <a data-track="book_click" href="${BUSINESS.bookingUrl}" class="contact-opt book">
+   <span class="icon">🛎️</span>
+   <span class="lbl">${BUSINESS.directBooking.ctaLabel}</span>
+   <span class="val">BestWestern.com</span>
   </a>
  </div>
 </div>`;

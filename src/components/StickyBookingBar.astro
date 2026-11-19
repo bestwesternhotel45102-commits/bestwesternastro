@@ -14,7 +14,7 @@ const claims = BUSINESS.bookDirect.filter((c) => c.confirmed).map((c) => c.label
 <aside class="sbb" aria-label="Book directly with the hotel">
   <div class="sbb-inner">
     <p class="sbb-claims">
-      <strong>Book Direct &amp; Save</strong>
+      <strong>Book Direct</strong>
       {claims.map((c) => <span class="sbb-claim">{c}</span>)}
     </p>
     <div class="sbb-actions">
@@ -23,10 +23,10 @@ const claims = BUSINESS.bookDirect.filter((c) => c.confirmed).map((c) => c.label
       </a>
       <a
         class="sbb-book"
-        href={`tel:${BUSINESS.phoneTel}`}
+        href={BUSINESS.bookingUrl}
         data-track="book_click"
       >
-        {BUSINESS.directBooking.ctaLabel} {BUSINESS.directBooking.discountPercent}%
+        {BUSINESS.directBooking.ctaLabel}
       </a>
     </div>
   </div>

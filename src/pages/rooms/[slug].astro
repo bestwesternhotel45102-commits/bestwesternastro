@@ -48,7 +48,6 @@ const HERO_MS = 1500;
 
 const abs = (src: string) => `${BUSINESS.site.domain}/${src}`;
 const tel = `tel:${BUSINESS.phoneTel}`;
-const bookLabel = `${BUSINESS.directBooking.ctaLabel} ${BUSINESS.directBooking.discountPercent}%`;
 const others = otherRooms(room.slug);
 
 // ── Structured data ─────────────────────────────────────────────────────────
@@ -180,8 +179,8 @@ const roomNode = {
       <div class="rm-hero-act">
         <p class="rm-weekly">{room.weekly}</p>
         <div class="rm-btns">
-          <a href={tel} class="rm-btn rm-btn-p" data-track="phone_call_room_hero">
-            Book Now · {BUSINESS.phoneDisplay}
+          <a href={BUSINESS.bookingUrl} class="rm-btn rm-btn-p" data-track="book_click">
+            {BUSINESS.directBooking.ctaLabel}
           </a>
           <a href="#rm-pricing" class="rm-btn rm-btn-s">Check Availability</a>
         </div>
@@ -308,8 +307,8 @@ const roomNode = {
   <section class="rm-sec">
     <h2>Ready to Book This Room?</h2>
     <p>
-      Book direct and mention code {BUSINESS.directBooking.promoCode} to save
-      {' '}{BUSINESS.directBooking.discountPercent}%. The front desk is staffed 24 hours, so a late call is fine.
+      Book the {room.name} online at BestWestern.com, or call the front desk — it is staffed
+      24 hours, so a late call is fine.
       For a stay of a week or more, ask for the weekly rate on the {room.name} while you have them
       on the phone — weekly stays are quoted by phone and never published on this site.
     </p>
@@ -322,7 +321,7 @@ const roomNode = {
       banner would read "Call for pricing + tax". */}
   <CTA
     heading={`${room.name} · ${room.nightly.price}${room.nightly.published ? ` / night ${RATES.taxNote}` : ''}`}
-    tagline={`${bookLabel} — mention code ${BUSINESS.directBooking.promoCode} · ${room.weekly} · Free hot breakfast · Free WiFi · Free parking`}
+    tagline={`${room.weekly} · Free hot breakfast · Free WiFi · Free parking`}
   />
 
   <!-- ═══ 7. RELATED ROOMS ═══════════════════════════════════════════════ -->

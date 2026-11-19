@@ -160,7 +160,7 @@ const bodyContent = `
 
 <!-- PAGE SUMMARY BAR — AI-extractable content, visible to all crawlers -->
 <div class="page-summary-bar" role="complementary" aria-label="Quick summary">
- <strong>Best Western Vernal Inn</strong> — Extended stay hotel in Vernal, Utah. Nightly rates from ${LOWEST_NIGHTLY} + tax (Studio King). Weekly rates — call for price. Free hot breakfast daily, full kitchenettes, jacuzzi studios, pet friendly rooms, free WiFi and free parking. Located at 1935 South 1500 East, Vernal, UT 84078 — 0.6 miles from Vernal Regional Airport, near Dinosaur National Monument. Call <strong>(435) 789-6625</strong> and mention code ROCCO to save 10%.
+ <strong>Best Western Vernal Inn</strong> — Extended stay hotel in Vernal, Utah. Nightly rates from ${LOWEST_NIGHTLY} + tax (Studio King). Weekly rates — call for price. Free hot breakfast daily, full kitchenettes, jacuzzi studios, pet friendly rooms, free WiFi and free parking. Located at 1935 South 1500 East, Vernal, UT 84078 — 0.6 miles from Vernal Regional Airport, near Dinosaur National Monument. Book online at BestWestern.com or call <strong>(435) 789-6625</strong>.
 </div>
 
 <!-- NAV -->
@@ -168,7 +168,8 @@ const bodyContent = `
 
 <!-- HERO SLIDESHOW — cinematic Ken Burns backgrounds.
      Opens on the two property shots, then walks one room type per slide with
-     its rate laid over the photograph. Slides and rates both come from
+     its rate laid over the photograph, and closes on the pool, hot tub and
+     fitness center. Slides and rates both come from
      src/data/heroShowcase.ts → src/data/rates.ts; nothing is hardcoded here. -->
 <section class="hero" id="hero" aria-roledescription="carousel" aria-label="Best Western Vernal Inn — rooms and rates">
 ${HERO_SLIDES.map((s, i) => `<div class="hero-slide ${s.kb}${i === 0 ? ' active' : ''}" role="img" aria-label="${s.alt}"><div class="hero-kb"${i === 0 ? ` style="background-image:url('${s.image}')"` : ` data-bg="${s.image}"`}${s.portrait ? ` data-bg-portrait="${s.portrait}"` : ''}></div></div>`).join('\n')}
@@ -178,13 +179,8 @@ ${HERO_SLIDES.map((s, i) => `<div class="hero-slide ${s.kb}${i === 0 ? ' active'
  <h1 class="htitle">Best Western Inn<br><em>Vernal, Utah</em></h1>
  <p class="hsub">The Executive Inn has been beautifully transformed into Best Western Vernal Inn — spacious rooms, free hot breakfast, and a warm welcome every single day. Your home away from home.</p>
  <div class="hbtns">
- <a href="tel:${BUSINESS.phoneTel}" class="btn-p" data-track="phone_call_homepage">📞 ${BUSINESS.directBooking.ctaLabel} ${BUSINESS.directBooking.discountPercent}%</a>
+ <a href="${BUSINESS.bookingUrl}" class="btn-p" data-track="book_click">${BUSINESS.directBooking.ctaLabel}</a>
  <a href="#rooms" class="btn-s">Explore Rooms</a>
- </div>
- <div class="promo-callout" style="display:inline-block;margin-top:14px;padding:8px 24px;border:2px solid var(--gold);border-radius:8px;background:rgba(10,20,45,.45);backdrop-filter:blur(4px);">
- <div style="font-size:.62rem;letter-spacing:2px;text-transform:uppercase;opacity:.85;">🎟️ Website Exclusive — Discount Code</div>
- <div style="font-size:1.35rem;font-weight:900;color:var(--gold);letter-spacing:3px;line-height:1.3;">${BUSINESS.directBooking.promoCode}</div>
- <div style="font-size:.7rem;opacity:.85;">Use this code when you call to save ${BUSINESS.directBooking.discountPercent}%.</div>
  </div>
  </div>
 
@@ -219,7 +215,7 @@ ${HERO_SLIDES.map((s, i) => {
    <div class="hroom-act">
     <p class="hroom-weekly">${r.weekly}</p>
     ${r.footnote ? `<p class="hroom-foot">${r.footnote}</p>` : ''}
-    <a href="tel:${BUSINESS.phoneTel}" class="hroom-cta" data-track="phone_call_homepage">Book Now · ${BUSINESS.phoneDisplay}</a>
+    <a href="${BUSINESS.bookingUrl}" class="hroom-cta" data-track="book_click">${BUSINESS.directBooking.ctaLabel}</a>
     ${more}
    </div>
   </article>`;
@@ -227,12 +223,12 @@ ${HERO_SLIDES.map((s, i) => {
  </div>
 
  <!-- Controls sit as one row at the bottom centre: the left edge of the hero is
-      taken by the "We're Open!" notice and the right by the pet badge, and both
-      would swallow a vertically-centred arrow. -->
+      right edge of the hero is taken by the pet badge, which would swallow a
+      vertically-centred arrow. -->
  <div class="hctrls">
-  <button class="hnav" id="hprev" type="button" aria-controls="hero" aria-label="Previous room">‹</button>
+  <button class="hnav" id="hprev" type="button" aria-controls="hero" aria-label="Previous slide">‹</button>
   <div class="hdots" id="hdots" role="tablist" aria-label="Choose a room"></div>
-  <button class="hnav" id="hnext" type="button" aria-controls="hero" aria-label="Next room">›</button>
+  <button class="hnav" id="hnext" type="button" aria-controls="hero" aria-label="Next slide">›</button>
  </div>
  <div class="scroll-hint">Scroll</div>
 
@@ -262,20 +258,20 @@ ${HERO_SLIDES.map((s, i) => {
  <div class="pi"><span class="ic">🐾</span><div><div class="label">Pet Friendly</div><div class="sub">Whole family welcome</div></div></div>
 </div>
 
-<!-- BOOK DIRECT PROMO -->
+<!-- BOOK DIRECT -->
 <section style="background:var(--navy);color:#fff;padding:40px 20px;text-align:center;">
- <p style="font-size:.75rem;letter-spacing:3px;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:10px;">Save 10% When You Book Direct</p>
+ <p style="font-size:.75rem;letter-spacing:3px;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:10px;">Book Direct with Best Western</p>
  <h2 style="font-family:'Playfair Display',serif;font-size:clamp(1.4rem,3.5vw,2rem);margin-bottom:12px;">Skip Third-Party Booking Sites</h2>
- <p style="opacity:.85;max-width:520px;margin:0 auto 20px;line-height:1.6;">Call us directly and mention the code <strong style="color:var(--gold);">ROCCO</strong> — you'll receive 10% off your reservation.</p>
- <a href="tel:${BUSINESS.phoneTel}" data-track="phone_call_homepage" style="display:inline-block;background:var(--gold);color:var(--navy);padding:13px 32px;border-radius:4px;text-decoration:none;font-weight:900;font-size:.85rem;letter-spacing:1.5px;text-transform:uppercase;">📞 (435) 789-6625</a>
- <p style="font-size:.75rem;opacity:.6;margin-top:14px;">Offer valid only when booking directly by phone.</p>
+ <p style="opacity:.85;max-width:520px;margin:0 auto 20px;line-height:1.6;">Reserve your room on BestWestern.com, or call the front desk — we're here 24 hours.</p>
+ <a href="${BUSINESS.bookingUrl}" data-track="book_click" style="display:inline-block;background:var(--gold);color:var(--navy);padding:13px 32px;border-radius:4px;text-decoration:none;font-weight:900;font-size:.85rem;letter-spacing:1.5px;text-transform:uppercase;">${BUSINESS.directBooking.ctaLabel}</a>
+ <a href="tel:${BUSINESS.phoneTel}" data-track="phone_call_homepage" style="display:inline-block;margin-left:10px;border:2px solid var(--gold);color:var(--gold);padding:11px 30px;border-radius:4px;text-decoration:none;font-weight:900;font-size:.85rem;letter-spacing:1.5px;text-transform:uppercase;">📞 ${BUSINESS.phoneDisplay}</a>
 </section>
 
 <!-- WHY BOOK DIRECT -->
 <section style="background:var(--cream);padding:36px 20px;text-align:center;">
  <h2 style="font-family:'Playfair Display',serif;font-size:clamp(1.2rem,3vw,1.6rem);color:var(--navy);margin-bottom:18px;">Why Book Direct?</h2>
  <ul style="list-style:none;padding:0;margin:0 auto;max-width:560px;display:flex;flex-direction:column;gap:12px;text-align:left;">
-  <li style="display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--gold);font-weight:900;">✓</span> Save ${BUSINESS.directBooking.discountPercent}% when you mention "${BUSINESS.directBooking.promoCode}"</li>
+  <li style="display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--gold);font-weight:900;">✓</span> No third-party booking fees</li>
   <li style="display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--gold);font-weight:900;">✓</span> Speak directly with our front desk staff</li>
   <li style="display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--gold);font-weight:900;">✓</span> Get answers about rooms, pets, parking, and local attractions before you book</li>
  </ul>
@@ -726,7 +722,7 @@ ${p.link ? ` <p class="room-detail-links" style="margin:0 0 4px;"><a href="${p.l
  <h2>Ready to Feel at Home?</h2>
  <p>Book your stay at Best Western Vernal Inn — Vernal tonight.<br>Great rooms, free breakfast, and a warm welcome waiting for you.</p>
  <div class="cta-btns">
- <a href="tel:${BUSINESS.phoneTel}" class="btn-p">📞 ${BUSINESS.directBooking.ctaLabel} ${BUSINESS.directBooking.discountPercent}%</a>
+ <a data-track="book_click" href="${BUSINESS.bookingUrl}" class="btn-p">${BUSINESS.directBooking.ctaLabel}</a>
  <a href="tel:${BUSINESS.phoneTel}" class="btn-s" style="color:var(--navy);border-color:var(--navy);">📞 (435) 789-6625</a>
  </div>
  <p class="cta-info">1935 South 1500 East, Vernal, UT &nbsp;|&nbsp; <a href="https://bestwesternvernalinn.com">bestwesternvernalinn.com</a></p>
