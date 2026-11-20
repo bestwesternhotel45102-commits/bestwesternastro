@@ -153,6 +153,164 @@ ${ldScript(hotelNodeFull(hotelDescription))}
  }
 
  /* Badge styles moved to styles.css */
+
+ /* ── "Leave a Google review" button, under the guest quote (.quote) ──
+    Navy-dark pill with a gold hairline, matching the hero rate card; white
+    Google "G", five stars that turn gold one after another on hover/focus, a
+    periodic shine sweep, a soft gold halo and a star burst on click (script in
+    pageScripts). All motion is off under prefers-reduced-motion. */
+ .bw-review-cta {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 14px;
+ max-width: 460px;
+ margin: 34px auto 0;
+ padding-top: 28px;
+ border-top: 1px solid rgba(var(--gold-rgb), .3);
+ }
+ .bw-review-cta__prompt {
+ margin: 0;
+ font-family: 'Playfair Display', serif;
+ font-style: italic;
+ font-size: 1.05rem;
+ line-height: 1.5;
+ color: rgba(var(--cream-rgb), .92);
+ text-wrap: balance;
+ }
+ .bw-review-btn {
+ position: relative;
+ display: inline-flex;
+ align-items: center;
+ gap: 10px;
+ max-width: 100%;
+ padding: 10px 20px 10px 10px;
+ border: 1px solid rgba(var(--gold-rgb), .7);
+ border-radius: 999px;
+ background: linear-gradient(160deg, rgba(var(--navy-dark-rgb), .78), rgba(var(--navy-dark-rgb), .96));
+ color: #fff;
+ font-family: 'Lato', sans-serif;
+ font-weight: 900;
+ font-size: .8rem;
+ letter-spacing: 1.4px;
+ text-transform: uppercase;
+ text-decoration: none;
+ box-shadow: 0 6px 18px rgba(0, 0, 0, .28), inset 0 1px 0 rgba(var(--white-rgb), .12);
+ isolation: isolate;
+ transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+ }
+ /* Shine sweep, clipped to the pill by its radius. */
+ .bw-review-btn::before {
+ content: "";
+ position: absolute;
+ inset: 0;
+ border-radius: inherit;
+ background: linear-gradient(110deg, transparent 30%, rgba(var(--gold-rgb), .35) 50%, transparent 70%) no-repeat;
+ background-size: 250% 100%;
+ background-position: 150% 0;
+ z-index: -1;
+ pointer-events: none;
+ }
+ /* Soft pulsing halo to draw the eye. */
+ .bw-review-btn::after {
+ content: "";
+ position: absolute;
+ inset: -4px;
+ border-radius: inherit;
+ border: 2px solid rgba(var(--gold-rgb), .7);
+ opacity: 0;
+ z-index: -2;
+ pointer-events: none;
+ }
+ .bw-review-btn__g {
+ display: grid;
+ place-items: center;
+ width: 32px;
+ height: 32px;
+ flex: 0 0 32px;
+ border-radius: 50%;
+ background: #fff;
+ box-shadow: 0 1px 3px rgba(0, 0, 0, .25);
+ transition: transform .4s cubic-bezier(.34, 1.56, .64, 1);
+ }
+ .bw-review-btn__g svg { display: block; }
+ .bw-review-btn__stars {
+ display: inline-flex;
+ gap: 1px;
+ font-size: .95rem;
+ letter-spacing: 0;
+ }
+ .bw-review-btn__stars i {
+ font-style: normal;
+ color: rgba(var(--white-rgb), .35);
+ transition: color .2s ease, transform .25s cubic-bezier(.34, 1.56, .64, 1);
+ }
+ .bw-review-btn:hover,
+ .bw-review-btn:focus-visible {
+ transform: translateY(-2px);
+ border-color: var(--gold);
+ box-shadow: 0 10px 26px rgba(0, 0, 0, .35), 0 0 0 1px rgba(var(--gold-rgb), .35), inset 0 1px 0 rgba(var(--white-rgb), .12);
+ }
+ .bw-review-btn:focus-visible { outline: 3px solid var(--gold-light); outline-offset: 4px; }
+ .bw-review-btn:active { transform: translateY(0) scale(.97); }
+ .bw-review-btn:hover .bw-review-btn__g,
+ .bw-review-btn:focus-visible .bw-review-btn__g { transform: rotate(-12deg) scale(1.1); }
+ /* Stars light up one after another on hover/focus. */
+ .bw-review-btn:hover .bw-review-btn__stars i,
+ .bw-review-btn:focus-visible .bw-review-btn__stars i {
+ color: var(--gold-light);
+ transform: scale(1.25);
+ }
+ .bw-review-btn__stars i:nth-child(2) { transition-delay: .06s; }
+ .bw-review-btn__stars i:nth-child(3) { transition-delay: .12s; }
+ .bw-review-btn__stars i:nth-child(4) { transition-delay: .18s; }
+ .bw-review-btn__stars i:nth-child(5) { transition-delay: .24s; }
+ /* Star burst on click. */
+ .bw-review-btn__spark {
+ position: absolute;
+ left: 50%;
+ top: 50%;
+ color: var(--gold-light);
+ font-size: 14px;
+ line-height: 1;
+ letter-spacing: 0;
+ pointer-events: none;
+ text-shadow: 0 0 6px rgba(var(--gold-rgb), .7);
+ animation: bw-review-spark .7s ease-out forwards;
+ }
+ @keyframes bw-review-spark {
+ from { transform: translate(-50%, -50%) scale(.6); opacity: 1; }
+ to { transform: translate(calc(-50% + var(--dx)), calc(-50% + var(--dy))) scale(1.1) rotate(180deg); opacity: 0; }
+ }
+ @media (prefers-reduced-motion: no-preference) {
+ .bw-review-btn::before { animation: bw-review-shine 4s ease-in-out 1.5s infinite; }
+ .bw-review-btn::after { animation: bw-review-halo 2.8s ease-out infinite; }
+ .bw-review-btn:hover::before { animation-duration: 1.2s; animation-delay: 0s; }
+ }
+ @keyframes bw-review-shine {
+ 0%, 60% { background-position: 150% 0; }
+ 100% { background-position: -50% 0; }
+ }
+ @keyframes bw-review-halo {
+ 0% { transform: scale(.96); opacity: .8; }
+ 100% { transform: scale(1.12); opacity: 0; }
+ }
+ @media (prefers-reduced-motion: reduce) {
+ .bw-review-btn,
+ .bw-review-btn__g,
+ .bw-review-btn__stars i { transition: none; }
+ .bw-review-btn:hover,
+ .bw-review-btn:focus-visible,
+ .bw-review-btn:active,
+ .bw-review-btn:hover .bw-review-btn__g,
+ .bw-review-btn:focus-visible .bw-review-btn__g,
+ .bw-review-btn:hover .bw-review-btn__stars i,
+ .bw-review-btn:focus-visible .bw-review-btn__stars i { transform: none; }
+ }
+ @media (max-width: 420px) {
+ .bw-review-btn { font-size: .74rem; letter-spacing: 1px; padding: 9px 16px 9px 9px; gap: 8px; }
+ .bw-review-btn__stars { display: none; }
+ }
  </style>`;
 const bodyContent = `
 
@@ -539,6 +697,16 @@ ${p.link ? ` <p class="room-detail-links" style="margin:0 0 4px;"><a href="${p.l
  <div class="stars">★★★★★</div>
  <blockquote>"Friendly and accommodating, clean rooms, nice breakfast — everything you'd want from a hotel stay."</blockquote>
  <cite>— Verified Guest Review · Hotels.com</cite>
+ <!-- Google review button: opens the write-a-review dialog. Styles in the
+      head <style> (.bw-review-*), click star-burst in pageScripts. -->
+ <div class="bw-review-cta">
+  <p class="bw-review-cta__prompt">Stayed with us? Tell the next traveler how it went.</p>
+  <a class="bw-review-btn" href="${BUSINESS.googleWriteReview}" target="_blank" rel="noopener" aria-label="Leave a Google review (opens in a new tab)">
+   <span class="bw-review-btn__g" aria-hidden="true"><svg viewBox="0 0 48 48" width="22" height="22"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg></span>
+   <span class="bw-review-btn__label">Leave a Google review</span>
+   <span class="bw-review-btn__stars" aria-hidden="true"><i>★</i><i>★</i><i>★</i><i>★</i><i>★</i></span>
+  </a>
+ </div>
 </div>
 
 <!-- BREAKFAST BANNER -->
@@ -1003,6 +1171,30 @@ if (ownerOverlay && ownerIframe) {
     });
   }
 }
+</script>
+<script>
+/* Google review button (under the guest quote): a burst of stars on click.
+   The link still opens normally. Skipped under reduced motion. */
+(() => {
+  const btn = document.querySelector('.quote .bw-review-btn');
+  if (!btn) return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  btn.addEventListener('click', () => {
+    for (let i = 0; i < 10; i++) {
+      const s = document.createElement('span');
+      s.className = 'bw-review-btn__spark';
+      s.setAttribute('aria-hidden', 'true');
+      s.textContent = '★';
+      const angle = (Math.PI * 2 * i) / 10 + Math.random() * 0.4;
+      const dist = 40 + Math.random() * 30;
+      s.style.setProperty('--dx', Math.cos(angle) * dist + 'px');
+      s.style.setProperty('--dy', Math.sin(angle) * dist + 'px');
+      btn.appendChild(s);
+      s.addEventListener('animationend', () => s.remove());
+      setTimeout(() => s.remove(), 1000); // fallback if animations are paused
+    }
+  });
+})();
 </script>`;
 ---
 

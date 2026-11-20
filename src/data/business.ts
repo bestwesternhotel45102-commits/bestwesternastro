@@ -56,6 +56,10 @@ export const BUSINESS = {
     ctaLabel: 'Book Now',
   },
 
+  // Opens Google's "write a review" dialog for the hotel's Business Profile.
+  // Used by the header badge (Header.astro) and the homepage review button.
+  googleWriteReview: 'https://g.page/r/CfRCHpamSkOcEBM/review',
+
   site: {
     domain: 'https://bestwesternvernalhotel.com',
     canonicalHome: 'https://bestwesternvernalhotel.com/',

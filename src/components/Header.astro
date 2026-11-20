@@ -57,7 +57,32 @@ const homeClass = isHome ? 'nav-drop-trigger nav-active' : 'nav-drop-trigger';
     <li><a href="/faq">FAQ</a></li>
     <li><a href="/video">▶ Our Story</a></li>
   </ul>
-  <a class="nav-phone" href={`tel:${BUSINESS.phoneTel}`} data-track="phone_call_header"><strong>Book Directly</strong>📞 {BUSINESS.phoneDisplay}</a>
+  {/* The phone link and the Google review badge share one flex slot. On
+      desktop the badge hangs as a slim line under the phone number, out of
+      flow, so the nav row's spacing is exactly what it was without it (the row
+      has no spare width between 901px and ~1360px). At burger widths the phone
+      is hidden and the badge sits in flow between the logo and the burger. */}
+  <div class="bw-navutil">
+    <a class="nav-phone" href={`tel:${BUSINESS.phoneTel}`} data-track="phone_call_header"><strong>Book Directly</strong>📞 {BUSINESS.phoneDisplay}</a>
+    {/* Google review badge — opens the write-a-review dialog. Deliberately
+        shows no rating or review count: those figures are not confirmed. */}
+    <a
+      class="bw-rvbadge"
+      href={BUSINESS.googleWriteReview}
+      target="_blank"
+      rel="noopener"
+      aria-label="Review us on Google (opens in a new tab)"
+    >
+      <span class="bw-rvbadge__stars" aria-hidden="true">
+        {[0, 1, 2, 3, 4].map((i) => (
+          <svg viewBox="0 0 24 24" width="1em" height="1em" style={`--i:${i}`} focusable="false">
+            <path fill="currentColor" d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" />
+          </svg>
+        ))}
+      </span>
+      <span class="bw-rvbadge__text"><span>Review us</span> <span>on Google</span></span>
+    </a>
+  </div>
   <a class="nav-cta" href={BUSINESS.bookingUrl} data-track="book_click">{BUSINESS.directBooking.ctaLabel}</a>
   <button class="burger" id="burger">
     <span></span><span></span><span></span>
@@ -84,3 +109,143 @@ const homeClass = isHome ? 'nav-drop-trigger nav-active' : 'nav-drop-trigger';
   <a href={BUSINESS.bookingUrl} data-track="book_click" style="color:var(--gold)">{BUSINESS.directBooking.ctaLabel} →</a>
   <a href={`tel:${BUSINESS.phoneTel}`} data-track="phone_call_header" style="color:var(--gold);font-size:1.1rem;font-weight:900;letter-spacing:1px;">📞 {BUSINESS.phoneDisplay}</a>
 </div>
+
+<script>
+  // Replay the star chase when the review badge is hovered or focused.
+  document.querySelectorAll<HTMLElement>('.bw-rvbadge').forEach((badge) => {
+    const replay = () =>
+      badge.querySelectorAll('svg').forEach((star) =>
+        star.getAnimations().forEach((a) => {
+          if (a.playState === 'finished') { a.cancel(); a.play(); }
+        }),
+      );
+    badge.addEventListener('mouseenter', replay);
+    badge.addEventListener('focus', replay);
+  });
+</script>
+
+<style>
+  /* Google review badge. Gold stars + "Review us on Google" in the nav's own
+     type (Lato, bold, uppercase, letter-spaced) and the site's gold/navy
+     tokens from global.css.
+     The stars flash in a left-to-right chase three times on page load (4.8s
+     in total) and then stop; hover or focus replays it (script above). Motion
+     that starts by itself must end within 5 seconds (WCAG 2.2.2) — do not make
+     this loop. Each star peaks once per 1.4s, far under the 3-flashes-per-
+     second limit (2.3.1). Reduced-motion visitors get no animation at all. */
+  .bw-navutil {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto;
+  }
+  .bw-rvbadge {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: rgba(var(--white-rgb), 0.88);
+    font-family: 'Lato', sans-serif;
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    line-height: 1;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: color var(--t), border-color var(--t), background var(--t);
+  }
+  .bw-rvbadge:hover,
+  .bw-rvbadge:focus-visible { color: var(--gold); }
+  .bw-rvbadge:focus-visible {
+    outline: 2px solid var(--gold-light);
+    outline-offset: 2px;
+  }
+  .bw-rvbadge__stars {
+    display: inline-flex;
+    gap: 1px;
+    color: var(--gold);
+    font-size: 0.72rem;
+  }
+  .bw-rvbadge__stars svg {
+    display: block;
+    overflow: visible;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .bw-rvbadge__stars svg {
+      animation: bw-rvbadge-flash 1.4s ease-in-out 3 both;
+      animation-delay: calc(var(--i) * 0.15s);
+    }
+  }
+  /* Each star flashes bright with a gold halo, chasing left to right. */
+  @keyframes bw-rvbadge-flash {
+    0%, 45%, 100% { transform: scale(1); filter: none; }
+    18% {
+      transform: scale(1.4);
+      filter: brightness(1.5) drop-shadow(0 0 3px #fff) drop-shadow(0 0 7px var(--gold-light));
+    }
+  }
+
+  /* Desktop: a slim line centred under "Book Directly 📞 (435) 789-6625".
+     Absolutely positioned so it takes no width from the nav row; the padding
+     gives it a ~22px tap/click target without making it look bigger. It ends
+     inside the 72px nav and at most a couple of pixels past the 60px
+     scrolled nav, where the nav (z-index 1000) still sits above the status
+     strip. */
+  @media (min-width: 901px) {
+    .bw-rvbadge {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 5px 8px;
+      border-radius: 4px;
+    }
+  }
+
+  /* Burger widths: the phone link is hidden, so the badge is the slot's only
+     visible child and sits in flow between the logo and the burger, as a
+     hairline gold pill. */
+  @media (max-width: 900px) {
+    .bw-navutil { margin: 0 10px; }
+    .bw-rvbadge {
+      padding: 6px 12px 6px 10px;
+      border: 1px solid rgba(var(--gold-rgb), 0.5);
+      border-radius: 999px;
+      background: rgba(var(--navy-dark-rgb), 0.35);
+      font-size: 0.66rem;
+    }
+    .bw-rvbadge:hover,
+    .bw-rvbadge:focus-visible {
+      border-color: var(--gold);
+      background: rgba(var(--navy-dark-rgb), 0.6);
+    }
+    .bw-rvbadge__stars { font-size: 0.78rem; }
+  }
+  /* Phones: stack into three short centred lines (stars / REVIEW US / ON
+     GOOGLE), sized so "Best Western · Vernal" still fits on one line beside
+     it at 375px. (At 360–374px the logo name wraps to two lines, as it
+     already does on narrow desktops; it stays inside the nav.) */
+  @media (max-width: 560px) {
+    .bw-navutil { margin: 0 4px; }
+    .bw-rvbadge {
+      flex-direction: column;
+      gap: 3px;
+      padding: 5px 7px;
+      border-radius: 10px;
+      font-size: 0.55rem;
+      letter-spacing: 0.3px;
+      text-align: center;
+    }
+    .bw-rvbadge__stars { font-size: 0.7rem; }
+    .bw-rvbadge__text > span { display: block; }
+    .bw-rvbadge__text > span + span { margin-top: 2px; }
+  }
+  /* Very narrow phones (<360px) have no room beside the logo for the words;
+     the stars stay, and the link keeps its full accessible name. */
+  @media (max-width: 359px) {
+    .bw-navutil { margin: 0 6px; }
+    .bw-rvbadge { padding: 6px 7px; }
+    .bw-rvbadge__stars { font-size: 0.6rem; }
+    .bw-rvbadge__text { display: none; }
+  }
+</style>
